@@ -66,3 +66,11 @@ class PopularRouteResponse(BaseModel):
     origin_name: str
     destination_name: str
     frequency: int = Field(ge=1)
+
+
+class RouteVisitResponse(BaseModel):
+    id: int
+    origin_name: str
+    destination_name: str
+    distance: float
+    visited_at: datetime

@@ -14,7 +14,7 @@ from database import User, get_db, verify_password
 SECRET_KEY: str = "CHANGE_THIS_IN_PRODUCTION_uninav_development_secret_key"
 ALGORITHM: str = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
-TOKEN_URL: str = "/auth/login"
+TOKEN_URL: str = "/auth/token"
 
 oauth2_scheme: OAuth2PasswordBearer = OAuth2PasswordBearer(tokenUrl=TOKEN_URL)
 
