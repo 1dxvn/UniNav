@@ -73,6 +73,7 @@ Routes marked **admin** need an administrator token, **auth** needs any logged-i
 | routes | `POST /routes/calculate` (saves to history) | auth |
 | | `POST /routes/compare`, `POST /routes/multi-stop`, `GET /routes/popular` | public |
 | history | `GET /routes/history`, `/routes/history/last`, `/routes/history/{id}`, `DELETE /routes/history`, `DELETE /routes/history/{id}` | auth |
+| rankings | `GET /rankings/places` (`?limit=`) | public |
 | navigation | `GET /navigation`, `POST /navigation/visit`, `POST /navigation/back`, `POST /navigation/forward`, `DELETE /navigation` | auth |
 | tours | `GET /tours`, `GET /tours/{id}` | public |
 | | `POST /tours/{id}/start`, `GET /tours/session`, `POST /tours/session/next`, `POST /tours/session/previous`, `DELETE /tours/session` | auth |
@@ -97,6 +98,7 @@ Failed logins are limited to 5 per 5 minutes per client and username (HTTP 429).
 |---|---|---|
 | Weighted directed graph, A\*, Dijkstra | `data_structures/graph.py` | Campus map and route calculation |
 | Min priority queue (binary heap) | `data_structures/heaps.py` | Frontier of A\* and Dijkstra |
+| Max-heap | `data_structures/max_heap.py` | Most visited places (`/rankings/places`) |
 | AVL tree | `data_structures/avl_tree.py` | Ranking of popular routes (`/routes/popular`) |
 | Stack | `data_structures/stack.py` | User history, newest first |
 | N-ary tree | `data_structures/nary_tree.py` | Campus hierarchy (`/campus/hierarchy`) |
