@@ -23,9 +23,9 @@ from database import (
     hash_password,
     init_db,
 )
-from estructuras.arboles import AVLTree
-from estructuras.grafo import WeightedDirectedGraph
-from estructuras.listas import Stack
+from data_structures.trees import AVLTree
+from data_structures.graph import WeightedDirectedGraph
+from data_structures.lists import Stack
 from schemas import (
     BuildingCreate,
     BuildingResponse,
