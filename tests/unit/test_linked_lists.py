@@ -68,3 +68,27 @@ def test_circular_move_to():
     circle = make_circle(1, 2, 3)
     assert circle.move_to(3) is True and circle.current == 3
     assert circle.move_to(99) is False
+
+
+def test_pop_front_returns_values_in_order():
+    linked = make_list(1, 2, 3)
+    assert [linked.pop_front(), linked.pop_front()] == [1, 2]
+    assert linked.to_list_forward() == [3] and linked.to_list_backward() == [3]
+    linked.pop_front()
+    with pytest.raises(IndexError):
+        linked.pop_front()
+
+
+def test_truncate_after_drops_the_tail():
+    linked = make_list(1, 2, 3, 4)
+    assert linked.truncate_after(linked.find(2)) == 2
+    assert linked.to_list_forward() == [1, 2]
+    assert linked.tail.value == 2 and len(linked) == 2
+    linked.append(9)
+    assert linked.to_list_backward() == [9, 2, 1]
+
+
+def test_truncate_after_the_last_node_removes_nothing():
+    linked = make_list(1, 2)
+    assert linked.truncate_after(linked.tail) == 0
+    assert linked.to_list_forward() == [1, 2]

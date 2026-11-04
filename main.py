@@ -18,6 +18,7 @@ from routers import (
     health,
     history,
     imports,
+    navigation,
     paths,
     queues,
     routes,
@@ -51,7 +52,7 @@ app.add_middleware(
 
 # `imports` must be registered before `buildings` so "/buildings/import" is not read as an id.
 for router_module in (
-    auth, users, imports, buildings, floors, paths, graph, routes, history, queues, tours, campus, health
+    auth, users, imports, buildings, floors, paths, graph, routes, history, navigation, queues, tours, campus, health
 ):
     app.include_router(router_module.router)
 

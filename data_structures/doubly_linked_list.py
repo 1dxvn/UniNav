@@ -43,6 +43,25 @@ class DoublyLinkedList(Generic[T]):
         self._size += 1
         return new_node
 
+    def pop_front(self) -> T:
+        if self._head is None:
+            raise IndexError("Cannot pop from an empty list.")
+        node = self._head
+        value = node.value
+        self._unlink(node)
+        return value
+
+    def truncate_after(self, node: DoublyNode[T]) -> int:
+        """Removes every node that comes after `node`. Returns how many were removed."""
+        removed = 0
+        current = node.next
+        while current is not None:
+            following = current.next
+            self._unlink(current)
+            current = following
+            removed += 1
+        return removed
+
     def remove(self, value: T) -> bool:
         node = self.find(value)
         if node is None:
