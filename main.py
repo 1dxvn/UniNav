@@ -9,7 +9,19 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from config import ALLOWED_ORIGINS, API_DESCRIPTION, API_TITLE, API_VERSION
 from database import init_db
-from routers import auth, buildings, campus, graph, health, history, imports, routes, users
+from routers import (
+    auth,
+    buildings,
+    campus,
+    floors,
+    graph,
+    health,
+    history,
+    imports,
+    paths,
+    routes,
+    users,
+)
 from services.campus_graph import campus_graph_service
 
 
@@ -36,7 +48,9 @@ app.add_middleware(
 )
 
 # `imports` must be registered before `buildings` so "/buildings/import" is not read as an id.
-for router_module in (auth, users, imports, buildings, graph, routes, history, campus, health):
+for router_module in (
+    auth, users, imports, buildings, floors, paths, graph, routes, history, campus, health
+):
     app.include_router(router_module.router)
 
 

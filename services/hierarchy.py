@@ -21,7 +21,7 @@ def build_campus_tree(database_session: Session, root_name: str = "University") 
         tree.add_child(
             faculty_nodes[faculty],
             building.name,
-            {"id": building.id, "x": building.x, "y": building.y, "type": building.building_type},
+            {"id": building.id, "x": building.x, "y": building.y, "floor": building.floor, "type": building.building_type},
         )
     return tree
 

@@ -7,12 +7,14 @@ class GraphNodeResponse(BaseModel):
     name: str
     x: float
     y: float
+    floor: int
 
 
 class GraphEdgeResponse(BaseModel):
     source: str
     target: str
     weight: float = Field(ge=0)
+    bidirectional: bool
 
 
 class GraphResponse(BaseModel):

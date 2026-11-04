@@ -26,6 +26,7 @@ def list_buildings(
     search: Optional[str] = Query(default=None, min_length=1, description="Name contains"),
     faculty: Optional[str] = None,
     building_type: Optional[str] = None,
+    floor: Optional[int] = Query(default=None, ge=0),
 ) -> list[Building]:
     query = select(Building).order_by(Building.name)
     if search:
@@ -34,6 +35,8 @@ def list_buildings(
         query = query.where(Building.faculty == faculty)
     if building_type:
         query = query.where(Building.building_type == building_type)
+    if floor is not None:
+        query = query.where(Building.floor == floor)
     return list(database_session.scalars(query))
 
 
@@ -50,7 +53,9 @@ def create_building(
     database_session.commit()
     database_session.refresh(new_building)
 
-    campus_graph_service.add_building(new_building.name, new_building.x, new_building.y)
+    campus_graph_service.add_building(
+        new_building.name, new_building.x, new_building.y, new_building.floor
+    )
     return new_building
 
 
@@ -123,7 +128,7 @@ def update_building(
             changes.pop("name")
         else:
             ensure_name_available(database_session, changes["name"], ignore_id=building.id)
-    for field in ("x", "y"):
+    for field in ("x", "y", "floor"):
         if changes.get(field, 0.0) is None:
             changes.pop(field)
 

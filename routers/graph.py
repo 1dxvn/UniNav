@@ -15,8 +15,10 @@ router = APIRouter(prefix="/graph", tags=["graph"])
 def read_graph() -> GraphResponse:
     nodes, edges = campus_graph_service.snapshot()
     return GraphResponse(
-        nodes=[GraphNodeResponse(name=name, x=x, y=y) for name, x, y in nodes],
-        edges=[GraphEdgeResponse(source=s, target=t, weight=w) for s, t, w in edges],
+        nodes=[GraphNodeResponse(name=name, x=x, y=y, floor=floor)
+            for name, x, y, floor in nodes],
+        edges=[GraphEdgeResponse(source=s, target=t, weight=w, bidirectional=b)
+            for s, t, w, b in edges],
     )
 
 
