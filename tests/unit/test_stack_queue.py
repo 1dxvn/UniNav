@@ -54,3 +54,30 @@ def test_queue_can_be_reused_after_emptying():
     assert queue.to_list() == [2]
     with pytest.raises(IndexError):
         Queue().dequeue()
+
+
+@pytest.mark.parametrize("value, expected", [("a", ["b", "c"]), ("b", ["a", "c"]), ("c", ["a", "b"])])
+def test_queue_remove_from_front_middle_and_rear(value, expected):
+    queue = Queue()
+    for item in ("a", "b", "c"):
+        queue.enqueue(item)
+    assert queue.remove(value) is True
+    assert queue.to_list() == expected and queue.size() == 2
+
+
+def test_queue_remove_keeps_enqueue_working():
+    queue = Queue()
+    queue.enqueue("a")
+    queue.enqueue("b")
+    queue.remove("b")
+    queue.enqueue("c")
+    assert queue.to_list() == ["a", "c"]
+    assert Queue().remove("x") is False
+
+
+def test_queue_remove_the_only_element():
+    queue = Queue()
+    queue.enqueue("a")
+    assert queue.remove("a") is True and queue.is_empty()
+    queue.enqueue("b")
+    assert queue.to_list() == ["b"]

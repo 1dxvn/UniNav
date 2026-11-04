@@ -32,6 +32,22 @@ class Queue(Generic[T]):
         self._size -= 1
         return removed.value
 
+    def remove(self, value: T) -> bool:
+        previous: Optional[SinglyNode[T]] = None
+        current = self._front
+        while current is not None:
+            if current.value == value:
+                if previous is None:
+                    self._front = current.next
+                else:
+                    previous.next = current.next
+                if current is self._rear:
+                    self._rear = previous
+                self._size -= 1
+                return True
+            previous, current = current, current.next
+        return False
+
     def peek(self) -> T:
         if self._front is None:
             raise IndexError("Cannot peek an empty queue.")

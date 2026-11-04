@@ -16,6 +16,7 @@ from database import Base, SessionLocal, engine  # noqa: E402
 from main import app  # noqa: E402
 from security.authentication import get_user_by_username  # noqa: E402
 from services.rate_limiter import login_rate_limiter  # noqa: E402
+from services.waiting_lines import waiting_lines  # noqa: E402
 
 PASSWORD = "secret123"
 
@@ -24,6 +25,7 @@ PASSWORD = "secret123"
 def client() -> Iterator[TestClient]:
     Base.metadata.drop_all(bind=engine)
     login_rate_limiter._failures.clear()
+    waiting_lines.clear_all()
     with TestClient(app) as test_client:
         yield test_client
 

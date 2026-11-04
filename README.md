@@ -73,12 +73,17 @@ Routes marked **admin** need an administrator token, **auth** needs any logged-i
 | routes | `POST /routes/calculate` (saves to history) | auth |
 | | `POST /routes/compare`, `POST /routes/multi-stop`, `GET /routes/popular` | public |
 | history | `GET /routes/history`, `/routes/history/last`, `/routes/history/{id}`, `DELETE /routes/history`, `DELETE /routes/history/{id}` | auth |
+| queues | `GET /queues/{building_id}` | public |
+| | `POST /queues/{building_id}/join`, `GET .../position`, `DELETE .../leave` | auth |
+| | `POST /queues/{building_id}/serve` (calls the next person) | admin |
 | campus | `GET /campus/hierarchy` | public |
 | status | `GET /health` | public |
 
 Route requests accept `algorithm` (`a_star` or `dijkstra`) and `avoid`, a list of path
 kinds to skip, for example `{"avoid": ["stairs"]}` for an accessible route. Responses
 include `steps` with the kind and distance of every hop.
+
+Waiting lines live in memory and are cleared when the server restarts.
 
 Failed logins are limited to 5 per 5 minutes per client and username (HTTP 429).
 
@@ -91,7 +96,8 @@ Failed logins are limited to 5 per 5 minutes per client and username (HTTP 429).
 | AVL tree | `data_structures/avl_tree.py` | Ranking of popular routes (`/routes/popular`) |
 | Stack | `data_structures/stack.py` | User history, newest first |
 | N-ary tree | `data_structures/nary_tree.py` | Campus hierarchy (`/campus/hierarchy`) |
-| Queue, doubly linked list, circular doubly linked list | `data_structures/` | Implemented and tested, not exposed by the API yet |
+| Queue | `data_structures/queue.py` | Waiting line of each place (`/queues`) |
+| Doubly linked list, circular doubly linked list | `data_structures/` | Implemented and tested, not exposed by the API yet |
 
 Run a demo with, for example, `python -m examples.graph_demo`.
 

@@ -16,6 +16,7 @@ from schemas.buildings import (
 )
 from services.buildings import distance_between, ensure_name_available, get_building_or_404
 from services.campus_graph import campus_graph_service
+from services.waiting_lines import waiting_lines
 
 router = APIRouter(prefix="/buildings", tags=["buildings"])
 
@@ -149,6 +150,7 @@ def delete_building(
 ) -> Response:
     building = get_building_or_404(database_session, building_id)
     campus_graph_service.remove_building(building.name)
+    waiting_lines.clear(building.id)
     database_session.delete(building)
     database_session.commit()
     return Response(status_code=status.HTTP_204_NO_CONTENT)
