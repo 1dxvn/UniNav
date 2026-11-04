@@ -73,6 +73,9 @@ Routes marked **admin** need an administrator token, **auth** needs any logged-i
 | routes | `POST /routes/calculate` (saves to history) | auth |
 | | `POST /routes/compare`, `POST /routes/multi-stop`, `GET /routes/popular` | public |
 | history | `GET /routes/history`, `/routes/history/last`, `/routes/history/{id}`, `DELETE /routes/history`, `DELETE /routes/history/{id}` | auth |
+| tours | `GET /tours`, `GET /tours/{id}` | public |
+| | `POST /tours/{id}/start`, `GET /tours/session`, `POST /tours/session/next`, `POST /tours/session/previous`, `DELETE /tours/session` | auth |
+| | `POST /tours`, `DELETE /tours/{id}` | admin |
 | queues | `GET /queues/{building_id}` | public |
 | | `POST /queues/{building_id}/join`, `GET .../position`, `DELETE .../leave` | auth |
 | | `POST /queues/{building_id}/serve` (calls the next person) | admin |
@@ -83,7 +86,7 @@ Route requests accept `algorithm` (`a_star` or `dijkstra`) and `avoid`, a list o
 kinds to skip, for example `{"avoid": ["stairs"]}` for an accessible route. Responses
 include `steps` with the kind and distance of every hop.
 
-Waiting lines live in memory and are cleared when the server restarts.
+Tours are stored in the database; the stop each user is on lives in memory. Waiting lines live in memory and are cleared when the server restarts.
 
 Failed logins are limited to 5 per 5 minutes per client and username (HTTP 429).
 
@@ -97,7 +100,8 @@ Failed logins are limited to 5 per 5 minutes per client and username (HTTP 429).
 | Stack | `data_structures/stack.py` | User history, newest first |
 | N-ary tree | `data_structures/nary_tree.py` | Campus hierarchy (`/campus/hierarchy`) |
 | Queue | `data_structures/queue.py` | Waiting line of each place (`/queues`) |
-| Doubly linked list, circular doubly linked list | `data_structures/` | Implemented and tested, not exposed by the API yet |
+| Circular doubly linked list | `data_structures/circular_doubly_linked_list.py` | Stops of a guided tour: next and previous wrap around (`/tours`) |
+| Doubly linked list | `data_structures/doubly_linked_list.py` | Implemented and tested, not exposed by the API yet |
 
 Run a demo with, for example, `python -m examples.graph_demo`.
 

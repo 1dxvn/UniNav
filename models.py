@@ -127,3 +127,41 @@ class RouteVisit(Base):
             f"origin_id={self.origin_id}, destination_id={self.destination_id}, "
             f"distance={self.distance})"
         )
+
+
+class Tour(Base):
+    __tablename__ = "tours"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(100), unique=True, nullable=False, index=True)
+    description: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
+
+    stops: Mapped[list[TourStop]] = relationship(
+        back_populates="tour",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+        order_by="TourStop.position",
+    )
+
+    def __repr__(self) -> str:
+        return f"Tour(id={self.id}, name={self.name!r}, stops={len(self.stops)})"
+
+
+class TourStop(Base):
+    __tablename__ = "tour_stops"
+    __table_args__ = (UniqueConstraint("tour_id", "position", name="uq_tour_stop_position"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    tour_id: Mapped[int] = mapped_column(
+        ForeignKey("tours.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    building_id: Mapped[int] = mapped_column(
+        ForeignKey("buildings.id", ondelete="CASCADE"),
+        nullable=False,
+    )
+    position: Mapped[int] = mapped_column(Integer, nullable=False)
+
+    tour: Mapped[Tour] = relationship(back_populates="stops")
+    building: Mapped[Building] = relationship()

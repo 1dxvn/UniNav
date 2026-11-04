@@ -21,6 +21,7 @@ from routers import (
     paths,
     queues,
     routes,
+    tours,
     users,
 )
 from services.campus_graph import campus_graph_service
@@ -50,7 +51,7 @@ app.add_middleware(
 
 # `imports` must be registered before `buildings` so "/buildings/import" is not read as an id.
 for router_module in (
-    auth, users, imports, buildings, floors, paths, graph, routes, history, queues, campus, health
+    auth, users, imports, buildings, floors, paths, graph, routes, history, queues, tours, campus, health
 ):
     app.include_router(router_module.router)
 
