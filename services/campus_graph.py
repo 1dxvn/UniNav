@@ -8,7 +8,8 @@ from sqlalchemy.orm import selectinload
 from data_structures.graph import WeightedDirectedGraph
 from database import SessionLocal
 from models import Building, CampusPath
-from schemas.routes import PathAlgorithm
+from schemas.paths import PathKind
+from schemas.routes import PathAlgorithm, RouteStep
 from services.paths import effective_weight
 
 
@@ -17,12 +18,14 @@ class CampusGraphService:
         self._graph: WeightedDirectedGraph = WeightedDirectedGraph()
         self._lock: threading.Lock = threading.Lock()
         self._floors: dict[str, int] = {}
+        self._kinds: dict[tuple[str, str], str] = {}
 
     def rebuild(self, buildings: list[Building], paths: list[CampusPath]) -> None:
         graph = WeightedDirectedGraph()
         for building in buildings:
             graph.add_node(building.name, (building.x, building.y))
         floors = {building.name: building.floor for building in buildings}
+        kinds: dict[tuple[str, str], str] = {}
         for path in paths:
             graph.add_edge(
                 path.source.name,
@@ -30,9 +33,13 @@ class CampusGraphService:
                 effective_weight(path),
                 bidirectional=path.bidirectional,
             )
+            kinds[(path.source.name, path.target.name)] = path.kind
+            if path.bidirectional:
+                kinds[(path.target.name, path.source.name)] = path.kind
         with self._lock:
             self._graph = graph
             self._floors = floors
+            self._kinds = kinds
 
     def load_from_database(self) -> None:
         with SessionLocal() as database_session:
@@ -62,12 +69,39 @@ class CampusGraphService:
             return all(name in self._graph for name in names)
 
     def find_path(
-        self, origin: str, destination: str, algorithm: PathAlgorithm
+        self,
+        origin: str,
+        destination: str,
+        algorithm: PathAlgorithm,
+        avoid: frozenset[PathKind] = frozenset(),
     ) -> tuple[list[str], float]:
         with self._lock:
+            graph = self._without_kinds(avoid) if avoid else self._graph
             if algorithm is PathAlgorithm.DIJKSTRA:
-                return self._graph.dijkstra(origin, destination)
-            return self._graph.a_star(origin, destination)
+                return graph.dijkstra(origin, destination)
+            return graph.a_star(origin, destination)
+
+    def describe_steps(self, path: list[str]) -> list[RouteStep]:
+        with self._lock:
+            return [
+                RouteStep(
+                    origin_name=source,
+                    destination_name=target,
+                    kind=PathKind(self._kinds.get((source, target), PathKind.CORRIDOR.value)),
+                    distance=self._graph.get_weight(source, target),
+                )
+                for source, target in zip(path, path[1:])
+            ]
+
+    def _without_kinds(self, avoid: frozenset[PathKind]) -> WeightedDirectedGraph:
+        avoided = {kind.value for kind in avoid}
+        graph = WeightedDirectedGraph()
+        for name in self._graph.get_nodes():
+            graph.add_node(name, self._graph.get_coordinates(name))
+        for source, target, weight in self._graph.get_edges():
+            if self._kinds.get((source, target)) not in avoided:
+                graph.add_edge(source, target, weight)
+        return graph
 
     def neighbors(self, name: str) -> dict[str, float]:
         with self._lock:

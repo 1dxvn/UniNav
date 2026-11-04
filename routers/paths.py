@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException, Response, status
 from sqlalchemy import or_, select
 from sqlalchemy.orm import selectinload
 
-from dependencies import CurrentUser, DatabaseSession
+from dependencies import AdminUser, DatabaseSession
 from models import CampusPath
 from schemas.paths import PathCreate, PathResponse, PathUpdate
 from services.buildings import get_building_or_404
@@ -30,7 +30,7 @@ def create_path_record(database_session: DatabaseSession, data: PathCreate) -> C
     get_building_or_404(database_session, data.target_id, "Target building")
     ensure_pair_is_free(database_session, data.source_id, data.target_id)
 
-    path = CampusPath(**data.model_dump())
+    path = CampusPath(**data.model_dump(mode="json"))
     database_session.add(path)
     return path
 
@@ -53,7 +53,7 @@ def list_paths(
 
 @router.post("", response_model=PathResponse, status_code=status.HTTP_201_CREATED)
 def create_path(
-    path_data: PathCreate, database_session: DatabaseSession, _current_user: CurrentUser
+    path_data: PathCreate, database_session: DatabaseSession, _admin_user: AdminUser
 ) -> PathResponse:
     path = create_path_record(database_session, path_data)
     database_session.commit()
@@ -64,7 +64,7 @@ def create_path(
 
 @router.post("/import", response_model=list[PathResponse], status_code=status.HTTP_201_CREATED)
 def import_paths(
-    paths_data: list[PathCreate], database_session: DatabaseSession, _current_user: CurrentUser
+    paths_data: list[PathCreate], database_session: DatabaseSession, _admin_user: AdminUser
 ) -> list[PathResponse]:
     if not paths_data:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="The import list is empty.")
@@ -89,15 +89,16 @@ def update_path(
     path_id: int,
     path_data: PathUpdate,
     database_session: DatabaseSession,
-    _current_user: CurrentUser,
+    _admin_user: AdminUser,
 ) -> PathResponse:
     path = get_path_or_404(database_session, path_id)
     changes = path_data.model_dump(exclude_unset=True)
-    if changes.get("bidirectional", True) is None:
-        changes.pop("bidirectional")
+    for field in ("bidirectional", "kind"):
+        if changes.get(field, True) is None:
+            changes.pop(field)
 
     for field, value in changes.items():
-        setattr(path, field, value)
+        setattr(path, field, getattr(value, "value", value))
     database_session.commit()
 
     campus_graph_service.load_from_database()
@@ -106,7 +107,7 @@ def update_path(
 
 @router.delete("/{path_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_path(
-    path_id: int, database_session: DatabaseSession, _current_user: CurrentUser
+    path_id: int, database_session: DatabaseSession, _admin_user: AdminUser
 ) -> Response:
     database_session.delete(get_path_or_404(database_session, path_id))
     database_session.commit()

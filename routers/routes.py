@@ -17,6 +17,7 @@ from schemas.routes import (
     RouteResponse,
 )
 from services.buildings import get_building_or_404
+from services.campus_graph import campus_graph_service
 from services.popular_routes import rank_popular_routes
 from services.routing import compute_path, resolve_endpoints
 
@@ -32,7 +33,9 @@ def calculate_route(
     origin, destination = resolve_endpoints(
         database_session, route_request.origin_id, route_request.destination_id
     )
-    path, distance = compute_path(origin, destination, route_request.algorithm)
+    path, distance = compute_path(
+        origin, destination, route_request.algorithm, route_request.avoid
+    )
 
     database_session.add(
         RouteVisit(
@@ -45,7 +48,11 @@ def calculate_route(
     database_session.commit()
 
     return RouteResponse(
-        path=path, distance=distance, origin_name=origin.name, destination_name=destination.name
+        path=path,
+        steps=campus_graph_service.describe_steps(path),
+        distance=distance,
+        origin_name=origin.name,
+        destination_name=destination.name,
     )
 
 
@@ -58,7 +65,7 @@ def compare_algorithms(
     )
     results: list[AlgorithmResult] = []
     for algorithm in PathAlgorithm:
-        path, distance = compute_path(origin, destination, algorithm)
+        path, distance = compute_path(origin, destination, algorithm, route_request.avoid)
         results.append(AlgorithmResult(algorithm=algorithm, path=path, distance=distance))
 
     return RouteComparisonResponse(
@@ -74,12 +81,13 @@ def calculate_multi_stop_route(
 
     legs: list[RouteLeg] = []
     for origin, destination in zip(buildings, buildings[1:]):
-        path, distance = compute_path(origin, destination, request.algorithm)
+        path, distance = compute_path(origin, destination, request.algorithm, request.avoid)
         legs.append(
             RouteLeg(
                 origin_name=origin.name,
                 destination_name=destination.name,
                 path=path,
+                steps=campus_graph_service.describe_steps(path),
                 distance=distance,
             )
         )

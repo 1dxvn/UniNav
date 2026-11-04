@@ -4,7 +4,7 @@ from typing import Any
 
 from fastapi import APIRouter
 
-from dependencies import CurrentUser
+from dependencies import AdminUser
 from schemas.graph import GraphEdgeResponse, GraphNodeResponse, GraphResponse
 from services.campus_graph import campus_graph_service
 
@@ -23,7 +23,7 @@ def read_graph() -> GraphResponse:
 
 
 @router.post("/reload")
-def reload_graph(_current_user: CurrentUser) -> dict[str, Any]:
+def reload_graph(_admin_user: AdminUser) -> dict[str, Any]:
     campus_graph_service.load_from_database()
     buildings, edges = campus_graph_service.counts()
     return {"status": "reloaded", "buildings": buildings, "edges": edges}

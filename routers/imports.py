@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 
-from dependencies import CurrentUser, DatabaseSession
+from dependencies import AdminUser, DatabaseSession
 from models import Building
 from schemas.buildings import BuildingCreate, BuildingResponse
 from services.campus_graph import campus_graph_service
@@ -20,7 +20,7 @@ def conflict(detail: str) -> HTTPException:
 def import_buildings(
     buildings_data: list[BuildingCreate],
     database_session: DatabaseSession,
-    _current_user: CurrentUser,
+    _admin_user: AdminUser,
 ) -> list[Building]:
     if not buildings_data:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="The import list is empty.")

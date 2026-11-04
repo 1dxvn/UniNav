@@ -1,4 +1,12 @@
 import os
+import secrets
+
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except ImportError:  # python-dotenv is optional; real environment variables still work
+    pass
 
 API_TITLE: str = "UniNav API"
 API_VERSION: str = "1.1.0"
@@ -28,11 +36,15 @@ FLOORS: dict[int, str] = {
 MAX_FLOOR: int = max(FLOORS)
 FLOOR_HEIGHT: float = 3.5
 
-SECRET_KEY: str = os.getenv(
-    "UNINAV_SECRET_KEY",
-    "CHANGE_THIS_IN_PRODUCTION_uninav_development_secret_key",
-)
+# Without UNINAV_SECRET_KEY a random key is used, so tokens stop working on every restart.
+SECRET_KEY: str = os.getenv("UNINAV_SECRET_KEY") or secrets.token_urlsafe(48)
 ALGORITHM: str = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
 TOKEN_URL: str = "/auth/token"
 BCRYPT_MAX_PASSWORD_BYTES: int = 72
+
+ROLE_USER: str = "user"
+ROLE_ADMIN: str = "admin"
+
+LOGIN_MAX_FAILURES: int = 5
+LOGIN_WINDOW_SECONDS: int = 300

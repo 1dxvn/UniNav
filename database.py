@@ -39,17 +39,23 @@ def init_db() -> None:
     import models  # noqa: F401  (registers the tables on Base.metadata)
 
     Base.metadata.create_all(bind=engine)
-    ensure_floor_column()
+    apply_column_migrations()
 
 
-def ensure_floor_column() -> None:
-    """Adds `buildings.floor` to databases created before floors existed."""
+COLUMN_MIGRATIONS: list[tuple[str, str, str]] = [
+    ("buildings", "floor", "INTEGER NOT NULL DEFAULT 0"),
+    ("users", "role", "VARCHAR(20) NOT NULL DEFAULT 'user'"),
+    ("paths", "kind", "VARCHAR(20) NOT NULL DEFAULT 'corridor'"),
+]
+
+
+def apply_column_migrations() -> None:
+    """Adds columns introduced after a database was first created."""
     with engine.begin() as connection:
-        columns = {row[1] for row in connection.exec_driver_sql("PRAGMA table_info(buildings)")}
-        if "floor" not in columns:
-            connection.exec_driver_sql(
-                "ALTER TABLE buildings ADD COLUMN floor INTEGER NOT NULL DEFAULT 0"
-            )
+        for table, column, definition in COLUMN_MIGRATIONS:
+            columns = {row[1] for row in connection.exec_driver_sql(f"PRAGMA table_info({table})")}
+            if columns and column not in columns:
+                connection.exec_driver_sql(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
 
 
 def get_db() -> Iterator[Session]:

@@ -6,7 +6,7 @@ from fastapi import APIRouter, Query, Response, status
 from sqlalchemy import select
 
 from config import NEAREST_BUILDINGS_LIMIT
-from dependencies import CurrentUser, DatabaseSession
+from dependencies import AdminUser, DatabaseSession
 from models import Building
 from schemas.buildings import (
     BuildingCreate,
@@ -44,7 +44,7 @@ def list_buildings(
 def create_building(
     building_data: BuildingCreate,
     database_session: DatabaseSession,
-    _current_user: CurrentUser,
+    _admin_user: AdminUser,
 ) -> Building:
     ensure_name_available(database_session, building_data.name)
 
@@ -119,7 +119,7 @@ def update_building(
     building_id: int,
     building_data: BuildingUpdate,
     database_session: DatabaseSession,
-    _current_user: CurrentUser,
+    _admin_user: AdminUser,
 ) -> Building:
     building = get_building_or_404(database_session, building_id)
     changes = building_data.model_dump(exclude_unset=True)
@@ -145,7 +145,7 @@ def update_building(
 def delete_building(
     building_id: int,
     database_session: DatabaseSession,
-    _current_user: CurrentUser,
+    _admin_user: AdminUser,
 ) -> Response:
     building = get_building_or_404(database_session, building_id)
     campus_graph_service.remove_building(building.name)

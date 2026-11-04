@@ -7,7 +7,7 @@ from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from config import TOKEN_URL
+from config import ROLE_ADMIN, TOKEN_URL
 from database import get_db
 from models import User
 from security.passwords import verify_password
@@ -50,3 +50,12 @@ def get_current_user(
         raise invalid_credentials
 
     return user
+
+
+def require_admin(current_user: Annotated[User, Depends(get_current_user)]) -> User:
+    if current_user.role != ROLE_ADMIN:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Administrator privileges are required.",
+        )
+    return current_user

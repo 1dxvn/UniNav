@@ -15,6 +15,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
+from config import ROLE_USER
 from database import Base
 
 
@@ -28,6 +29,9 @@ class User(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     username: Mapped[str] = mapped_column(String(50), unique=True, nullable=False, index=True)
     password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
+    role: Mapped[str] = mapped_column(
+        String(20), nullable=False, default=ROLE_USER, server_default=ROLE_USER
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utc_now, nullable=False)
 
     route_visits: Mapped[list[RouteVisit]] = relationship(
@@ -76,6 +80,9 @@ class CampusPath(Base):
     )
     weight: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     bidirectional: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+    kind: Mapped[str] = mapped_column(
+        String(20), nullable=False, default="corridor", server_default="corridor"
+    )
 
     source: Mapped[Building] = relationship(foreign_keys=[source_id])
     target: Mapped[Building] = relationship(foreign_keys=[target_id])

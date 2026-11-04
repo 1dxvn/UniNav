@@ -4,6 +4,7 @@ from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
 from models import Building
+from schemas.paths import PathKind
 from schemas.routes import PathAlgorithm
 from services.buildings import get_building_or_404
 from services.campus_graph import campus_graph_service
@@ -18,7 +19,10 @@ def resolve_endpoints(
 
 
 def compute_path(
-    origin: Building, destination: Building, algorithm: PathAlgorithm
+    origin: Building,
+    destination: Building,
+    algorithm: PathAlgorithm,
+    avoid: list[PathKind] | None = None,
 ) -> tuple[list[str], float]:
     if not campus_graph_service.contains(origin.name, destination.name):
         raise HTTPException(
@@ -26,7 +30,9 @@ def compute_path(
             detail="The campus graph is out of sync with the database. Reload the graph.",
         )
 
-    path, distance = campus_graph_service.find_path(origin.name, destination.name, algorithm)
+    path, distance = campus_graph_service.find_path(
+        origin.name, destination.name, algorithm, frozenset(avoid or [])
+    )
     if not path:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

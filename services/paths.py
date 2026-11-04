@@ -29,6 +29,7 @@ def to_path_response(path: CampusPath) -> PathResponse:
         target_name=path.target.name,
         weight=effective_weight(path),
         bidirectional=path.bidirectional,
+        kind=path.kind,
     )
 
 
