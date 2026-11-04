@@ -1,64 +1,16 @@
 from __future__ import annotations
 
-from collections.abc import Iterator
 from datetime import datetime, timezone
-from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 
-from passlib.context import CryptContext
-from sqlalchemy import (
-    CheckConstraint,
-    DateTime,
-    Float,
-    ForeignKey,
-    Integer,
-    String,
-    create_engine,
-    event,
-)
-from sqlalchemy.engine import Engine
-from sqlalchemy.orm import (
-    DeclarativeBase,
-    Mapped,
-    Session,
-    mapped_column,
-    relationship,
-    sessionmaker,
-)
+from sqlalchemy import CheckConstraint, DateTime, Float, ForeignKey, Integer, String
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-BACKEND_DIRECTORY: Path = Path(__file__).resolve().parent
-DATABASE_PATH: Path = BACKEND_DIRECTORY / "uninav.db"
-DATABASE_URL: str = f"sqlite:///{DATABASE_PATH.as_posix()}"
-
-BCRYPT_MAX_PASSWORD_BYTES: int = 72
-
-engine: Engine = create_engine(
-    DATABASE_URL,
-    connect_args={"check_same_thread": False},
-)
-
-SessionLocal: sessionmaker[Session] = sessionmaker(
-    bind=engine,
-    autoflush=False,
-    expire_on_commit=False,
-)
-
-password_context: CryptContext = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
-
-@event.listens_for(engine, "connect")
-def enable_sqlite_foreign_keys(dbapi_connection: Any, _connection_record: Any) -> None:
-    cursor = dbapi_connection.cursor()
-    cursor.execute("PRAGMA foreign_keys=ON")
-    cursor.close()
+from database import Base
 
 
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
-
-
-class Base(DeclarativeBase):
-    pass
 
 
 class User(Base):
@@ -126,36 +78,3 @@ class RouteVisit(Base):
             f"origin_id={self.origin_id}, destination_id={self.destination_id}, "
             f"distance={self.distance})"
         )
-
-
-def init_db() -> None:
-    Base.metadata.create_all(bind=engine)
-
-
-def get_db() -> Iterator[Session]:
-    database_session = SessionLocal()
-    try:
-        yield database_session
-    finally:
-        database_session.close()
-
-
-def hash_password(plain: str) -> str:
-    if not plain:
-        raise ValueError("Password cannot be empty.")
-    if len(plain.encode("utf-8")) > BCRYPT_MAX_PASSWORD_BYTES:
-        raise ValueError(f"Password cannot exceed {BCRYPT_MAX_PASSWORD_BYTES} bytes.")
-    return password_context.hash(plain)
-
-
-def verify_password(plain: str, hashed: str) -> bool:
-    try:
-        return password_context.verify(plain, hashed)
-    except (ValueError, TypeError):
-        return False
-
-
-if __name__ == "__main__":
-    init_db()
-    print(f"Database initialized successfully at: {DATABASE_PATH}")
-    print(f"Tables: {', '.join(Base.metadata.tables)}")

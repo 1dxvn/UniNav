@@ -1,36 +1,19 @@
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
-from typing import Annotated, Any, Optional
+from typing import Annotated, Optional
 
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from jose import JWTError, jwt
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from database import User, get_db, verify_password
-
-SECRET_KEY: str = "CHANGE_THIS_IN_PRODUCTION_uninav_development_secret_key"
-ALGORITHM: str = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
-TOKEN_URL: str = "/auth/token"
+from config import TOKEN_URL
+from database import get_db
+from models import User
+from security.passwords import verify_password
+from security.tokens import decode_access_token
 
 oauth2_scheme: OAuth2PasswordBearer = OAuth2PasswordBearer(tokenUrl=TOKEN_URL)
-
-
-def create_access_token(data: dict[str, Any], expires_delta: Optional[timedelta] = None) -> str:
-    lifetime = expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    claims = dict(data)
-    claims["exp"] = datetime.now(timezone.utc) + lifetime
-    return jwt.encode(claims, SECRET_KEY, algorithm=ALGORITHM)
-
-
-def decode_access_token(token: str) -> Optional[dict[str, Any]]:
-    try:
-        return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    except JWTError:
-        return None
 
 
 def get_user_by_username(database_session: Session, username: str) -> Optional[User]:
