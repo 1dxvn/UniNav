@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
@@ -10,7 +11,7 @@ from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
 PROJECT_DIRECTORY: Path = Path(__file__).resolve().parent
 DATABASE_PATH: Path = PROJECT_DIRECTORY / "uninav.db"
-DATABASE_URL: str = f"sqlite:///{DATABASE_PATH.as_posix()}"
+DATABASE_URL: str = os.getenv("UNINAV_DATABASE_URL", f"sqlite:///{DATABASE_PATH.as_posix()}")
 
 engine: Engine = create_engine(
     DATABASE_URL,

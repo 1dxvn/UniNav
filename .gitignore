@@ -10,3 +10,5 @@ uninav.db
 
 # Environment
 .env
+# Tests
+.pytest_cache/
