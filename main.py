@@ -7,8 +7,9 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from config import ALLOWED_ORIGINS, API_DESCRIPTION, API_TITLE, API_VERSION
+from config import ALLOWED_ORIGINS, API_DESCRIPTION, API_TITLE, API_VERSION, FRONTEND_DIST
 from database import init_db
+from frontend import mount_frontend
 from routers import (
     auth,
     buildings,
@@ -56,6 +57,9 @@ for router_module in (
     auth, users, imports, buildings, floors, paths, graph, routes, history, navigation, queues, rankings, tours, campus, health
 ):
     app.include_router(router_module.router)
+
+# Registered after the API so its routes keep priority.
+mount_frontend(app, FRONTEND_DIST)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 import os
 import secrets
+from pathlib import Path
 
 try:
     from dotenv import load_dotenv
@@ -18,6 +19,11 @@ API_DESCRIPTION: str = (
 )
 
 ALLOWED_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000"]
+
+# Compiled UniNav-Frontend served under /app/. Override with UNINAV_FRONTEND_DIST.
+FRONTEND_DIST: Path = Path(
+    os.getenv("UNINAV_FRONTEND_DIST") or Path(__file__).resolve().parent / "UniNav-Frontend" / "dist"
+)
 
 POPULAR_ROUTES_LIMIT: int = 10
 NEAREST_BUILDINGS_LIMIT: int = 5
