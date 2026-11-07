@@ -16,6 +16,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--directory", required=True, type=Path)
     parser.add_argument("--dataset", type=Path, help="Optional reviewed navigation fixture; imported only into the temporary database.")
+    parser.add_argument("--snapshot-json", action="store_true", help="Print the actual API data contract and exit without opening a port.")
     args = parser.parse_args()
     directory = args.directory.resolve(strict=True)
     if not directory.name.startswith("uninav-e2e-") or any(directory.iterdir()):
@@ -38,6 +39,17 @@ def main() -> None:
         session.add(Building(name="Isolated test destination", x=70, y=0, floor=1))
         session.add(User(username="student", password_hash=hash_password("demo1234")))
         session.commit()
+
+    if args.snapshot_json:
+        from fastapi.testclient import TestClient
+        from main import app
+
+        with TestClient(app) as client:
+            buildings, paths = client.get("/buildings"), client.get("/paths")
+            buildings.raise_for_status()
+            paths.raise_for_status()
+            print("UNINAV_E2E_SNAPSHOT=" + json.dumps({"buildings": buildings.json(), "paths": paths.json()}), flush=True)
+        return
 
     # Let the OS reserve a free port instead of racing an existing user service.
     with socket.socket() as listener:
