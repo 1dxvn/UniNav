@@ -12,3 +12,6 @@ uninav.db
 .env
 # Tests
 .pytest_cache/
+
+# Local Codex continuity state, logs and process lock
+.uninav-continuity/

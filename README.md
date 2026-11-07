@@ -16,6 +16,9 @@ The three detailed plans are kept in the repository root, in Spanish:
 The visual plan prioritizes the university model. The avatar remains simple and
 faceless, with improved proportions and basic movement.
 
+For the local overnight worker, see [automatic continuity](CONTINUIDAD.md).
+Its authorized project instructions live in [EJECUCION_AUTONOMA.md](EJECUCION_AUTONOMA.md).
+
 ## Quick start
 
 ```bash

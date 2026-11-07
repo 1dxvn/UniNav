@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "status": { "type": "string", "enum": ["continue", "waiting", "complete", "blocked"] },
+    "summary": { "type": "string" },
+    "next_step": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "blockers": { "type": "array", "items": { "type": "string" } },
+    "wait_seconds": { "type": "integer", "minimum": 0, "maximum": 86400 }
+  },
+  "required": ["status", "summary", "next_step", "evidence", "blockers", "wait_seconds"]
+}
