@@ -15,6 +15,7 @@ import socket
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--directory", required=True, type=Path)
+    parser.add_argument("--dataset", type=Path, help="Optional reviewed navigation fixture; imported only into the temporary database.")
     args = parser.parse_args()
     directory = args.directory.resolve(strict=True)
     if not directory.name.startswith("uninav-e2e-") or any(directory.iterdir()):
@@ -25,11 +26,15 @@ def main() -> None:
     from models import Building, User
     from scripts.seed_ucc_floor1 import seed_campus
     from security.passwords import hash_password
+    from schemas.datasets import CampusDataset
+    from services.datasets import import_dataset
     import uvicorn
 
     init_db()
     with SessionLocal() as session:
         seed_campus(session)
+        if args.dataset:
+            import_dataset(session, CampusDataset.model_validate_json(args.dataset.read_text(encoding="utf-8")))
         session.add(Building(name="Isolated test destination", x=70, y=0, floor=1))
         session.add(User(username="student", password_hash=hash_password("demo1234")))
         session.commit()
