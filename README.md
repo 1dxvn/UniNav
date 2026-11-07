@@ -5,6 +5,17 @@ Backend for UniNav, an interactive campus navigation simulator. It stores the ca
 A\* or Dijkstra, and keeps each user's route history. A separate 3D frontend consumes
 this API.
 
+## Work plans
+
+The three detailed plans are kept in the repository root, in Spanish:
+
+1. [Complete the campus by blocks and floors](Plan_1_Campus_Completo_Por_Bloques.md).
+2. [Integrate Block A](Plan_2_Bloque_A.md).
+3. [Improve the campus appearance and refine the simple avatar](Plan_3_Mejora_Visual_Campus_y_Monito.md).
+
+The visual plan prioritizes the university model. The avatar remains simple and
+faceless, with improved proportions and basic movement.
+
 ## Quick start
 
 ```bash
