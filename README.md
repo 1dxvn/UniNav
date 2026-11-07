@@ -24,6 +24,23 @@ working every time the server restarts.
 | `UNINAV_SECRET_KEY` | Signs the JWT tokens. |
 | `UNINAV_ADMIN_PASSWORD` | Password of the `admin` user created by the seed (default `demo1234`). |
 | `UNINAV_DATABASE_URL` | Overrides the SQLite database (used by the tests). |
+| `UNINAV_FRONTEND_DIST` | Folder of the compiled frontend (default `UniNav-Frontend/dist`). |
+
+## Frontend
+
+The web app lives in its own repository,
+[1dxvn/UniNav-Frontend](https://github.com/1dxvn/UniNav-Frontend), cloned inside this folder
+as `UniNav-Frontend/` (excluded from this repository's Git). FastAPI serves its build under
+`/app/` and redirects `/` there, so the app and the API share one origin.
+
+```bash
+git clone https://github.com/1dxvn/UniNav-Frontend.git
+cd UniNav-Frontend && npm install && npm run build && cd ..
+python main.py                # open http://localhost:8000/
+```
+
+If `UniNav-Frontend/dist` is missing the API still starts; `/app/` answers 503 until the
+frontend is built.
 
 ## Project layout
 
