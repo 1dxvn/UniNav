@@ -42,6 +42,12 @@
       "revision": "c18-floor-zero-v1",
       "generation": 1,
       "sha256": "bf6e9039ea794efae8aae4a6d8165516d556df8ac50181b151696ee7235e6285"
+    },
+    "ucc-floors-4-5.json": {
+      "scope": "ucc:floor45-connection",
+      "revision": "c16-floors-4-5-v1",
+      "generation": 1,
+      "sha256": "c6d3e213f000cead1c67d84fb40f517fddc9def9eb02281b2eaf900ceb9889c5"
     }
   },
   "profiles": {
@@ -94,6 +100,15 @@
         "ucc-second-floor-c15.json",
         "ucc-third-floor.json",
         "ucc-floor-zero.json"
+      ]
+    },
+    "ucc-six-floors-c18": {
+      "datasets": [
+        "ucc-first-floor-c15.json",
+        "ucc-second-floor-c15.json",
+        "ucc-third-floor.json",
+        "ucc-floor-zero.json",
+        "ucc-floors-4-5.json"
       ]
     }
   }

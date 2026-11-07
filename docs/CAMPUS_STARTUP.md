@@ -14,6 +14,7 @@ and its database have not been upgraded by this delivery.
 | `ucc-two-floors-c15` | 68 / 63 | C15 data, C16 set with C17 floor-2 ramp |
 | `ucc-three-floors-c16` | 110 / 102 | Three-floor data, C16 set with C17 floor-2 ramp |
 | `ucc-four-floors-c18` | 150 / 139 | Floors 0–3: C18 piso cero and floor 1, C17 floor 2, C16 floor 3 |
+| `ucc-six-floors-c18` | 235 / 218 | Floors 0–5: adds Block A floors 4 and 5 (C16) with six classroom entrances |
 
 These counts describe the reviewed campus data. Unrelated scoped blocks are
 preserved, so a database containing those records has larger totals. New connected
@@ -117,6 +118,17 @@ modelled as operating stops. Reverting to the three-floor profile is rejected
 instead of deleting the scope. Rehearse it with `--profile ucc-four-floors-c18`,
 an explicit temporary file and port 0. Evidence is in frontend
 `docs/verification/floor0/`.
+
+The 235/218 `ucc-six-floors-c18` profile adds `ucc:floor45-connection`
+(85 places / 79 connections) after the four scopes above.
+- **Towers:** the C16 east tower runs 3 → 4 (world 9.87 → 13.37) and 4 → 5
+  (13.37 → 16.87), each with 25 waypoints.
+- **Floor 4:** a drawn partition closes the corridor west of the 3–4 arrival,
+  so the 4–5 foot is reached north of it, along y 55.95.
+- **Destinations:** six classrooms, 420 A, 421 A and 422 A (D27, D26, D28) and
+  512 A, 513 A and 515 A (D18, D19, D11).
+- **Restrictions:** avoiding stairs rejects travel between floors. Reverting to
+  `ucc-four-floors-c18` is rejected.
 
 C17's floor-2 junction ramp is integrated in the two compatible profiles above;
 the data-profile identifiers and 68/63 and 110/102 bindings stay unchanged. No

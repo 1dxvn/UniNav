@@ -266,3 +266,28 @@ The geometry audit (`tools/prepare-floor0.ts` in the frontend) walks all 139
 connections in both directions. It uses the runtime support and collision
 functions against floors 0–5. As a negative control, the flat C14 preview rejects
 all 35 floor-0 connections. See frontend `docs/verification/floor0/`.
+
+## Prepared floors 4-5 scope
+
+`ucc-floors-4-5.json` adds 85 places and 79 bidirectional connections under
+`ucc:floor45-connection` / `c16-floors-4-5-v1`. The `ucc-six-floors-c18` profile
+composes it after the four scopes of `ucc-four-floors-c18`: 235 places / 218
+connections. IDs, paths and history are preserved and a repeated startup creates
+nothing.
+
+- **East tower:** it reuses the reviewed east stair plan points (21 risers) for
+  3 → 4 and 4 → 5 on the accepted C16 geometry `002aaec`: Block A N +6.37 →
+  +9.87 → +13.37, world 9.87 → 13.37 → 16.87.
+- **Floor 4:** the drawn partition (x 38.03–38.50, y 53.46–55.68) is passed to
+  the north, along y 55.95.
+- **Destinations:** each is the inside stand of an inventory doorway whose inside
+  side sees the literal room label (`model/tools/data/floor{4,5}/` @389cfd9):
+  - floor 4: Classroom 420 A (D27), 421 A (D26) and 422 A (D28);
+  - floor 5: Classroom 512 A (D18), 513 A (D19) and 515 A (D11).
+- **Reference anchors:** each floor has three isolated structural anchors at its
+  B datum, world 12.32 and 15.26.
+
+The frontend `tools/prepare-floor45.ts` audits all 218 connections in both
+directions against floors 0–5. See frontend `docs/verification/floor45/`. The
+A/B junctions of floors 4 and 5, the western rooms and the rooftop stay pending.
+
