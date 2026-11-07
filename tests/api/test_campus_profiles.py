@@ -21,7 +21,7 @@ def snapshot(session) -> tuple:
         [(r.scope, r.revision, r.payload_hash) for r in session.scalars(select(CampusDataRevision).order_by(CampusDataRevision.scope, CampusDataRevision.revision))])
 
 
-@pytest.mark.parametrize("profile_id,counts", zip(profile_ids(), [(19,16),(64,59),(19,16),(64,59),(68,63),(110,102)], strict=True))
+@pytest.mark.parametrize("profile_id,counts", zip(profile_ids(), [(19,16),(64,59),(19,16),(64,59),(68,63),(110,102),(150,139)], strict=True))
 def test_profiles_start_and_repeat_without_replaying_old_revisions(client: TestClient, profile_id: str, counts: tuple[int,int]) -> None:
     profile = load_profile(profile_id)
     with SessionLocal() as session:
@@ -81,7 +81,7 @@ def test_c15_scopes_and_bootstrap_roll_back_together(client: TestClient) -> None
         assert snapshot(session)==before
 
 
-@pytest.mark.parametrize("old,new",[("ucc-three-floors-c16","ucc-two-floors-c15"),("ucc-two-floors-c15","base"),("ucc-two-floors-c15","ucc-two-floors-stair-review"),("ucc-first-floor-stair-review","base"),("ucc-two-floors","base")])
+@pytest.mark.parametrize("old,new",[("ucc-four-floors-c18","ucc-three-floors-c16"),("ucc-three-floors-c16","ucc-two-floors-c15"),("ucc-two-floors-c15","base"),("ucc-two-floors-c15","ucc-two-floors-stair-review"),("ucc-first-floor-stair-review","base"),("ucc-two-floors","base")])
 def test_profile_downgrades_do_not_remove_or_revert_records(client: TestClient,old:str,new:str)->None:
     with SessionLocal() as session:
         seed_profile(session,load_profile(old));session.commit();before=snapshot(session)

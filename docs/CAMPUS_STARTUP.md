@@ -13,6 +13,7 @@ and its database have not been upgraded by this delivery.
 | `ucc-two-floors-stair-review` | 64 / 59 | C14 two-floor and mapped first-floor stairs |
 | `ucc-two-floors-c15` | 68 / 63 | C15 data, C16 set with C17 floor-2 ramp |
 | `ucc-three-floors-c16` | 110 / 102 | Three-floor data, C16 set with C17 floor-2 ramp |
+| `ucc-four-floors-c18` | 150 / 139 | Floors 0–3: C18 piso cero and floor 1, C17 floor 2, C16 floor 3 |
 
 These counts describe the reviewed campus data. Unrelated scoped blocks are
 preserved, so a database containing those records has larger totals. New connected
@@ -104,6 +105,18 @@ Reverting that database to a two-floor profile is rejected instead of deleting
 the new scope. Use `--profile ucc-three-floors-c16` with an explicit temporary
 file and port 0 to rehearse it. The default, real database and user processes
 remain unchanged. Evidence is in frontend `docs/verification/floor3/`.
+
+The 150/139 `ucc-four-floors-c18` profile adds the piso cero scope (40 places /
+37 connections) after the three unchanged scopes. The C18 east tower rises 3.50 m
+from Block A on floor 0 (world -0.63) to the floor-1 north junction (world 2.87).
+Its waypoints keep floor-0 metadata until the upper endpoint. Two source-backed
+destinations are added: the Clinical Simulation Laboratory through doorway D32
+and the waiting room through the drawn facade sliding door. Avoiding stairs
+rejects travel between floor 0 and the other floors; the elevators are not
+modelled as operating stops. Reverting to the three-floor profile is rejected
+instead of deleting the scope. Rehearse it with `--profile ucc-four-floors-c18`,
+an explicit temporary file and port 0. Evidence is in frontend
+`docs/verification/floor0/`.
 
 C17's floor-2 junction ramp is integrated in the two compatible profiles above;
 the data-profile identifiers and 68/63 and 110/102 bindings stay unchanged. No

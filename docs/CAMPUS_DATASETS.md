@@ -232,3 +232,37 @@ No public ramp connection is added. The read-only catalogue records the user's
 Block A/B identity confirmation from frontend `level-zones.md @b36d328`, retaining
 all existing floor datums and derived/provisional level evidence. See frontend `docs/blocks/floor3-navigation.md`
 and `docs/verification/floor3/` for the source and rehearsal evidence.
+
+## Prepared C18 piso cero scope
+
+`ucc-floor-zero.json` adds 40 places and 37 bidirectional connections under
+`ucc:floor0-connection` / `c18-floor-zero-v1`. The `ucc-four-floors-c18` startup
+profile composes the two C15 scopes, the C16 third-floor scope and this addition:
+150 places / 139 connections. IDs, paths and history are preserved, a repeated
+startup creates nothing, a failure rolls back the whole upgrade, and later
+profiles omitting the installed scope are rejected.
+
+- **Levels:** Block A and the east clinic are at N -4.13, world -0.63. They come
+  from the frontend piso cero sources (`docs/blocks/level-zones.md @de3815e /
+  e3c18dc`) and candidate `model/candidates/c18/` @711fb9d. The C18 floor-1
+  companion opens the ground slab under the stair well; all its other meshes are
+  identical to C16.
+- **East tower:** it reuses the reviewed floor 1-2 east stair plan points
+  (21 risers) with heights rescaled to the 3.50 m rise. It joins the existing
+  floor-1 north junction at world 2.87.
+- **Destinations:**
+  - Clinical Simulation Laboratory, inside stand of doorway D32 (1.57 m, clear),
+    with the literal label `LABORATORIO DE SIMULACIÓN CLÍNICA`.
+  - Waiting room, labelled `SALA DE ESPERA`, reached through the drawn facade
+    sliding door.
+  - A floor-0 elevator lobby waypoint is reachable but is not a destination.
+- **Reference anchors:** three isolated structural anchors stay at the B datum,
+  world 0.56.
+- **Not modelled:** the B stair flights, the west stair, the south-west ramp,
+  the east-yard steps, the southern rooms and the elevators as operating stops.
+  None of them has a connection.
+
+The geometry audit (`tools/prepare-floor0.ts` in the frontend) walks all 139
+connections in both directions. It uses the runtime support and collision
+functions against floors 0–5. As a negative control, the flat C14 preview rejects
+all 35 floor-0 connections. See frontend `docs/verification/floor0/`.

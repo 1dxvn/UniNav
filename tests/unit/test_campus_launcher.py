@@ -17,7 +17,7 @@ def cli(module:str,*args:str)->subprocess.CompletedProcess:
     return subprocess.run([sys.executable,"-m",module,*args],cwd=ROOT,env={**os.environ,"PYTHONIOENCODING":"utf-8"},capture_output=True,text=True,encoding="utf-8",timeout=30)
 
 
-@pytest.mark.parametrize("profile,counts",[("base",(19,16)),("ucc-two-floors",(64,59)),("ucc-first-floor-stair-review",(19,16)),("ucc-two-floors-stair-review",(64,59)),("ucc-two-floors-c15",(68,63)),("ucc-three-floors-c16",(110,102))])
+@pytest.mark.parametrize("profile,counts",[("base",(19,16)),("ucc-two-floors",(64,59)),("ucc-first-floor-stair-review",(19,16)),("ucc-two-floors-stair-review",(64,59)),("ucc-two-floors-c15",(68,63)),("ucc-three-floors-c16",(110,102)),("ucc-four-floors-c18",(150,139))])
 def test_seed_command_repeats_against_an_explicit_database(tmp_path:Path,profile:str,counts:tuple[int,int])->None:
     path=tmp_path/"review.db"
     first=cli("scripts.seed_campus","--database",str(path),"--profile",profile)
