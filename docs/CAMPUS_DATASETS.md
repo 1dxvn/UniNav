@@ -87,6 +87,34 @@ drift instead of overwriting it silently.
 
 ## Verification
 
+`data/datasets/ucc-second-floor.json` prepares the first three source destinations
+on floor 2: mixed reality, molecular biology and the medical research centre.
+It adds 45 records (including hidden waypoints and three structural references)
+and 43 bidirectional paths in `ucc:floor2-connection`. Combined with the base,
+the prepared dataset has 64 places and 59 paths. Original IDs and all 16 base
+connections remain unchanged. Two collinear links add the east-stair junction
+to the existing north corridor while retaining its legacy direct edge.
+
+The model source is the committed C13 `a2dbda0`; elevations follow its 3.5 / 6.44 m
+model frame, with flattened A/B half-levels and derived physical identities.
+Door D14 enters mixed reality, D15 molecular biology and D13 medical research.
+The source's staff-room label is across glass from D13 and is not assigned to it.
+The only mapped vertical connection is the measured east stair. Avoiding stairs
+therefore returns no route to these destinations; no elevator/ramp is invented.
+
+The file is prepared for controlled import and is not automatically seeded by
+`scripts.run_campus`. Neither development database has received it. The real
+service still has its older loaded contract. Importing new places behind that
+service would mix API/data revisions and invalidate the frontend binding.
+Use an isolated database for rehearsal; activate only with the compatible API
+and frontend model/data manifest. Preparation is not a completed public rollout.
+
+Source door facts, geometry and browser evidence live in the frontend's
+`docs/blocks/floor2-door-accesses.json`, `floor2-route-review.md` and
+`docs/verification/h2-floor2-candidate/`. The new API tests check both algorithms,
+round trips, explicit heights/IDs/doors, repeated import, base-record preservation,
+stairs exclusion and atomic rejection without the required first-floor endpoints.
+
 API tests cover legacy migration twice with retained history, controlled adoption,
 outer rollback, atomic import failure, foreign scope/path conflicts, omitted-record
 preservation, revision drift and repeated display labels across synthetic floors.
