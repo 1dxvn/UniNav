@@ -29,8 +29,10 @@ def create_path_record(database_session: DatabaseSession, data: PathCreate) -> C
     get_building_or_404(database_session, data.source_id, "Source building")
     get_building_or_404(database_session, data.target_id, "Target building")
     ensure_pair_is_free(database_session, data.source_id, data.target_id)
+    if data.code and database_session.scalar(select(CampusPath.id).where(CampusPath.code == data.code)):
+        raise HTTPException(status_code=409, detail="The path code already exists.")
 
-    path = CampusPath(**data.model_dump(mode="json"))
+    path = CampusPath(**data.model_dump(mode="json", exclude_none=True))
     database_session.add(path)
     return path
 

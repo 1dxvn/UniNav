@@ -14,6 +14,12 @@ class BuildingCreate(BaseModel):
     floor: int = Field(default=0, ge=0, le=MAX_FLOOR)
     faculty: Optional[str] = Field(default=None, max_length=100)
     building_type: Optional[str] = Field(default=None, max_length=50)
+    code: Optional[str] = Field(default=None, min_length=1, max_length=128, pattern=r"^[A-Za-z0-9][A-Za-z0-9_.:/-]*$")
+    display_name: Optional[str] = Field(default=None, min_length=1, max_length=100)
+    block_code: Optional[str] = Field(default=None, max_length=32)
+    floor_code: Optional[str] = Field(default=None, max_length=64)
+    elevation_m: Optional[float] = Field(default=None, allow_inf_nan=False)
+    elevation_source: Optional[str] = Field(default=None, max_length=1000)
 
 
 class BuildingUpdate(BaseModel):
@@ -23,6 +29,11 @@ class BuildingUpdate(BaseModel):
     floor: Optional[int] = Field(default=None, ge=0, le=MAX_FLOOR)
     faculty: Optional[str] = Field(default=None, max_length=100)
     building_type: Optional[str] = Field(default=None, max_length=50)
+    display_name: Optional[str] = Field(default=None, min_length=1, max_length=100)
+    block_code: Optional[str] = Field(default=None, max_length=32)
+    floor_code: Optional[str] = Field(default=None, max_length=64)
+    elevation_m: Optional[float] = Field(default=None, allow_inf_nan=False)
+    elevation_source: Optional[str] = Field(default=None, max_length=1000)
 
 
 class BuildingResponse(BaseModel):
@@ -35,6 +46,14 @@ class BuildingResponse(BaseModel):
     floor: int
     faculty: Optional[str]
     building_type: Optional[str]
+    code: str
+    display_name: Optional[str]
+    block_code: Optional[str]
+    floor_code: Optional[str]
+    elevation_m: Optional[float]
+    elevation_source: Optional[str]
+    effective_elevation_m: float
+    data_scope: Optional[str]
 
 
 class NearbyBuildingResponse(BaseModel):

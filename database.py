@@ -47,6 +47,15 @@ COLUMN_MIGRATIONS: list[tuple[str, str, str]] = [
     ("buildings", "floor", "INTEGER NOT NULL DEFAULT 0"),
     ("users", "role", "VARCHAR(20) NOT NULL DEFAULT 'user'"),
     ("paths", "kind", "VARCHAR(20) NOT NULL DEFAULT 'corridor'"),
+    ("buildings", "code", "VARCHAR(128)"),
+    ("buildings", "display_name", "VARCHAR(100)"),
+    ("buildings", "block_code", "VARCHAR(32)"),
+    ("buildings", "floor_code", "VARCHAR(64)"),
+    ("buildings", "elevation_m", "FLOAT"),
+    ("buildings", "elevation_source", "VARCHAR(1000)"),
+    ("buildings", "data_scope", "VARCHAR(128)"),
+    ("paths", "code", "VARCHAR(128)"),
+    ("paths", "data_scope", "VARCHAR(128)"),
 ]
 
 
@@ -57,6 +66,12 @@ def apply_column_migrations() -> None:
             columns = {row[1] for row in connection.exec_driver_sql(f"PRAGMA table_info({table})")}
             if columns and column not in columns:
                 connection.exec_driver_sql(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
+        # Additive migration: preserve row IDs, FK relationships, coordinates and
+        # histories. Source datasets can explicitly adopt these legacy codes later.
+        for table, prefix in (("buildings", "legacy-place"), ("paths", "legacy-path")):
+            connection.exec_driver_sql(f"UPDATE {table} SET code = '{prefix}:' || id WHERE code IS NULL")
+            connection.exec_driver_sql(f"CREATE UNIQUE INDEX IF NOT EXISTS ix_{table}_code ON {table} (code)")
+            connection.exec_driver_sql(f"CREATE INDEX IF NOT EXISTS ix_{table}_data_scope ON {table} (data_scope)")
 
 
 def get_db() -> Iterator[Session]:

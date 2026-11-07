@@ -31,6 +31,10 @@ def test_real_floor_routes_keep_corners_and_confirmed_destinations(client: TestC
         assert route["path"][:3] == ["Hall Acceso", "Access courtyard", "South circulation"]
         assert route["path"][-1] == name
         assert len(route["steps"]) == len(route["path"]) - 1
+        assert [point["id"] for point in route["waypoints"]] == [ids[name] for name in route["path"]]
+        assert all(point["elevation_m"] == 3.5 for point in route["waypoints"])
+        assert all(point["floor_code"] == "ucc-first-floor" for point in route["waypoints"])
+        assert all(step["connection_code"].startswith("ucc:floor1:") for step in route["steps"])
         assert route["distance"] > 40
         reverse = client.post("/routes/calculate", headers=user_headers, json={
             "origin_id": ids[name], "destination_id": ids["Hall Acceso"], "avoid": ["stairs"], "algorithm": algorithm,
@@ -38,6 +42,7 @@ def test_real_floor_routes_keep_corners_and_confirmed_destinations(client: TestC
         assert reverse.status_code == 200
         back = reverse.json()
         assert back["path"] == list(reversed(route["path"]))
+        assert back["waypoints"] == list(reversed(route["waypoints"]))
         assert back["distance"] == pytest.approx(route["distance"])
         assert len(back["steps"]) == len(back["path"]) - 1
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 from typing import Optional
+from uuid import uuid4
 
 from sqlalchemy import (
     Boolean,
@@ -15,7 +16,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from config import ROLE_USER
+from config import FLOOR_HEIGHT, ROLE_USER
 from database import Base
 
 
@@ -54,6 +55,19 @@ class Building(Base):
     floor: Mapped[int] = mapped_column(Integer, nullable=False, default=0, server_default="0")
     faculty: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     building_type: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
+    code: Mapped[str] = mapped_column(
+        String(128), unique=True, index=True, default=lambda: f"place:{uuid4().hex}"
+    )
+    display_name: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
+    block_code: Mapped[Optional[str]] = mapped_column(String(32), nullable=True)
+    floor_code: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    elevation_m: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    elevation_source: Mapped[Optional[str]] = mapped_column(String(1000), nullable=True)
+    data_scope: Mapped[Optional[str]] = mapped_column(String(128), nullable=True, index=True)
+
+    @property
+    def effective_elevation_m(self) -> float:
+        return self.elevation_m if self.elevation_m is not None else self.floor * FLOOR_HEIGHT
 
     def __repr__(self) -> str:
         return f"Building(id={self.id}, name={self.name!r}, x={self.x}, y={self.y})"
@@ -83,6 +97,10 @@ class CampusPath(Base):
     kind: Mapped[str] = mapped_column(
         String(20), nullable=False, default="corridor", server_default="corridor"
     )
+    code: Mapped[str] = mapped_column(
+        String(128), unique=True, index=True, default=lambda: f"path:{uuid4().hex}"
+    )
+    data_scope: Mapped[Optional[str]] = mapped_column(String(128), nullable=True, index=True)
 
     source: Mapped[Building] = relationship(foreign_keys=[source_id])
     target: Mapped[Building] = relationship(foreign_keys=[target_id])
@@ -92,6 +110,15 @@ class CampusPath(Base):
             f"CampusPath(id={self.id}, source_id={self.source_id}, "
             f"target_id={self.target_id}, weight={self.weight})"
         )
+
+
+class CampusDataRevision(Base):
+    __tablename__ = "campus_data_revisions"
+    scope: Mapped[str] = mapped_column(String(128), primary_key=True)
+    revision: Mapped[str] = mapped_column(String(128), primary_key=True)
+    payload_hash: Mapped[str] = mapped_column(String(64), nullable=False)
+    source: Mapped[str] = mapped_column(String(1000), nullable=False)
+    applied_at: Mapped[datetime] = mapped_column(DateTime, default=utc_now, nullable=False)
 
 
 class RouteVisit(Base):

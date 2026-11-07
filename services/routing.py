@@ -24,14 +24,14 @@ def compute_path(
     algorithm: PathAlgorithm,
     avoid: list[PathKind] | None = None,
 ) -> tuple[list[str], float]:
-    if not campus_graph_service.contains(origin.name, destination.name):
+    if not campus_graph_service.contains(origin.id, destination.id):
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="The campus graph is out of sync with the database. Reload the graph.",
         )
 
     path, distance = campus_graph_service.find_path(
-        origin.name, destination.name, algorithm, frozenset(avoid or [])
+        origin.id, destination.id, algorithm, frozenset(avoid or [])
     )
     if not path:
         raise HTTPException(

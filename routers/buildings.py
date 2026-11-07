@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Optional
 
-from fastapi import APIRouter, Query, Response, status
-from sqlalchemy import select
+from fastapi import APIRouter, HTTPException, Query, Response, status
+from sqlalchemy import or_, select
 
 from config import NEAREST_BUILDINGS_LIMIT
 from dependencies import AdminUser, DatabaseSession
@@ -28,16 +28,22 @@ def list_buildings(
     faculty: Optional[str] = None,
     building_type: Optional[str] = None,
     floor: Optional[int] = Query(default=None, ge=0),
+    block_code: Optional[str] = None,
+    floor_code: Optional[str] = None,
 ) -> list[Building]:
     query = select(Building).order_by(Building.name)
     if search:
-        query = query.where(Building.name.ilike(f"%{search}%"))
+        query = query.where(or_(Building.name.ilike(f"%{search}%"), Building.display_name.ilike(f"%{search}%")))
     if faculty:
         query = query.where(Building.faculty == faculty)
     if building_type:
         query = query.where(Building.building_type == building_type)
     if floor is not None:
         query = query.where(Building.floor == floor)
+    if block_code is not None:
+        query = query.where(Building.block_code == block_code)
+    if floor_code is not None:
+        query = query.where(Building.floor_code == floor_code)
     return list(database_session.scalars(query))
 
 
@@ -49,14 +55,16 @@ def create_building(
 ) -> Building:
     ensure_name_available(database_session, building_data.name)
 
-    new_building = Building(**building_data.model_dump())
+    if building_data.code and database_session.scalar(
+        select(Building.id).where(Building.code == building_data.code)
+    ):
+        raise HTTPException(status_code=409, detail="The place code already exists.")
+    new_building = Building(**building_data.model_dump(exclude_none=True))
     database_session.add(new_building)
     database_session.commit()
     database_session.refresh(new_building)
 
-    campus_graph_service.add_building(
-        new_building.name, new_building.x, new_building.y, new_building.floor
-    )
+    campus_graph_service.load_from_database()
     return new_building
 
 
@@ -99,19 +107,19 @@ def read_building_neighbors(
     limit: int = Query(default=NEAREST_BUILDINGS_LIMIT, ge=1, le=50),
 ) -> list[NearbyBuildingResponse]:
     building = get_building_or_404(database_session, building_id)
-    if not campus_graph_service.contains(building.name):
+    if not campus_graph_service.contains(building.id):
         return []
 
-    closest = sorted(campus_graph_service.neighbors(building.name).items(), key=lambda p: p[1])
-    names = [name for name, _ in closest[:limit]]
-    by_name = {
-        found.name: found
-        for found in database_session.scalars(select(Building).where(Building.name.in_(names)))
+    closest = sorted(campus_graph_service.neighbors(building.id).items(), key=lambda p: p[1])
+    ids = [id_ for id_, _ in closest[:limit]]
+    by_id = {
+        found.id: found
+        for found in database_session.scalars(select(Building).where(Building.id.in_(ids)))
     }
     return [
-        NearbyBuildingResponse(building=by_name[name], distance=distance)
-        for name, distance in closest[:limit]
-        if name in by_name
+        NearbyBuildingResponse(building=by_id[id_], distance=distance)
+        for id_, distance in closest[:limit]
+        if id_ in by_id
     ]
 
 
@@ -149,8 +157,8 @@ def delete_building(
     _admin_user: AdminUser,
 ) -> Response:
     building = get_building_or_404(database_session, building_id)
-    campus_graph_service.remove_building(building.name)
     waiting_lines.clear(building.id)
     database_session.delete(building)
     database_session.commit()
+    campus_graph_service.load_from_database()
     return Response(status_code=status.HTTP_204_NO_CONTENT)

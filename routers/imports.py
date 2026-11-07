@@ -34,7 +34,7 @@ def import_buildings(
     if stored:
         raise conflict(f"Buildings already exist: {', '.join(stored)}.")
 
-    new_buildings = [Building(**building.model_dump()) for building in buildings_data]
+    new_buildings = [Building(**building.model_dump(exclude_none=True)) for building in buildings_data]
     database_session.add_all(new_buildings)
     try:
         database_session.commit()

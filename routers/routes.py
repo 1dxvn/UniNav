@@ -48,7 +48,8 @@ def calculate_route(
     database_session.commit()
 
     return RouteResponse(
-        path=path,
+        path=campus_graph_service.names(path),
+        waypoints=campus_graph_service.waypoints(path),
         steps=campus_graph_service.describe_steps(path),
         distance=distance,
         origin_name=origin.name,
@@ -66,7 +67,8 @@ def compare_algorithms(
     results: list[AlgorithmResult] = []
     for algorithm in PathAlgorithm:
         path, distance = compute_path(origin, destination, algorithm, route_request.avoid)
-        results.append(AlgorithmResult(algorithm=algorithm, path=path, distance=distance))
+        results.append(AlgorithmResult(algorithm=algorithm, path=campus_graph_service.names(path),
+            waypoints=campus_graph_service.waypoints(path), distance=distance))
 
     return RouteComparisonResponse(
         origin_name=origin.name, destination_name=destination.name, results=results
@@ -86,7 +88,8 @@ def calculate_multi_stop_route(
             RouteLeg(
                 origin_name=origin.name,
                 destination_name=destination.name,
-                path=path,
+                path=campus_graph_service.names(path),
+                waypoints=campus_graph_service.waypoints(path),
                 steps=campus_graph_service.describe_steps(path),
                 distance=distance,
             )

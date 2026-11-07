@@ -120,8 +120,9 @@ tests/              unit (data structures) and api (endpoints)
   a `floor` (0-7: ground, first to fifth, terraces, roof), and an optional faculty and type.
 - **Path**: a connection between two places. It has a `kind` (`corridor`, `stairs`,
   `elevator`, `ramp`, `outdoor`), may be one-way, and has an optional weight. The
-  effective weight is never lower than the 3D straight-line distance (floors are 3.5 m
-  apart), which keeps A\* optimal. Places are only reachable through paths.
+  effective weight is never lower than the 3D straight-line distance using explicit
+  elevations, which keeps A\* optimal. Legacy places fall back to `floor * 3.5 m`.
+  Places are only reachable through paths.
 - **Roles**: `user` can read and calculate routes. `admin` can also create, edit and
   delete places and paths. Promote someone with `python -m scripts.promote_admin <username>`.
 
@@ -133,7 +134,7 @@ Routes marked **admin** need an administrator token, **auth** needs any logged-i
 |---|---|---|
 | auth | `POST /auth/register`, `POST /auth/login`, `POST /auth/token`, `GET /auth/me` | public / auth |
 | users | `GET /users/me/stats`, `PUT /users/me/password`, `DELETE /users/me` | auth |
-| buildings | `GET /buildings` (filters: `search`, `faculty`, `building_type`, `floor`) | public |
+| buildings | `GET /buildings` (filters: `search`, `faculty`, `building_type`, `floor`, `block_code`, `floor_code`) | public |
 | | `GET /buildings/{id}`, `/buildings/{id}/neighbors`, `/buildings/nearest`, `/buildings/faculties`, `/buildings/types` | public |
 | | `POST /buildings`, `POST /buildings/import`, `PUT /buildings/{id}`, `DELETE /buildings/{id}` | admin |
 | floors | `GET /floors` | public |
@@ -152,12 +153,16 @@ Routes marked **admin** need an administrator token, **auth** needs any logged-i
 | queues | `GET /queues/{building_id}` | public |
 | | `POST /queues/{building_id}/join`, `GET .../position`, `DELETE .../leave` | auth |
 | | `POST /queues/{building_id}/serve` (calls the next person) | admin |
-| campus | `GET /campus/hierarchy` | public |
+| campus | `GET /campus/hierarchy`, `GET /campus/catalog` | public |
+| | `POST /campus/datasets/import` | admin |
 | status | `GET /health` | public |
 
 Route requests accept `algorithm` (`a_star` or `dijkstra`) and `avoid`, a list of path
-kinds to skip, for example `{"avoid": ["stairs"]}` for an accessible route. Responses
-include `steps` with the kind and distance of every hop.
+kinds to skip, for example `{"avoid": ["stairs"]}` to avoid recorded stairs. Responses
+include `steps` with the kind and distance of every hop, connection IDs/codes,
+and `waypoints` with stable place IDs/codes and explicit positions/elevations.
+The legacy `path` and name fields remain available. See
+[versioned campus datasets](docs/CAMPUS_DATASETS.md) for migration and import rules.
 
 The navigation trail works like a browser history: visiting a place after going back discards the places ahead, and the trail keeps the latest 50 places. Tours are stored in the database; the stop each user is on lives in memory. Waiting lines live in memory and are cleared when the server restarts.
 

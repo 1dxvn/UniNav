@@ -17,10 +17,12 @@ def read_catalog() -> CampusCatalog:
 
 def catalog_for_database(session: Session) -> CatalogResponse:
     # Do not present UCC observations as the catalogue of an unrelated sample DB.
+    catalog = read_catalog()
     places = {place.name: place for place in session.scalars(select(Building))}
     for name, x, y, floor, *_ in PLACES:
         place = places.get(name)
-        if place is None or place.floor != floor or abs(place.x-x) > 0.001 or abs(place.y-y) > 0.001:
+        if (place is None or place.floor != floor or abs(place.x-x) > 0.001 or abs(place.y-y) > 0.001
+                or abs(place.effective_elevation_m-catalog.integrated_dataset.model_elevation_m) > 0.001):
             return CatalogResponse(available=False, catalog=None)
     edges = {
         (edge.source.name, edge.target.name, edge.kind, edge.bidirectional)
@@ -29,4 +31,4 @@ def catalog_for_database(session: Session) -> CatalogResponse:
     for source, target, kind in PATHS:
         if (source, target, kind, True) not in edges and (target, source, kind, True) not in edges:
             return CatalogResponse(available=False, catalog=None)
-    return CatalogResponse(available=True, catalog=read_catalog())
+    return CatalogResponse(available=True, catalog=catalog)

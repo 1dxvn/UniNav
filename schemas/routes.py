@@ -19,6 +19,25 @@ class RouteStep(BaseModel):
     destination_name: str
     kind: PathKind
     distance: float = Field(ge=0)
+    origin_id: int
+    destination_id: int
+    path_id: int
+    connection_code: str
+    origin_display_name: str
+    destination_display_name: str
+
+
+class RouteWaypoint(BaseModel):
+    id: int
+    code: str
+    name: str
+    display_name: str
+    x: float
+    y: float
+    floor: int
+    elevation_m: float
+    block_code: str | None
+    floor_code: str | None
 
 
 class RouteRequest(BaseModel):
@@ -34,12 +53,14 @@ class RouteResponse(BaseModel):
     distance: float = Field(ge=0)
     origin_name: str
     destination_name: str
+    waypoints: list[RouteWaypoint]
 
 
 class AlgorithmResult(BaseModel):
     algorithm: PathAlgorithm
     path: list[str]
     distance: float = Field(ge=0)
+    waypoints: list[RouteWaypoint]
 
 
 class RouteComparisonResponse(BaseModel):
@@ -60,6 +81,7 @@ class RouteLeg(BaseModel):
     path: list[str]
     steps: list[RouteStep]
     distance: float = Field(ge=0)
+    waypoints: list[RouteWaypoint]
 
 
 class MultiStopResponse(BaseModel):

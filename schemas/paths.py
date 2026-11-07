@@ -15,6 +15,7 @@ class PathKind(str, Enum):
 
 
 class PathCreate(BaseModel):
+    code: Optional[str] = Field(default=None, min_length=1, max_length=128, pattern=r"^[A-Za-z0-9][A-Za-z0-9_.:/-]*$")
     source_id: int = Field(gt=0)
     target_id: int = Field(gt=0)
     weight: Optional[float] = Field(
@@ -42,3 +43,5 @@ class PathResponse(BaseModel):
     weight: float = Field(ge=0, description="Effective weight used by the route algorithms.")
     bidirectional: bool
     kind: PathKind
+    code: str
+    data_scope: Optional[str] = None

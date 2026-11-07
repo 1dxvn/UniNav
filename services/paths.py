@@ -6,7 +6,6 @@ from fastapi import HTTPException, status
 from sqlalchemy import and_, or_, select
 from sqlalchemy.orm import Session, selectinload
 
-from config import FLOOR_HEIGHT
 from models import CampusPath
 from schemas.paths import PathResponse
 
@@ -15,7 +14,7 @@ def effective_weight(path: CampusPath) -> float:
     straight_line = math.hypot(
         path.source.x - path.target.x,
         path.source.y - path.target.y,
-        (path.source.floor - path.target.floor) * FLOOR_HEIGHT,
+        path.source.effective_elevation_m - path.target.effective_elevation_m,
     )
     return max(path.weight or 0.0, straight_line)
 
@@ -30,6 +29,8 @@ def to_path_response(path: CampusPath) -> PathResponse:
         weight=effective_weight(path),
         bidirectional=path.bidirectional,
         kind=path.kind,
+        code=path.code,
+        data_scope=path.data_scope,
     )
 
 

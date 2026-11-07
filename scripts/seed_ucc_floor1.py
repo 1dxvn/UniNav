@@ -1,4 +1,4 @@
-"""Idempotent real-floor seed in a dedicated development DB; leaves uninav.db alone."""
+"""Versioned real-floor seed; preserves other scoped floors and the sample DB."""
 from __future__ import annotations
 
 import os
@@ -8,37 +8,22 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from sqlalchemy.orm import Session
 
-from scripts.ucc_floor1_data import PATHS, PLACES
+DATASET_PATH = Path(__file__).resolve().parents[1] / "data/datasets/ucc-first-floor.json"
 
 
 def seed_campus(database_session: Session) -> tuple[int, int]:
     from sqlalchemy import select
-    from models import Building, CampusPath
+    from models import Building
+    from schemas.datasets import CampusDataset
+    from services.datasets import import_dataset
 
-    expected_names = {place[0] for place in PLACES}
-    buildings = {place.name: place for place in database_session.scalars(select(Building))}
-    if set(buildings) - expected_names:
+    dataset = CampusDataset.model_validate_json(DATASET_PATH.read_text(encoding="utf-8"))
+    expected_names = {place.name for place in dataset.places}
+    unrelated = database_session.scalars(select(Building).where(Building.data_scope.is_(None)))
+    if any(place.name not in expected_names for place in unrelated):
         raise ValueError("This database contains another campus. Use the dedicated uninav-campus.db.")
-    created_places = 0
-    for name, x, y, floor, faculty, building_type in PLACES:
-        if name in buildings:
-            place = buildings[name]
-            if abs(place.x - x) > 0.001 or abs(place.y - y) > 0.001 or place.floor != floor:
-                raise ValueError(f"Existing coordinates differ for {name}; review the campus data first.")
-            continue
-        place = Building(name=name, x=x, y=y, floor=floor, faculty=faculty, building_type=building_type)
-        database_session.add(place)
-        buildings[name] = place
-        created_places += 1
-    database_session.flush()
-    existing = {(edge.source_id, edge.target_id) for edge in database_session.scalars(select(CampusPath))}
-    created_paths = 0
-    for source, target, kind in PATHS:
-        pair = (buildings[source].id, buildings[target].id)
-        if pair not in existing:
-            database_session.add(CampusPath(source_id=pair[0], target_id=pair[1], kind=kind, bidirectional=True))
-            created_paths += 1
-    return created_places, created_paths
+    result = import_dataset(database_session, dataset, adopt_legacy=True)
+    return result.created_places, result.created_paths
 
 
 def main() -> None:
