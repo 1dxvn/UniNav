@@ -74,15 +74,18 @@ Swagger remain available at the usual paths on port 8001. An explicitly configur
 `UNINAV_DATABASE_URL` takes priority; the seed refuses to mix the real floor with
 another campus. `python main.py` continues to use the original database.
 
-Three destinations are connected: ICETEX, Morphology Laboratory, and Elevator and
-Restroom Hall. Preclinic is present but intentionally disconnected until its doorway
-is confirmed. Coordinates come from the model handoff; corridor waypoints were
+Four destinations are connected: ICETEX, Morphology Laboratory, Elevator and
+Restroom Hall, and Preclinic / Dentistry Coordination. Preclinic is reached through
+the north circulation and storeroom, as documented in the model handoff. The floor
+has 19 places and 16 bidirectional paths. Corridor waypoints were
 checked against its walls. Plan `(x, y)` becomes scene `(x, floor * 3.5, -y)`.
 The drawing's +y direction is not geographic north. Heights and plaza levels remain
 the approximations documented by the model author.
 
 See `UniNav-Frontend/docs/REHEARSAL.md` for the one-minute demonstration and
 `UniNav-Frontend/docs/campus-review.md` for the model review and route screenshots.
+The impossible-route regression uses an isolated synthetic destination in a
+temporary test database; it is never added to either development campus.
 
 ## Project layout
 
