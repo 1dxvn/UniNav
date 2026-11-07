@@ -87,6 +87,15 @@ See `UniNav-Frontend/docs/REHEARSAL.md` for the one-minute demonstration and
 The impossible-route regression uses an isolated synthetic destination in a
 temporary test database; it is never added to either development campus.
 
+`GET /campus/catalog` exposes the versioned source inventory in
+`data/campus-catalog.json` when the connected database matches the integrated UCC
+places and paths. An unrelated sample database receives `available: false`.
+Block identities and per-block floor elevations retain their evidence status.
+The current flat model remains at scene elevation 3.5 m; reading this catalogue
+does not move places, add rooms or enable vertical routes. The route and building
+contracts remain compatible. The new endpoint is loaded on the next normal server
+start; browser error tests exercise it with a separate temporary FastAPI process.
+
 ## Project layout
 
 ```
