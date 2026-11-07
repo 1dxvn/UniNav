@@ -18,7 +18,8 @@ def test_catalog_preserves_documented_levels_and_current_flat_model(client):
     assert result["available"] is True
     catalog = result["catalog"]
     blocks = {block["id"]: block for block in catalog["blocks"]}
-    assert blocks["A"]["identity_evidence"] == "derived"
+    assert all(block["identity_evidence"] == "confirmed" for block in blocks.values())
+    assert all("b36d328" in block["source"] for block in blocks.values())
     assert blocks["B"]["floors"][2]["datum_elevation_m"] == 2.94
     assert blocks["A"]["floors"][1]["datum_elevation_m"] == -0.63
     assert all(floor["evidence"] == "derived" for block in blocks.values() for floor in block["floors"])
@@ -38,6 +39,6 @@ def test_catalog_preserves_documented_levels_and_current_flat_model(client):
 
 def test_catalog_ids_are_unique_and_versioned():
     catalog = read_catalog()
-    assert catalog.version == 1 and catalog.revision == "dwg-a35f892"
+    assert catalog.version == 1 and catalog.revision == "dwg-a35f892-identities-b36d328"
     ids = [floor.id for block in catalog.blocks for floor in block.floors]
     assert len(ids) == len(set(ids)) == 12

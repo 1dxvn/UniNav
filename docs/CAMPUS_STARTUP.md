@@ -11,8 +11,8 @@ and its database have not been upgraded by this delivery.
 | `ucc-two-floors` | 64 / 59 | C14 two-floor profile |
 | `ucc-first-floor-stair-review` | 19 / 16 | C14 with mapped first-floor stairs |
 | `ucc-two-floors-stair-review` | 64 / 59 | C14 two-floor and mapped first-floor stairs |
-| `ucc-two-floors-c15` | 68 / 63 | C15 data, reviewed C16 models |
-| `ucc-three-floors-c16` | 110 / 102 | C16 and three confirmed floor-3 computer labs |
+| `ucc-two-floors-c15` | 68 / 63 | C15 data, C16 set with C17 floor-2 ramp |
+| `ucc-three-floors-c16` | 110 / 102 | Three-floor data, C16 set with C17 floor-2 ramp |
 
 These counts describe the reviewed campus data. Unrelated scoped blocks are
 preserved, so a database containing those records has larger totals. New connected
@@ -105,6 +105,12 @@ the new scope. Use `--profile ucc-three-floors-c16` with an explicit temporary
 file and port 0 to rehearse it. The default, real database and user processes
 remain unchanged. Evidence is in frontend `docs/verification/floor3/`.
 
-C17's floor-2 junction ramp is received but not integrated in these profiles.
+C17's floor-2 junction ramp is integrated in the two compatible profiles above;
+the data-profile identifiers and 68/63 and 110/102 bindings stay unchanged. No
+public graph connection across that ramp is added. Its geometry is rehearsed
+using disconnected temporary ramp points and the real FastAPI. The drawn strip
+is step-free; accessibility is not certified. Block A/B identities now record
+the user's confirmation, without promoting derived floor levels to confirmed
+survey measurements. See frontend `docs/verification/c17/`.
 Other destinations, level zones and public activation remain pending; this
 delivery does not complete H2 or the three project plans.

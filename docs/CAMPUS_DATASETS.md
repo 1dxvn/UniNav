@@ -226,6 +226,9 @@ travel between these same-floor entrances.
 The matching frontend profile has its own third-floor API reference and data
 fingerprints; old profiles remain available. No live import or service restart
 is part of this prepared delivery. Floors 0/4/5, other rooms and unresolved level
-zones remain pending. C17 is a separately received ramp candidate; this data
-still binds to the reviewed C16 models. See frontend `docs/blocks/floor3-navigation.md`
+zones remain pending. This data now binds to the C16 set with the reviewed C17
+floor-2 ramp; coordinates, IDs, graph topology and dataset payloads are unchanged.
+No public ramp connection is added. The read-only catalogue records the user's
+Block A/B identity confirmation from frontend `level-zones.md @b36d328`, retaining
+all existing floor datums and derived/provisional level evidence. See frontend `docs/blocks/floor3-navigation.md`
 and `docs/verification/floor3/` for the source and rehearsal evidence.
