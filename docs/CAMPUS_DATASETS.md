@@ -193,9 +193,39 @@ upgrading both scopes, identity preservation, bypass removal, rollback, both
 algorithms, seven round-trip destinations and stair exclusion. Browser and
 geometry evidence is in frontend `docs/verification/c15/`.
 
-The versioned launcher now offers all five reviewed combinations, including C15
+The versioned launcher offers the historical reviewed combinations, including C15
 through an explicit `--profile ucc-two-floors-c15`. The default stays at the old
 baseline, and the existing 8001 database/service remains unchanged. Profile
 restarts compose patches before import and apply both C15 scopes atomically;
 they do not replay the superseded flat seed. See [startup profiles](CAMPUS_STARTUP.md)
 for isolated commands, revision hashes, port reservation and downgrade behavior.
+
+## Prepared C16 third-floor scope
+
+`ucc-third-floor.json` adds 42 places and 39 bidirectional connections under
+`ucc:floor3-connection` / `c16-third-floor-v1`. The versioned
+`ucc-three-floors-c16` startup profile composes the two unchanged C15 scopes and
+this addition: 110 places / 102 connections. It preserves their IDs, paths and
+history, supports repeated startup, rolls back the complete upgrade on failure,
+and rejects later profiles omitting the installed third-floor scope.
+
+Only Informática 1 / 308 A, Informática 2 / 309 A, and Informática 3 / 310 A
+are destinations. Doorway D15, D14 and D13 centres and inside/outside stands come
+from frontend `model/tools/data/floor3/doorways.json @389cfd9`; the paired literal
+laboratory/classroom labels come from `wing.json` at the same revision. Their
+drawn partitions and approaches are checked against committed C16 `002aaec`.
+Targets lie inside the doors, not at the label centroids. Faculty is unknown.
+
+The existing floor-2 north corridor connects to the next east stair through
+(36.35,54.7), then (36.35,55.9). C16's documented 21-riser layout rises from
+world 6.18 to 9.87. Stair waypoints keep floor 2 through the high landing and
+change to floor 3 at the final upper endpoint. Three isolated structural anchors
+remain at B datum 9.38. Avoiding stairs rejects inter-floor travel while allowing
+travel between these same-floor entrances.
+
+The matching frontend profile has its own third-floor API reference and data
+fingerprints; old profiles remain available. No live import or service restart
+is part of this prepared delivery. Floors 0/4/5, other rooms and unresolved level
+zones remain pending. C17 is a separately received ramp candidate; this data
+still binds to the reviewed C16 models. See frontend `docs/blocks/floor3-navigation.md`
+and `docs/verification/floor3/` for the source and rehearsal evidence.

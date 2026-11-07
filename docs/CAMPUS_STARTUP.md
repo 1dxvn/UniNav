@@ -1,6 +1,6 @@
 # Reviewed campus startup profiles
 
-The launcher can seed and serve five reviewed model/data combinations. The
+The launcher can seed and serve six reviewed model/data combinations. The
 default remains the historical 19/16 baseline. C15 is an explicit prepared profile,
 not a completed physical survey or a public rollout. The existing 8001 process
 and its database have not been upgraded by this delivery.
@@ -11,7 +11,8 @@ and its database have not been upgraded by this delivery.
 | `ucc-two-floors` | 64 / 59 | C14 two-floor profile |
 | `ucc-first-floor-stair-review` | 19 / 16 | C14 with mapped first-floor stairs |
 | `ucc-two-floors-stair-review` | 64 / 59 | C14 two-floor and mapped first-floor stairs |
-| `ucc-two-floors-c15` | 68 / 63 | C15 hall and Block A levels |
+| `ucc-two-floors-c15` | 68 / 63 | C15 data, reviewed C16 models |
+| `ucc-three-floors-c16` | 110 / 102 | C16 and three confirmed floor-3 computer labs |
 
 These counts describe the reviewed campus data. Unrelated scoped blocks are
 preserved, so a database containing those records has larger totals. New connected
@@ -93,8 +94,17 @@ import behind it. A future coordinated switch needs a verified backup and a
 service running the matching API, seed profile and frontend. Existing user
 processes remain running during the isolated rehearsal.
 
-C15 retains pending physical B laboratory, sloped-hall, western and upper A/B
-junction levels. Its next-floor stair is an inspection approximation; floors
-0/3/4/5 remain previews. This launcher does not add destinations, change GLBs,
-resolve those levels or finish H2/the three project plans. Browser evidence is in
-frontend `docs/verification/campus-startup/`.
+C15 data retains pending physical B laboratory, sloped-hall, western and upper
+A/B junction levels. Its 68/63 profile keeps floor 3 as a preview. The separate
+110/102 profile adds a reviewed 2-to-3 east stair and three source-confirmed
+Computer Lab entrances on floor 3; floors 0/4/5 remain previews. Its C16 physical
+stair rises from world 6.18 to 9.87, with floor metadata retained until arrival.
+The 42-place/39-connection scope is applied after the two unchanged C15 scopes.
+Reverting that database to a two-floor profile is rejected instead of deleting
+the new scope. Use `--profile ucc-three-floors-c16` with an explicit temporary
+file and port 0 to rehearse it. The default, real database and user processes
+remain unchanged. Evidence is in frontend `docs/verification/floor3/`.
+
+C17's floor-2 junction ramp is received but not integrated in these profiles.
+Other destinations, level zones and public activation remain pending; this
+delivery does not complete H2 or the three project plans.

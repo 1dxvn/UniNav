@@ -30,6 +30,12 @@
       "revision": "c15-second-floor-v1",
       "generation": 3,
       "sha256": "3b79f6b1a6596db42e6e64769700e94493d1485507532ee60008d388cf20bdc0"
+    },
+    "ucc-third-floor.json": {
+      "scope": "ucc:floor3-connection",
+      "revision": "c16-third-floor-v1",
+      "generation": 1,
+      "sha256": "4255ea2d0ba612bce72a4a8904f749deb5c1ded11cc51c679eae9c22243c2157"
     }
   },
   "profiles": {
@@ -67,6 +73,13 @@
       "datasets": [
         "ucc-first-floor-c15.json",
         "ucc-second-floor-c15.json"
+      ]
+    },
+    "ucc-three-floors-c16": {
+      "datasets": [
+        "ucc-first-floor-c15.json",
+        "ucc-second-floor-c15.json",
+        "ucc-third-floor.json"
       ]
     }
   }
