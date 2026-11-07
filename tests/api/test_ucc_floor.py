@@ -10,7 +10,7 @@ def load_campus() -> dict[str, int]:
     from models import Building
 
     with SessionLocal() as session:
-        assert seed_campus(session) == (16, 12)
+        assert seed_campus(session) == (19, 16)
         session.commit()
         assert seed_campus(session) == (0, 0)
         ids = {place.name: place.id for place in session.scalars(select(Building))}
@@ -32,10 +32,15 @@ def test_real_floor_routes_keep_corners_and_confirmed_destinations(client: TestC
         assert route["distance"] > 40
 
 
-def test_unconfirmed_preclinic_connection_returns_no_route(client: TestClient, user_headers: dict[str, str]) -> None:
+def test_preclinic_is_reached_through_north_circulation_and_storeroom(client: TestClient, user_headers: dict[str, str]) -> None:
     ids = load_campus()
     response = client.post("/routes/calculate", headers=user_headers, json={
-        "origin_id": ids["Hall Acceso"], "destination_id": ids["Preclinic / Dentistry Coordination"],
+        "origin_id": ids["Hall Acceso"], "destination_id": ids["Preclinic / Dentistry Coordination"], "avoid": ["stairs"],
     })
-    assert response.status_code == 404
-    assert "There is no route" in response.json()["detail"]
+    assert response.status_code == 200
+    route = response.json()
+    assert route["path"][-5:] == [
+        "Elevator and Restroom Hall", "North circulation west", "North circulation east",
+        "Preclinic storeroom", "Preclinic / Dentistry Coordination",
+    ]
+    assert len(route["steps"]) == len(route["path"]) - 1

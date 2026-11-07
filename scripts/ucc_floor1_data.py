@@ -2,7 +2,8 @@
 
 Source: UniNav-Frontend/public/models/campus-reference.md and the exported GLB.
 Corridor waypoints were checked against the GLB at body height with 0.38 m
-clearance. Preclinic remains isolated until its doorway can be confirmed.
+clearance. The Preclinic is reached from the north circulation through the
+PRECLINICA ALMACEN room and its east doorway, as drawn in the DWG.
 """
 from __future__ import annotations
 
@@ -22,6 +23,9 @@ PLACES: list[tuple[str, float, float, int, str, str]] = [
     ("Laboratory corridor east", 46.5, 32, 1, "Health Sciences", "waypoint"),
     ("Morphology Laboratory", 42.96, 27.77, 1, "Health Sciences", "laboratory"),
     ("Preclinic / Dentistry Coordination", 56.84, 51.96, 1, "Health Sciences", "clinic"),
+    ("North circulation west", 32, 54.4, 1, "Health Sciences", "waypoint"),
+    ("North circulation east", 58.26, 54.7, 1, "Health Sciences", "waypoint"),
+    ("Preclinic storeroom", 58.26, 51.68, 1, "Health Sciences", "waypoint"),
     ("ICETEX column reference", 27.26, 41.77, 1, "Administration", "reference"),
     ("Lockers column reference", 46.97, 36.94, 1, "Administration", "reference"),
 ]
@@ -40,4 +44,8 @@ PATHS: list[tuple[str, str, str]] = [
     ("South circulation", "Laboratory corridor west", "corridor"),
     ("Laboratory corridor west", "Laboratory corridor east", "corridor"),
     ("Laboratory corridor east", "Morphology Laboratory", "corridor"),
+    ("Elevator and Restroom Hall", "North circulation west", "corridor"),
+    ("North circulation west", "North circulation east", "corridor"),
+    ("North circulation east", "Preclinic storeroom", "corridor"),
+    ("Preclinic storeroom", "Preclinic / Dentistry Coordination", "corridor"),
 ]
