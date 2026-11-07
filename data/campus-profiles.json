@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "datasets": {
+    "ucc-first-floor.json": {
+      "scope": "ucc:floor1",
+      "revision": "3809907-c2-elevation-v1",
+      "generation": 1,
+      "sha256": "41dfea721ca79d64cb3e63277d9751fd8b4513013ac6508865c2089f4edcdbc3"
+    },
+    "ucc-first-floor-stairs.json": {
+      "scope": "ucc:floor1",
+      "revision": "first-floor-stairs-68c7a36-v1",
+      "generation": 2,
+      "sha256": "d3e7262aa1c9b7797f40ff9da95fdf32cef1d09e73883e88e103cb253a935dde"
+    },
+    "ucc-second-floor.json": {
+      "scope": "ucc:floor2-connection",
+      "revision": "floor2-a2dbda0-b864a5b7b529",
+      "generation": 1,
+      "sha256": "87d639d35741733e892e4a9141273ea3b3cfe9077ecd605af00f574382e11639"
+    },
+    "ucc-first-floor-c15.json": {
+      "scope": "ucc:floor1",
+      "revision": "c15-first-floor-v1",
+      "generation": 3,
+      "sha256": "dde23e8a5d0f5adfec256b8d919428f9c85eae47c5ec3832b7ae9231572652b0"
+    },
+    "ucc-second-floor-c15.json": {
+      "scope": "ucc:floor2-connection",
+      "revision": "c15-second-floor-v1",
+      "generation": 3,
+      "sha256": "3b79f6b1a6596db42e6e64769700e94493d1485507532ee60008d388cf20bdc0"
+    }
+  },
+  "profiles": {
+    "base": {
+      "datasets": [
+        "ucc-first-floor.json"
+      ]
+    },
+    "ucc-two-floors": {
+      "datasets": [
+        "ucc-first-floor.json",
+        "ucc-second-floor.json"
+      ]
+    },
+    "ucc-first-floor-stair-review": {
+      "datasets": [
+        "ucc-first-floor.json",
+        "ucc-first-floor-stairs.json"
+      ],
+      "composed_revisions": {
+        "ucc:floor1": "startup-first-floor-stairs-v1"
+      }
+    },
+    "ucc-two-floors-stair-review": {
+      "datasets": [
+        "ucc-first-floor.json",
+        "ucc-first-floor-stairs.json",
+        "ucc-second-floor.json"
+      ],
+      "composed_revisions": {
+        "ucc:floor1": "startup-first-floor-stairs-v1"
+      }
+    },
+    "ucc-two-floors-c15": {
+      "datasets": [
+        "ucc-first-floor-c15.json",
+        "ucc-second-floor-c15.json"
+      ]
+    }
+  }
+}

@@ -192,3 +192,10 @@ reports drift instead of restoring old endpoints and heights. API tests rehearse
 upgrading both scopes, identity preservation, bypass removal, rollback, both
 algorithms, seven round-trip destinations and stair exclusion. Browser and
 geometry evidence is in frontend `docs/verification/c15/`.
+
+The versioned launcher now offers all five reviewed combinations, including C15
+through an explicit `--profile ucc-two-floors-c15`. The default stays at the old
+baseline, and the existing 8001 database/service remains unchanged. Profile
+restarts compose patches before import and apply both C15 scopes atomically;
+they do not replay the superseded flat seed. See [startup profiles](CAMPUS_STARTUP.md)
+for isolated commands, revision hashes, port reservation and downgrade behavior.
