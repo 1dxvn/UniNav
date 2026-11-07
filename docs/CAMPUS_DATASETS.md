@@ -161,3 +161,34 @@ serialization without opening a port. Both modes use only their new temporary
 database. Frontend profiles preserve the old base/upper bindings and add reviewed
 stair-classified bindings; the legacy API UI separately rejects the same audited
 crossings when Avoid stairs is selected.
+
+## Prepared C15 physical hall and Block A levels
+
+`ucc-first-floor-c15.json` and `ucc-second-floor-c15.json` are complete scoped
+revisions of `ucc:floor1` and `ucc:floor2-connection`. Apply both within one
+outer transaction after the canonical first-floor baseline. They prepare
+68 places / 63 bidirectional connections and preserve the existing 64 place IDs
+and 59 connection IDs when upgrading the older two-floor data.
+
+The original e09 connection is retargeted from the new hall-after node to the
+elevator hall. Four new stair connections replace its direct crossing, preserving
+the e09 ID without a remaining bypass. The before-node keeps its ID and moves to
+the documented point (28,47.6). The three tread centres and after-point follow
+C15's four 0.1575 m risers. A's walking levels are world 2.87 / 6.18 m; the east
+stair keeps its measured plan layout with its corrected 3.31 m rise. Structural
+reference heights remain at the B datum and do not become walking surfaces.
+
+Sources are the committed C15 exports and `level-zones.json` at frontend
+`3177ca7`, including the corrected y=49.23 boundary. The B laboratory/Lockers
+zone remains physically pending at the candidate's flat world 3.5 m; it is not
+raised to +1.19 by inference. Its known stair crossing remains classified.
+The outdoor courtyard node uses model-only world 3.35 m to match the `Site`
+mesh top, 0.15 m below the B slab; this is not a surveyed physical level.
+
+These revisions require the separate frontend `ucc-two-floors-c15` model/data
+profile. They are not imported by the normal launcher, and neither live database
+has received them. Repeating the imports is idempotent; the old baseline then
+reports drift instead of restoring old endpoints and heights. API tests rehearse
+upgrading both scopes, identity preservation, bypass removal, rollback, both
+algorithms, seven round-trip destinations and stair exclusion. Browser and
+geometry evidence is in frontend `docs/verification/c15/`.
