@@ -1,3 +1,6 @@
+"""Compatibility of the historical flat baseline; see test_ucc_stairs for its
+prepared physical-step classification and the corrected avoidance behavior.
+"""
 from fastapi.testclient import TestClient
 import pytest
 

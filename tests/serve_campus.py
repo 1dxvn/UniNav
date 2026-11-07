@@ -15,7 +15,7 @@ import socket
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--directory", required=True, type=Path)
-    parser.add_argument("--dataset", type=Path, help="Optional reviewed navigation fixture; imported only into the temporary database.")
+    parser.add_argument("--dataset", type=Path, action="append", default=[], help="Reviewed navigation fixture; repeat to import revisions in order into the temporary database.")
     parser.add_argument("--snapshot-json", action="store_true", help="Print the actual API data contract and exit without opening a port.")
     args = parser.parse_args()
     directory = args.directory.resolve(strict=True)
@@ -34,8 +34,8 @@ def main() -> None:
     init_db()
     with SessionLocal() as session:
         seed_campus(session)
-        if args.dataset:
-            import_dataset(session, CampusDataset.model_validate_json(args.dataset.read_text(encoding="utf-8")))
+        for dataset_path in args.dataset:
+            import_dataset(session, CampusDataset.model_validate_json(dataset_path.read_text(encoding="utf-8")))
         session.add(Building(name="Isolated test destination", x=70, y=0, floor=1))
         session.add(User(username="student", password_hash=hash_password("demo1234")))
         session.commit()

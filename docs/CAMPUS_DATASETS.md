@@ -123,13 +123,41 @@ explicit heights. The four real destinations and their returns also verify IDs,
 connection codes and 3.5 m C2 waypoints. Synthetic upper-floor examples exist only
 in temporary tests, never in either development database.
 
-The reviewed C2/C5 models and their sources remain unchanged. Real vertical
-navigation still requires Claude's matching slab openings, stairs, landings and
-confirmed endpoint coordinates, followed by collision and browser rehearsals.
+The reviewed C13 cuts and C5 exterior remain unchanged. Temporary-API browser
+journeys already pass through the C13 east stair at model elevations 3.5 / 6.44 m.
+Physical level changes elsewhere still require matching geometry and waypoints.
 
-Claude's updated `docs/blocks/vertical-connections.md` also identifies a physical
-first-floor B stair on the laboratory approach: N 0.00 to +1.19 m. C2 represents
-this region with a flat slab and the reviewed dataset still has a flat corridor.
-Its physical ramp direction is unconfirmed. Preserving C2's verified coordinates
-does not certify an accessible real-world route; this discrepancy must be resolved
-with matching geometry and revised waypoints before the new stair is integrated.
+## Prepared first-floor stair classification
+
+`data/datasets/ucc-first-floor-stairs.json` is a separate prepared revision of
+`ucc:floor1`. It updates only kinds for e08, e09 and e10 to `stairs`. These whole
+connections contain confirmed steps. It creates no records and changes no IDs,
+endpoints, positions, elevations or weights. It works with either 19/16 or 64/59
+data and retains the other scope. It is not automatically seeded or imported.
+
+The source is Claude's first-floor level review, including `b9648f5`: three
+numbered hall treads lie between four risers, about 0.158 m each, dropping from
+N 0.00 to -0.63. The B laboratory approach climbs nine steps to N +1.19. The
+south-east polygon is a roof; no step-free ramp to that laboratory is confirmed.
+Stair avoidance now rejects the three affected destinations from Hall Acceso in
+both directions, while ICETEX and travel within the upper hall area remain open.
+
+This classification protects filtering. Its connection distances include clear
+approaches and must not be interpreted as measured stair-flight lengths. C13
+still flattens these areas. Physical splitting, affected level assignments and
+clearance/support rehearsals await the separate model candidate requested in
+`UniNav-Frontend/docs/blocks/first-floor-level-review.json`. Those proposed points
+are explicitly approximate and the handoff file is not an importable dataset.
+
+Do not import this revision into the live development DB yet. The current 8001
+process exposes the earlier contract; a future release must also advance the
+full baseline seed to a new reviewed revision carrying these classifications.
+Replaying the old baseline after applying this revision deliberately reports
+drift instead of silently restoring corridor types. Tests cover this behavior.
+
+`tests.serve_campus --dataset ...` can be repeated to rehearse the upper dataset
+and stair revision in order. Its `--snapshot-json` mode produces actual API
+serialization without opening a port. Both modes use only their new temporary
+database. Frontend profiles preserve the old base/upper bindings and add reviewed
+stair-classified bindings; the legacy API UI separately rejects the same audited
+crossings when Avoid stairs is selected.

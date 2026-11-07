@@ -1,0 +1,29 @@
+{
+  "scope": "ucc:floor1",
+  "revision": "first-floor-stairs-68c7a36-v1",
+  "source": "UniNav-Frontend/docs/blocks/vertical-connections.md @ 31e9c27/68c7a36/b9648f5: hall steps N 0.00 to -0.63 and B laboratory stair N 0.00 to +1.19. Conservative whole-connection classification only; existing C13 flat coordinates/elevations unchanged. Prepared revision, not an accepted physical-level model. Baseline seed adoption must advance before deployment.",
+  "places": [],
+  "paths": [
+    {
+      "code": "ucc:floor1:e08",
+      "source_code": "ucc:floor1:p08",
+      "target_code": "ucc:floor1:p09",
+      "kind": "stairs",
+      "bidirectional": true
+    },
+    {
+      "code": "ucc:floor1:e09",
+      "source_code": "ucc:floor1:p09",
+      "target_code": "ucc:floor1:p10",
+      "kind": "stairs",
+      "bidirectional": true
+    },
+    {
+      "code": "ucc:floor1:e10",
+      "source_code": "ucc:floor1:p03",
+      "target_code": "ucc:floor1:p11",
+      "kind": "stairs",
+      "bidirectional": true
+    }
+  ]
+}
