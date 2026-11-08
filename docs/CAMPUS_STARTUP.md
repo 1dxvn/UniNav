@@ -139,3 +139,34 @@ the user's confirmation, without promoting derived floor levels to confirmed
 survey measurements. See frontend `docs/verification/c17/`.
 Other destinations, level zones and public activation remain pending; this
 delivery does not complete H2 or the three project plans.
+
+## Activating the complete campus on the real database
+
+`scripts/activate_campus.ps1` switches the real `uninav-campus.db` to a reviewed
+profile, by default `ucc-six-floors-c18` (235 places / 218 connections), and
+restarts the campus service on port 8001. Run it yourself from the backend
+folder:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scriptsctivate_campus.ps1
+```
+
+The script:
+1. stops only the `scripts.run_campus` process listening on the port, and
+   refuses if another program serves it;
+2. copies the database to `backups\` before any change;
+3. starts the launcher with `--profile` in the background, logging to `logs\`,
+   and waits for `/health`.
+
+The sample service on port 8000 and `uninav.db` are not touched.
+
+**Rehearsal.** On a copy of the real database, the upgrade went from 19/16 to
+235/218 and kept all 3 users and 270 route visits.
+
+**Rollback.** Older profiles refuse to remove installed scopes, so roll back by
+restoring the backup:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scriptsctivate_campus.ps1 -Restore backups\<backup-file>.db
+```
+
