@@ -148,7 +148,7 @@ restarts the campus service on port 8001. Run it yourself from the backend
 folder:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scriptsctivate_campus.ps1
+powershell -ExecutionPolicy Bypass -File scripts\activate_campus.ps1
 ```
 
 The script:
@@ -167,6 +167,6 @@ The sample service on port 8000 and `uninav.db` are not touched.
 restoring the backup:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scriptsctivate_campus.ps1 -Restore backups\<backup-file>.db
+powershell -ExecutionPolicy Bypass -File scripts\activate_campus.ps1 -Restore backups\<backup-file>.db
 ```
 
