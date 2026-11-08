@@ -41,5 +41,7 @@ for ($i = 0; $i -lt 60 -and -not $ready; $i++) {
   try { Invoke-RestMethod "http://127.0.0.1:$Port/health" -TimeoutSec 2 | Out-Null; $ready = $true } catch { Start-Sleep -Seconds 1 }
 }
 if (-not $ready) { throw "The campus service did not start. See logs\campus-$Port.err.log" }
-$places = @(Invoke-RestMethod "http://127.0.0.1:$Port/buildings").Count
+# Windows PowerShell 5.1 returns a JSON array as one pipeline object, so count the array itself.
+$response = Invoke-RestMethod "http://127.0.0.1:$Port/buildings"
+$places = $response.Count
 "UniNav campus on http://127.0.0.1:$Port/ (PID $($p.Id)): $places places"
