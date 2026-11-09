@@ -28,13 +28,18 @@ from routers import (
     users,
 )
 from services.campus_graph import campus_graph_service
+from services.runtime_state import attach_runtime_stores, detach_runtime_stores
 
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
     init_db()
     campus_graph_service.load_from_database()
-    yield
+    try:
+        attach_runtime_stores()
+        yield
+    finally:
+        detach_runtime_stores()
 
 
 app = FastAPI(

@@ -19,7 +19,7 @@ DEMO_PASSWORD: str = "demo1234"
 
 
 def seed_users(database_session: Session) -> None:
-    admin_password = os.getenv("UNINAV_ADMIN_PASSWORD", DEMO_PASSWORD)
+    admin_password = os.getenv("UNINAV_ADMIN_PASSWORD") or DEMO_PASSWORD
     for username, role, password in (
         ("admin", ROLE_ADMIN, admin_password),
         ("student", ROLE_USER, DEMO_PASSWORD),

@@ -1,17 +1,28 @@
-# Python
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/.env.example
+!/requirements.txt
+!/*.py
+!/routers/
+!/services/
+!/schemas/
+!/security/
+!/data_structures/
+!/data/
+!/scripts/
+/scripts/*
+!/scripts/__init__.py
+!/scripts/run_campus.py
+!/scripts/campus_profiles.py
+!/scripts/seed_campus.py
+!/scripts/seed.py
+!/scripts/seed_data.py
+!/scripts/seed_ucc_floor1.py
+!/scripts/ucc_floor1_data.py
 __pycache__/
 *.py[cod]
-venv/
-env/
-
-# Database
 *.db
-uninav.db
-
-# Environment
+*.db-*
 .env
-# Tests
-.pytest_cache/
-
-# Local Codex continuity state, logs and process lock
-.uninav-continuity/

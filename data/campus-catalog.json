@@ -1,7 +1,7 @@
 {
   "version": 1,
   "id": "ucc-pasto",
-  "revision": "dwg-a35f892-identities-b36d328",
+  "revision": "dwg-a35f892-identities-b36d328-rooftop-c20",
   "source": "UniNav-Frontend/docs/blocks/dwg-inventory.md @ a35f892; PLANOS UCC 2025 - B.dwg; UniNav-Frontend/docs/blocks/level-zones.md @b36d328; user confirmation 2026-11-07 16:07: Block A north bar, Block B south body",
   "integrated_dataset": {
     "id": "ucc-first-floor",
@@ -65,6 +65,14 @@
           "source_label": "PLANTA QUINTO PISO",
           "datum_elevation_m": 13.37,
           "evidence": "derived"
+        },
+        {
+          "id": "A-6",
+          "level": 6,
+          "name": "Piso 6 · Terraza",
+          "source_label": "PLANTA AZOTEA CANCHAS SINTETICAS",
+          "datum_elevation_m": 16.87,
+          "evidence": "derived"
         }
       ]
     },
@@ -126,11 +134,10 @@
     }
   ],
   "unassigned_sheets": [
-    "PLANTA AZOTEA CANCHAS SINTETICAS",
     "PLANTA AZOTEA CUBIERTAS"
   ],
   "notes": [
-    "The user confirmed Block A as the north bar and Block B as the south body on 2026-11-07; recorded by Claude in level-zones.md @b36d328. Identity confirmation does not certify every height, room or accessibility condition.",
+    "The user confirmed Block A as the north bar and Block B as the south body on 2026-11-07. Identity confirmation does not certify every height, room or accessibility condition.",
     "Sheet level values and local level zones remain documented/derived from their sources. Identity confirmation does not make one datum valid throughout a floor. The historical C2 profile remains a flat slab at scene elevation 3.5 m.",
     "Block B ground-floor clinic also contains N -4.13; first-floor ramps have intermediate levels. A single floor datum does not describe every point.",
     "Plan (x,y) maps to scene (x,elevation,-y). Plan +Y is not geographic north. Survey datums must be reconciled with each exported model before navigation is enabled."

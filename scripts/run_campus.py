@@ -15,7 +15,7 @@ from scripts.campus_profiles import profile_ids
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8001)
-    parser.add_argument("--profile", choices=profile_ids(), default="base")
+    parser.add_argument("--profile", choices=profile_ids(), default="ucc-six-floors-c18")
     parser.add_argument("--database", type=Path, help="Dedicated SQLite file; defaults to uninav-campus.db.")
     args = parser.parse_args()
     if not 0 <= args.port <= 65535:

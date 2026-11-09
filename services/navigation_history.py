@@ -5,6 +5,7 @@ from dataclasses import dataclass, field
 from typing import NamedTuple, Optional
 
 from data_structures.doubly_linked_list import DoublyLinkedList, DoublyNode
+from services.runtime_state import DurableState
 
 MAX_TRAIL_LENGTH: int = 50
 
@@ -43,7 +44,7 @@ class NavigationTrail:
         return found
 
 
-class NavigationHistories:
+class NavigationHistories(DurableState):
     """Back and forward navigation per user, like the history of a web browser."""
 
     def __init__(self) -> None:
@@ -51,7 +52,7 @@ class NavigationHistories:
         self._lock: threading.Lock = threading.Lock()
 
     def visit(self, username: str, stop: NavStop) -> NavigationTrail:
-        with self._lock:
+        with self._lock, self._mutation():
             trail = self._trails.setdefault(username, NavigationTrail())
             if trail.current is not None and trail.current.building_id == stop.building_id:
                 return trail
@@ -67,7 +68,7 @@ class NavigationHistories:
             return self._trails.setdefault(username, NavigationTrail())
 
     def go_back(self, username: str) -> Optional[NavigationTrail]:
-        with self._lock:
+        with self._lock, self._mutation():
             trail = self._trails.setdefault(username, NavigationTrail())
             if not trail.can_go_back:
                 return None
@@ -75,7 +76,7 @@ class NavigationHistories:
             return trail
 
     def go_forward(self, username: str) -> Optional[NavigationTrail]:
-        with self._lock:
+        with self._lock, self._mutation():
             trail = self._trails.setdefault(username, NavigationTrail())
             if not trail.can_go_forward:
                 return None
@@ -83,12 +84,27 @@ class NavigationHistories:
             return trail
 
     def clear(self, username: str) -> None:
-        with self._lock:
+        with self._lock, self._mutation():
             self._trails.pop(username, None)
 
     def clear_all(self) -> None:
-        with self._lock:
+        with self._lock, self._mutation():
             self._trails.clear()
+
+    def _dump(self) -> dict:
+        return {name: {"entries": [[list(stop), current] for stop, current in trail.entries()]}
+                for name, trail in self._trails.items() if trail.current is not None}
+
+    def _restore(self, payload: dict) -> None:
+        restored = {}
+        for name, record in payload.items():
+            trail = NavigationTrail()
+            for stop, current in record["entries"]:
+                node = trail.places.append(NavStop(*stop))
+                if current:
+                    trail.cursor = node
+            restored[name] = trail
+        self._trails = restored
 
 
 navigation_histories: NavigationHistories = NavigationHistories()
