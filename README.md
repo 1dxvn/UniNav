@@ -17,32 +17,132 @@ en [UniNav-Frontend](https://github.com/1dxvn/UniNav-Frontend). La instalación 
 En Windows, instala Python y Node.js con sus opciones de añadirlos al PATH y vuelve a abrir la terminal.
 En distribuciones Linux que separan `venv`, instala también el paquete `python3-venv`.
 
-## Ejecutar desde un clon nuevo
+## Clonar ambos repositorios y ejecutar la aplicación
+
+Son dos repositorios independientes. Primero clona el backend y después clona el frontend **dentro de la
+carpeta del backend**. Mantén el nombre `UniNav-Frontend`: el servidor busca allí la interfaz compilada.
+Sigue los pasos en la misma terminal. No hace falta abrir dos servidores para utilizar la aplicación completa.
+
+### 1. Comprobar los requisitos
+
+En Windows, abre PowerShell y ejecuta:
+
+```powershell
+git --version
+py -3 --version
+node --version
+npm --version
+```
+
+En Linux o macOS, abre una terminal y ejecuta:
 
 ```bash
-git clone --depth 1 https://github.com/1dxvn/UniNav.git
+git --version
+python3 --version
+node --version
+npm --version
+```
+
+Cada comando debe mostrar una versión. Python debe ser 3.11 o posterior y Node.js 22.12 o posterior.
+Si un comando no se reconoce, instala ese requisito y vuelve a abrir la terminal antes de continuar.
+
+### 2. Clonar el backend
+
+Abre la terminal en la carpeta donde quieras guardar el proyecto, por ejemplo Documentos. Debe ser una
+ubicación donde todavía no exista una carpeta llamada `UniNav`. Ejecuta:
+
+```bash
+git clone --depth 1 https://github.com/1dxvn/UniNav.git UniNav
 cd UniNav
 ```
 
-En Windows:
+El primer comando descarga el servidor y crea la carpeta `UniNav`. El segundo entra en ella.
+`--depth 1` descarga la versión actual sin el historial anterior; es suficiente para ejecutar la aplicación.
+
+### 3. Clonar el frontend dentro del backend
+
+Sin salir de `UniNav`, ejecuta:
+
+```bash
+git clone --depth 1 https://github.com/1dxvn/UniNav-Frontend.git UniNav-Frontend
+```
+
+Este comando crea `UniNav/UniNav-Frontend`. **No ejecutes `cd UniNav-Frontend` para el siguiente paso**:
+el comando de arranque se ejecuta desde `UniNav`, donde está `start.py`.
+
+La estructura debe quedar así:
+
+```text
+UniNav/                      # repositorio del backend; terminal situada aquí
+  README.md
+  start.py
+  main.py
+  requirements.txt
+  data/
+  UniNav-Frontend/            # repositorio del frontend
+    README.md
+    package.json
+    package-lock.json
+    src/
+    public/models/
+```
+
+No deben quedar como carpetas hermanas `UniNav/` y `UniNav-Frontend/`, ni debe aparecer una carpeta adicional
+`UniNav/UniNav/`. Cada repositorio conserva su propio historial Git; no tienes que combinarlos.
+
+Puedes comprobar la ubicación en PowerShell:
+
+```powershell
+Test-Path .\start.py
+Test-Path .\UniNav-Frontend\package.json
+```
+
+Ambos resultados deben ser `True`. En Linux o macOS, comprueba ambos archivos con:
+
+```bash
+ls start.py UniNav-Frontend/package.json
+```
+
+### 4. Instalar e iniciar
+
+Desde `UniNav`, ejecuta el comando de tu sistema operativo.
+
+Windows:
 
 ```powershell
 py -3 start.py
 ```
 
-En Linux o macOS:
+Linux o macOS:
 
 ```bash
 python3 start.py
 ```
 
-El comando descarga el frontend dentro de `UniNav-Frontend/`, crea `.venv`, instala las dependencias,
-comprueba los modelos, compila la interfaz y arranca el campus con 235 lugares y 218 conexiones.
-También crea una clave de sesión local en `.env` y la base `uninav-campus.db`.
-No necesitas Blender, planos, una base de datos previa ni archivos de otro equipo.
+El instalador detecta el frontend que acabas de clonar y lo utiliza. Después crea `.venv`, instala las
+dependencias de Python y npm, comprueba los modelos, compila la interfaz y arranca el campus con
+235 lugares y 218 conexiones. También crea una clave de sesión local en `.env` y la base `uninav-campus.db`.
+No necesitas ejecutar `npm ci` o `npm run build` por separado para esta instalación.
 
-Abre **http://127.0.0.1:8001/app/** y deja la terminal abierta. Detén el servidor con `Ctrl+C`.
-Para volver a ejecutarlo, utiliza el mismo comando; conserva los datos existentes.
+La primera ejecución tarda más porque descarga las dependencias y prepara los modelos. Deja que termine
+hasta que la terminal indique que el servidor inició. No necesitas Blender, planos, una base de datos previa
+ni archivos de otro equipo.
+
+### 5. Abrir la aplicación y volver a ejecutarla
+
+Abre **http://127.0.0.1:8001/app/** en el navegador y deja la terminal abierta mientras utilizas la aplicación.
+La API y la interfaz se sirven juntas en ese puerto. Detén el servidor con `Ctrl+C`.
+
+Para abrirla otro día, entra en la carpeta `UniNav` y vuelve a ejecutar `py -3 start.py` en Windows o
+`python3 start.py` en Linux/macOS. No vuelvas a clonar los repositorios: se conservan los datos existentes.
+
+### Alternativa: descargar automáticamente el frontend
+
+También puedes hacer solo el paso 2 y ejecutar `start.py`: si `UniNav-Frontend/` no existe, el instalador
+clona automáticamente ese segundo repositorio en la ubicación correcta. El resultado es el mismo que
+clonar ambos manualmente. Si ya seguiste el paso 3, no crea otra copia del frontend.
+
+## Acceso de demostración
 
 | Usuario de demostración | Contraseña | Función |
 | --- | --- | --- |
@@ -51,6 +151,19 @@ Para volver a ejecutarlo, utiliza el mismo comando; conserva los datos existente
 
 Son credenciales de demostración local. Puedes cambiar la contraseña desde la aplicación.
 Para elegir la contraseña inicial de administrador, define `UNINAV_ADMIN_PASSWORD` en `.env` antes del primer arranque.
+
+## Problemas habituales al clonar o iniciar
+
+- **`destination path 'UniNav' already exists`:** ya hay una carpeta con ese nombre. Si es tu clon del proyecto,
+  entra en ella y continúa desde el paso que falte. Si pertenece a otro proyecto, elige otra ubicación para clonar.
+- **El frontend quedó fuera del backend:** la ubicación esperada es `UniNav/UniNav-Frontend/`. Revisa el árbol
+  del paso 3 antes de iniciar; el repositorio del frontend por sí solo no incluye la API.
+- **`start.py` no se encuentra:** la terminal está en otra carpeta. Vuelve a `UniNav`, donde están `main.py`
+  y `requirements.txt`.
+- **GitHub pide autenticación o responde `Repository not found`:** comprueba la URL y que tu cuenta tenga
+  acceso a ambos repositorios.
+- **La interfaz responde que falta el build:** ejecuta `start.py` desde el backend y espera a que termine la
+  compilación. No abras `index.html` directamente desde el explorador de archivos.
 
 ## Configuración y comandos
 
