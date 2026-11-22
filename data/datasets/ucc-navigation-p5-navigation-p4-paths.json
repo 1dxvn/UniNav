@@ -1,0 +1,16 @@
+{
+  "scope": "ucc:navigation-p4-paths",
+  "revision": "navigation-p56-v1",
+  "source": "DWG P5 and TERRAZAS names/doors; current uploaded models; body/support and two-way stairs validated; manual arrival review pending",
+  "places": [],
+  "paths": [
+    {
+      "code": "ucc:p4:e:c50c6ff4f61df1bf33",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:18674",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "scope": "ucc:floor45-connection",
+  "revision": "navigation-p56-v1",
+  "source": "DWG P5 and TERRAZAS names/doors; current uploaded models; body/support and two-way stairs validated; manual arrival review pending",
+  "places": [
+    {
+      "name": "Classroom 513 A (floor 5)",
+      "x": 61.85,
+      "y": 55.95,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "classroom",
+      "code": "ucc:f45:classroom-513-entrance",
+      "display_name": "Aula 513 A",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    },
+    {
+      "name": "Classroom 512 A (floor 5)",
+      "x": 61.85,
+      "y": 55.95,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "classroom",
+      "code": "ucc:f45:classroom-512-entrance",
+      "display_name": "Aula 512 A",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    },
+    {
+      "name": "Classroom 515 A (floor 5)",
+      "x": 60.05,
+      "y": 53.65,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "classroom",
+      "code": "ucc:f45:classroom-515-entrance",
+      "display_name": "Aula 515 A",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:f45:e043",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:182",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e044",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:183",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e045",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:184",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e046",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:185",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e047",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:186",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e048",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:187",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e049",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:188",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e050",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:189",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e051",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:190",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e052",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:191",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e053",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:192",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e054",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:193",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e055",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:194",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e056",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:195",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e057",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:196",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e058",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:197",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e059",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:198",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e060",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:199",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e061",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:200",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e062",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:201",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e063",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:202",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e064",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:203",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e065",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:204",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e066",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:205",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e067",
+      "source_code": "ucc:p56:east45:f4-landing",
+      "target_code": "ucc:p56:historical:206",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e068",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:207",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e069",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:208",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e070",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:209",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e071",
+      "source_code": "ucc:f45:classroom-512-entrance",
+      "target_code": "ucc:p56:historical:210",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e072",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:211",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e073",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:212",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e074",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:213",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e075",
+      "source_code": "ucc:f45:classroom-513-entrance",
+      "target_code": "ucc:p56:historical:214",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e076",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:215",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e077",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:216",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e078",
+      "source_code": "ucc:p56:east45:f5-landing",
+      "target_code": "ucc:p56:historical:217",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e079",
+      "source_code": "ucc:f45:classroom-515-entrance",
+      "target_code": "ucc:p56:historical:218",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

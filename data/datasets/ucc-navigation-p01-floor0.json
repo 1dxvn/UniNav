@@ -1,0 +1,309 @@
+{
+  "scope": "ucc:floor0-connection",
+  "revision": "navigation-p01-c27-v1",
+  "source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending",
+  "places": [
+    {
+      "name": "Waiting Room (floor 0)",
+      "x": 39.35,
+      "y": 45.85000000000001,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "service",
+      "code": "ucc:f0:waiting-room",
+      "display_name": "SALA DE ESPERA",
+      "block_code": "B",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Clinical Simulation Laboratory (floor 0)",
+      "x": 46.95,
+      "y": 58.25,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "laboratory",
+      "code": "ucc:f0:simulation-lab-entrance",
+      "display_name": "Laboratorio de simulación clínica",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 elevator lobby",
+      "x": 26.35,
+      "y": 52.75,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "service",
+      "code": "ucc:f0:elevator-lobby",
+      "display_name": "Hall de ascensores",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "East stair point 0 (floors 0-1)",
+      "x": 36.35,
+      "y": 55.85000000000001,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:east-stair-00",
+      "display_name": "East stair point 0 (floors 0-1)",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 D32 corridor stand",
+      "x": 47.550000000000004,
+      "y": 52.55,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:sim-lab-outside",
+      "display_name": "Floor 0 D32 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 D32 doorway centre",
+      "x": 47.550000000000004,
+      "y": 53.150000000000006,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:sim-lab-door",
+      "display_name": "Floor 0 D32 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 corridor junction",
+      "x": 39.95,
+      "y": 51.95,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:corridor-junction",
+      "display_name": "Floor 0 corridor junction",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 corridor near the Clinical Simulation Laboratory",
+      "x": 47.550000000000004,
+      "y": 51.95,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:sim-lab-corridor-turn",
+      "display_name": "Floor 0 corridor near the Clinical Simulation Laboratory",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 facade opening, Block A side",
+      "x": 39.95,
+      "y": 50.05,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:facade-north",
+      "display_name": "Floor 0 facade opening, Block A side",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 facade opening, waiting-room side",
+      "x": 40.050000000000004,
+      "y": 48.150000000000006,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:facade-south",
+      "display_name": "Floor 0 facade opening, waiting-room side",
+      "block_code": "B",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 facade sliding door",
+      "x": 39.95,
+      "y": 48.85000000000001,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:facade-opening",
+      "display_name": "Floor 0 facade sliding door",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 north circulation, east",
+      "x": 39.95,
+      "y": 54.55,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:circulation-east",
+      "display_name": "Floor 0 north circulation, east",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Floor 0 north circulation, west",
+      "x": 32.95,
+      "y": 52.95,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:circulation-west",
+      "display_name": "Floor 0 north circulation, west",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "East stair point 24 (floors 0-1)",
+      "x": 38.650000000000006,
+      "y": 55.85000000000001,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f0:east-stair-24",
+      "display_name": "East stair point 24 (floors 0-1)",
+      "block_code": "A",
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:f0:e025",
+      "source_code": "ucc:f0:east-stair-24",
+      "target_code": "ucc:p01:legacy-connector-127",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e026",
+      "source_code": "ucc:f0:east-stair-00",
+      "target_code": "ucc:p01:legacy-connector-128",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e027",
+      "source_code": "ucc:f0:circulation-west",
+      "target_code": "ucc:p01:legacy-connector-129",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e028",
+      "source_code": "ucc:f0:east-stair-00",
+      "target_code": "ucc:p01:legacy-connector-130",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e029",
+      "source_code": "ucc:f0:circulation-east",
+      "target_code": "ucc:p01:legacy-connector-131",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e030",
+      "source_code": "ucc:f0:corridor-junction",
+      "target_code": "ucc:p01:legacy-connector-132",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e031",
+      "source_code": "ucc:f0:facade-north",
+      "target_code": "ucc:p01:legacy-connector-133",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e032",
+      "source_code": "ucc:f0:facade-opening",
+      "target_code": "ucc:p01:legacy-connector-134",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e033",
+      "source_code": "ucc:f0:facade-south",
+      "target_code": "ucc:p01:legacy-connector-135",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e034",
+      "source_code": "ucc:f0:corridor-junction",
+      "target_code": "ucc:p01:legacy-connector-136",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e035",
+      "source_code": "ucc:f0:sim-lab-corridor-turn",
+      "target_code": "ucc:p01:legacy-connector-137",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e036",
+      "source_code": "ucc:f0:sim-lab-outside",
+      "target_code": "ucc:p01:legacy-connector-138",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f0:e037",
+      "source_code": "ucc:f0:sim-lab-door",
+      "target_code": "ucc:p01:legacy-connector-139",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "ucc-pasto",
-  "revision": "dwg-a35f892-identities-b36d328-rooftop-c20",
-  "source": "UniNav-Frontend/docs/blocks/dwg-inventory.md @ a35f892; PLANOS UCC 2025 - B.dwg; UniNav-Frontend/docs/blocks/level-zones.md @b36d328; user confirmation 2026-11-07 16:07: Block A north bar, Block B south body",
+  "revision": "dwg-a35f892-identities-b36d328-C22-hall-user-override",
+  "source": "UniNav-Frontend/docs/blocks/dwg-inventory.md @ a35f892; PLANOS UCC 2025 - B.dwg; UniNav-Frontend/docs/blocks/level-zones.md @b36d328; user confirmation 2026-11-07 16:07: Block A north bar, Block B south body; user explicitly authorized hall +0.63 m to N 0 on 2026-11-10",
   "integrated_dataset": {
     "id": "ucc-first-floor",
     "revision": "ucc-first-floor-3809907",
@@ -30,9 +30,9 @@
           "id": "A-1",
           "level": 1,
           "name": "First floor",
-          "source_label": "PLANTA PRIMER PISO",
-          "datum_elevation_m": -0.63,
-          "evidence": "derived"
+          "source_label": "PLANTA PRIMER PISO; recrecido autorizado por el usuario 2026-11-10",
+          "datum_elevation_m": 0,
+          "evidence": "confirmed"
         },
         {
           "id": "A-2",

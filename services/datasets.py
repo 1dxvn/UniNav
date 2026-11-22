@@ -11,7 +11,8 @@ from models import Building, CampusDataRevision, CampusPath
 from schemas.datasets import CampusDataset, DatasetImportResult
 
 
-def import_dataset(session: Session, dataset: CampusDataset, *, adopt_legacy: bool = False) -> DatasetImportResult:
+def import_dataset(session: Session, dataset: CampusDataset, *, adopt_legacy: bool = False,
+                   _places_only: bool = False) -> DatasetImportResult:
     payload_hash = hashlib.sha256(json.dumps(dataset.model_dump(mode="json"),
         sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()).hexdigest()
     counts = [0, 0]
@@ -61,6 +62,12 @@ def import_dataset(session: Session, dataset: CampusDataset, *, adopt_legacy: bo
             places[record.code] = place
             by_name[record.name] = place
         session.flush()
+        if _places_only:
+            # Startup prepares every scope's places before cross-floor paths.
+            # The enclosing profile transaction still owns the entire import.
+            return DatasetImportResult(scope=dataset.scope, revision=dataset.revision,
+                payload_hash=payload_hash, created_places=counts[0], created_paths=0,
+                unchanged_revision=revision is not None)
         for record in dataset.paths:
             if record.source_code not in places or record.target_code not in places:
                 raise ValueError(f"Unknown endpoint for path: {record.code}.")

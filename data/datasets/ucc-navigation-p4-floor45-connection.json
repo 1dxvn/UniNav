@@ -1,0 +1,511 @@
+{
+  "scope": "ucc:floor45-connection",
+  "revision": "navigation-p4-c29-v1",
+  "source": "DWG P4 room names and doors; uploaded C29 support, body-clearance and stair validation; 2026-11-16; manual arrivals pending",
+  "places": [
+    {
+      "name": "Classroom 421 A (floor 4)",
+      "x": 52.65,
+      "y": 55.85,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "classroom",
+      "code": "ucc:f45:classroom-421-entrance",
+      "display_name": "Aula 421 A",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Classroom 420 A (floor 4)",
+      "x": 43.35,
+      "y": 55.85,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "classroom",
+      "code": "ucc:f45:classroom-420-entrance",
+      "display_name": "Aula 420 A",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Classroom 422 A (floor 4)",
+      "x": 61.85,
+      "y": 55.85,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "classroom",
+      "code": "ucc:f45:classroom-422-entrance",
+      "display_name": "Aula 422 A",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 D26 corridor stand",
+      "x": 52.650000000000006,
+      "y": 55.85000000000001,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-421-outside",
+      "display_name": "Floor 4 D26 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 D26 doorway centre",
+      "x": 52.25,
+      "y": 56.150000000000006,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-421-door",
+      "display_name": "Floor 4 D26 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 D27 corridor stand",
+      "x": 43.35,
+      "y": 55.85000000000001,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-420-outside",
+      "display_name": "Floor 4 D27 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 D27 doorway centre",
+      "x": 43.150000000000006,
+      "y": 56.05000000000001,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-420-door",
+      "display_name": "Floor 4 D27 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 D28 corridor stand",
+      "x": 61.85000000000001,
+      "y": 55.95,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-422-outside",
+      "display_name": "Floor 4 D28 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 D28 doorway centre",
+      "x": 61.85000000000001,
+      "y": 56.05000000000001,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-422-door",
+      "display_name": "Floor 4 D28 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 corridor near Classroom 420 A",
+      "x": 43.35,
+      "y": 54.650000000000006,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-420-corridor-turn",
+      "display_name": "Floor 4 corridor near Classroom 420 A",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 corridor near Classroom 421 A",
+      "x": 52.650000000000006,
+      "y": 54.650000000000006,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-421-corridor-turn",
+      "display_name": "Floor 4 corridor near Classroom 421 A",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 corridor near Classroom 422 A",
+      "x": 61.85000000000001,
+      "y": 54.650000000000006,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-room-422-corridor-turn",
+      "display_name": "Floor 4 corridor near Classroom 422 A",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 4 north circulation",
+      "x": 38.95,
+      "y": 54.650000000000006,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f45:f4-north-corridor",
+      "display_name": "Floor 4 north circulation",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.369999885559082,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:f45:e003",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:142",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e004",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:143",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e005",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:144",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e006",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:145",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e007",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:146",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e008",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:147",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e009",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:148",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e010",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:149",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e011",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:150",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e012",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:151",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e013",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:152",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e014",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:153",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e015",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:154",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e016",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:155",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e017",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:156",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e018",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:157",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e019",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:158",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e020",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:159",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e021",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:160",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e022",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:161",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e023",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:162",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e024",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:163",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e025",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:164",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e026",
+      "source_code": "ucc:p4:east34:f3-landing",
+      "target_code": "ucc:p4:historical:165",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e027",
+      "source_code": "ucc:f45:f4-north-corridor",
+      "target_code": "ucc:p4:historical:166",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e028",
+      "source_code": "ucc:f45:f4-north-corridor",
+      "target_code": "ucc:p4:historical:167",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e029",
+      "source_code": "ucc:f45:f4-room-420-corridor-turn",
+      "target_code": "ucc:p4:historical:168",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e030",
+      "source_code": "ucc:f45:f4-room-420-outside",
+      "target_code": "ucc:p4:historical:169",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e031",
+      "source_code": "ucc:f45:f4-room-420-door",
+      "target_code": "ucc:p4:historical:170",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e032",
+      "source_code": "ucc:f45:f4-room-420-corridor-turn",
+      "target_code": "ucc:p4:historical:171",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e033",
+      "source_code": "ucc:f45:f4-room-421-corridor-turn",
+      "target_code": "ucc:p4:historical:172",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e034",
+      "source_code": "ucc:f45:f4-room-421-outside",
+      "target_code": "ucc:p4:historical:173",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e035",
+      "source_code": "ucc:f45:f4-room-421-door",
+      "target_code": "ucc:p4:historical:174",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e036",
+      "source_code": "ucc:f45:f4-room-421-corridor-turn",
+      "target_code": "ucc:p4:historical:175",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e037",
+      "source_code": "ucc:f45:f4-room-422-corridor-turn",
+      "target_code": "ucc:p4:historical:176",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e038",
+      "source_code": "ucc:f45:f4-room-422-outside",
+      "target_code": "ucc:p4:historical:177",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e039",
+      "source_code": "ucc:f45:f4-room-422-door",
+      "target_code": "ucc:p4:historical:178",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e040",
+      "source_code": "ucc:p4:east34:f4-landing",
+      "target_code": "ucc:p4:historical:179",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e041",
+      "source_code": "ucc:p4:east34:f4-landing",
+      "target_code": "ucc:p4:historical:180",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f45:e042",
+      "source_code": "ucc:p4:east34:f4-landing",
+      "target_code": "ucc:p4:historical:181",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

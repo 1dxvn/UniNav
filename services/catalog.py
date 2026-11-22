@@ -19,6 +19,11 @@ def catalog_for_database(session: Session) -> CatalogResponse:
     # Do not present UCC observations as the catalogue of an unrelated sample DB.
     catalog = read_catalog()
     places = {place.name: place for place in session.scalars(select(Building))}
+    # Versioned campus imports preserve these identities while routes and floor
+    # elevations evolve. Catalogue recognition must not require the old flat graph.
+    if all(name in places and places[name].floor == floor and places[name].data_scope == 'ucc:floor1'
+           for name, _x, _y, floor, *_rest in PLACES):
+        return CatalogResponse(available=True, catalog=catalog)
     for name, x, y, floor, *_ in PLACES:
         place = places.get(name)
         if (place is None or place.floor != floor or abs(place.x-x) > 0.001 or abs(place.y-y) > 0.001

@@ -1,0 +1,6104 @@
+{
+  "scope": "ucc:navigation-p01-paths",
+  "revision": "navigation-p01-c27-v1",
+  "source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending",
+  "places": [],
+  "paths": [
+    {
+      "code": "ucc:p01:e00001",
+      "source_code": "ucc:p01:west-stair-00",
+      "target_code": "ucc:p01:west-stair-01",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00002",
+      "source_code": "ucc:p01:west-stair-01",
+      "target_code": "ucc:p01:west-stair-02",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00003",
+      "source_code": "ucc:p01:west-stair-02",
+      "target_code": "ucc:p01:west-stair-03",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00004",
+      "source_code": "ucc:p01:west-stair-03",
+      "target_code": "ucc:p01:west-stair-04",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00005",
+      "source_code": "ucc:p01:west-stair-04",
+      "target_code": "ucc:p01:west-stair-05",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00006",
+      "source_code": "ucc:p01:west-stair-05",
+      "target_code": "ucc:p01:west-stair-06",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00007",
+      "source_code": "ucc:p01:west-stair-06",
+      "target_code": "ucc:p01:west-stair-07",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00008",
+      "source_code": "ucc:p01:west-stair-07",
+      "target_code": "ucc:p01:west-stair-08",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00009",
+      "source_code": "ucc:p01:west-stair-08",
+      "target_code": "ucc:p01:west-stair-09",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00010",
+      "source_code": "ucc:p01:west-stair-09",
+      "target_code": "ucc:p01:west-stair-10",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00011",
+      "source_code": "ucc:p01:west-stair-10",
+      "target_code": "ucc:p01:west-stair-11",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00012",
+      "source_code": "ucc:p01:west-stair-11",
+      "target_code": "ucc:p01:west-stair-12",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00013",
+      "source_code": "ucc:p01:west-stair-12",
+      "target_code": "ucc:p01:west-stair-13",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00014",
+      "source_code": "ucc:p01:west-stair-13",
+      "target_code": "ucc:p01:west-stair-14",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00015",
+      "source_code": "ucc:p01:west-stair-14",
+      "target_code": "ucc:p01:west-stair-15",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00016",
+      "source_code": "ucc:p01:west-stair-15",
+      "target_code": "ucc:p01:west-stair-16",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00017",
+      "source_code": "ucc:p01:west-stair-16",
+      "target_code": "ucc:p01:west-stair-17",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00018",
+      "source_code": "ucc:p01:west-stair-17",
+      "target_code": "ucc:p01:west-stair-18",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00019",
+      "source_code": "ucc:p01:west-stair-18",
+      "target_code": "ucc:p01:west-stair-19",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00020",
+      "source_code": "ucc:p01:west-landing-f0",
+      "target_code": "ucc:p01:west-stair-00",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00021",
+      "source_code": "ucc:p01:west-landing-f1",
+      "target_code": "ucc:p01:west-stair-19",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00022",
+      "source_code": "ucc:p01:f0:r025",
+      "target_code": "ucc:p01:f0:turn-375-362",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00023",
+      "source_code": "ucc:p01:f0:turn-375-362",
+      "target_code": "ucc:p01:f0:turn-367-370",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00024",
+      "source_code": "ucc:p01:f0:r061",
+      "target_code": "ucc:p01:f0:turn-367-365",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00025",
+      "source_code": "ucc:p01:f0:turn-367-365",
+      "target_code": "ucc:p01:f0:turn-367-370",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00026",
+      "source_code": "ucc:p01:f0:r026",
+      "target_code": "ucc:p01:f0:r027",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00027",
+      "source_code": "ucc:p01:f0:r026",
+      "target_code": "ucc:p01:f0:turn-393-371",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00028",
+      "source_code": "ucc:p01:f0:turn-393-371",
+      "target_code": "ucc:p01:f0:turn-383-380",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00029",
+      "source_code": "ucc:p01:f0:turn-367-370",
+      "target_code": "ucc:p01:f0:turn-366-372",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00030",
+      "source_code": "ucc:p01:f0:r024",
+      "target_code": "ucc:p01:f0:turn-366-372",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00031",
+      "source_code": "ucc:p01:f0:turn-366-372",
+      "target_code": "ucc:p01:f0:turn-381-378",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00032",
+      "source_code": "ucc:p01:f0:turn-381-378",
+      "target_code": "ucc:p01:f0:turn-383-380",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00033",
+      "source_code": "ucc:p01:f0:turn-383-380",
+      "target_code": "ucc:p01:f0:turn-392-420",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00034",
+      "source_code": "ucc:p01:f0:turn-392-420",
+      "target_code": "ucc:p01:f0:turn-394-422",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00035",
+      "source_code": "ucc:p01:f0:r047",
+      "target_code": "ucc:p01:f0:turn-353-420",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00036",
+      "source_code": "ucc:p01:f0:turn-353-420",
+      "target_code": "ucc:p01:f0:turn-358-421",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00037",
+      "source_code": "ucc:p01:f0:turn-358-421",
+      "target_code": "ucc:p01:f0:turn-383-421",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00038",
+      "source_code": "ucc:p01:f0:turn-383-421",
+      "target_code": "ucc:p01:f0:turn-391-425",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00039",
+      "source_code": "ucc:p01:f0:turn-394-422",
+      "target_code": "ucc:p01:f0:turn-416-422",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00040",
+      "source_code": "ucc:p01:f0:turn-416-422",
+      "target_code": "ucc:p01:f0:turn-430-446",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00041",
+      "source_code": "ucc:p01:f0:turn-430-446",
+      "target_code": "ucc:p01:f0:turn-431-460",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00042",
+      "source_code": "ucc:p01:f0:turn-431-460",
+      "target_code": "ucc:p01:f0:turn-459-485",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00043",
+      "source_code": "ucc:p01:f0:turn-459-485",
+      "target_code": "ucc:p01:f0:turn-459-519",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00044",
+      "source_code": "ucc:p01:f0:turn-394-422",
+      "target_code": "ucc:p01:f0:turn-391-425",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00045",
+      "source_code": "ucc:p01:f0:turn-391-425",
+      "target_code": "ucc:p01:f0:turn-378-459",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00046",
+      "source_code": "ucc:p01:f0:turn-378-459",
+      "target_code": "ucc:p01:f0:turn-353-459",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00047",
+      "source_code": "ucc:p01:f0:turn-353-459",
+      "target_code": "ucc:p01:f0:turn-351-462",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00048",
+      "source_code": "ucc:p01:f0:turn-351-462",
+      "target_code": "ucc:p01:f0:turn-351-469",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00049",
+      "source_code": "ucc:p01:f0:turn-351-469",
+      "target_code": "ucc:p01:f0:r045",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00050",
+      "source_code": "ucc:p01:f0:r009",
+      "target_code": "ucc:p01:f0:turn-517-456",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00051",
+      "source_code": "ucc:p01:f0:r005",
+      "target_code": "ucc:p01:f0:turn-539-457",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00052",
+      "source_code": "ucc:p01:f0:turn-539-457",
+      "target_code": "ucc:p01:f0:turn-517-456",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00053",
+      "source_code": "ucc:p01:f0:turn-517-456",
+      "target_code": "ucc:p01:f0:turn-513-456",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00054",
+      "source_code": "ucc:p01:f0:turn-513-456",
+      "target_code": "ucc:p01:f0:turn-509-468",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00055",
+      "source_code": "ucc:p01:f0:turn-509-468",
+      "target_code": "ucc:p01:f0:turn-509-488",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00056",
+      "source_code": "ucc:p01:f0:r044",
+      "target_code": "ucc:p01:f0:turn-603-502",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00057",
+      "source_code": "ucc:p01:f0:turn-603-502",
+      "target_code": "ucc:p01:f0:turn-608-505",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00058",
+      "source_code": "ucc:p01:f0:turn-608-505",
+      "target_code": "ucc:p01:f0:turn-613-505",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00059",
+      "source_code": "ucc:p01:f0:turn-613-505",
+      "target_code": "ucc:p01:f0:turn-616-502",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00060",
+      "source_code": "ucc:p01:f0:r008",
+      "target_code": "ucc:p01:f0:turn-513-488",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00061",
+      "source_code": "ucc:p01:f0:turn-513-488",
+      "target_code": "ucc:p01:f0:turn-509-488",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00062",
+      "source_code": "ucc:p01:f0:turn-509-488",
+      "target_code": "ucc:p01:f0:turn-508-499",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00063",
+      "source_code": "ucc:p01:f0:turn-508-499",
+      "target_code": "ucc:p01:f0:turn-508-520",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00064",
+      "source_code": "ucc:p01:f0:turn-508-520",
+      "target_code": "ucc:p01:f0:turn-512-524",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00065",
+      "source_code": "ucc:p01:f0:r011",
+      "target_code": "ucc:p01:f0:turn-634-487",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00066",
+      "source_code": "ucc:p01:f0:turn-634-487",
+      "target_code": "ucc:p01:f0:turn-628-489",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00067",
+      "source_code": "ucc:p01:f0:turn-628-489",
+      "target_code": "ucc:p01:f0:turn-616-502",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00068",
+      "source_code": "ucc:p01:f0:r012",
+      "target_code": "ucc:p01:f0:turn-540-524",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00069",
+      "source_code": "ucc:p01:f0:turn-540-524",
+      "target_code": "ucc:p01:f0:turn-533-523",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00070",
+      "source_code": "ucc:p01:f0:turn-533-523",
+      "target_code": "ucc:p01:f0:turn-529-520",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00071",
+      "source_code": "ucc:p01:f0:turn-616-502",
+      "target_code": "ucc:p01:f0:turn-616-505",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00072",
+      "source_code": "ucc:p01:f0:turn-616-505",
+      "target_code": "ucc:p01:f0:r010",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00073",
+      "source_code": "ucc:p01:f0:r004",
+      "target_code": "ucc:p01:f0:turn-676-508",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00074",
+      "source_code": "ucc:p01:f0:turn-676-508",
+      "target_code": "ucc:p01:f0:turn-675-517",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00075",
+      "source_code": "ucc:p01:f0:turn-675-517",
+      "target_code": "ucc:p01:f0:r003",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00076",
+      "source_code": "ucc:p01:f0:r007",
+      "target_code": "ucc:p01:f0:turn-517-520",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00077",
+      "source_code": "ucc:p01:f0:turn-517-520",
+      "target_code": "ucc:p01:f0:turn-512-524",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00078",
+      "source_code": "ucc:p01:f0:r006",
+      "target_code": "ucc:p01:f0:turn-529-520",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00079",
+      "source_code": "ucc:p01:f0:turn-459-519",
+      "target_code": "ucc:p01:f0:turn-430-519",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00080",
+      "source_code": "ucc:p01:f0:turn-430-519",
+      "target_code": "ucc:p01:f0:r062",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00081",
+      "source_code": "ucc:p01:f0:turn-459-519",
+      "target_code": "ucc:p01:f0:turn-460-536",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00082",
+      "source_code": "ucc:p01:f0:turn-460-536",
+      "target_code": "ucc:p01:f0:turn-477-559",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00083",
+      "source_code": "ucc:p01:f0:turn-529-520",
+      "target_code": "ucc:p01:f0:turn-518-530",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00084",
+      "source_code": "ucc:p01:f0:turn-512-524",
+      "target_code": "ucc:p01:f0:turn-518-530",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00085",
+      "source_code": "ucc:p01:f0:r002",
+      "target_code": "ucc:p01:f0:turn-721-541",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00086",
+      "source_code": "ucc:p01:f0:turn-721-541",
+      "target_code": "ucc:p01:f0:turn-721-544",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00087",
+      "source_code": "ucc:p01:f0:turn-721-544",
+      "target_code": "ucc:p01:f0:turn-724-545",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00088",
+      "source_code": "ucc:p01:f0:turn-724-545",
+      "target_code": "ucc:p01:f0:turn-744-545",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00089",
+      "source_code": "ucc:p01:f0:r001",
+      "target_code": "ucc:p01:f0:turn-744-545",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00090",
+      "source_code": "ucc:p01:f0:turn-518-530",
+      "target_code": "ucc:p01:f0:turn-527-543",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00091",
+      "source_code": "ucc:p01:f0:turn-527-543",
+      "target_code": "ucc:p01:f0:turn-532-556",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00092",
+      "source_code": "ucc:p01:f0:turn-532-556",
+      "target_code": "ucc:p01:f0:turn-535-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00093",
+      "source_code": "ucc:p01:f0:r010",
+      "target_code": "ucc:p01:f0:turn-605-540",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00094",
+      "source_code": "ucc:p01:f0:turn-605-540",
+      "target_code": "ucc:p01:f0:turn-603-543",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00095",
+      "source_code": "ucc:p01:f0:turn-603-543",
+      "target_code": "ucc:p01:f0:turn-600-560",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00096",
+      "source_code": "ucc:p01:f0:turn-600-560",
+      "target_code": "ucc:p01:f0:turn-603-563",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00097",
+      "source_code": "ucc:p01:f0:turn-603-563",
+      "target_code": "ucc:p01:f0:turn-608-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00098",
+      "source_code": "ucc:p01:f0:turn-744-545",
+      "target_code": "ucc:p01:f0:turn-759-552",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00099",
+      "source_code": "ucc:p01:f0:turn-759-552",
+      "target_code": "ucc:p01:f0:r017",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00100",
+      "source_code": "ucc:p01:f0:turn-744-545",
+      "target_code": "ucc:p01:f0:turn-733-556",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00101",
+      "source_code": "ucc:p01:f0:r003",
+      "target_code": "ucc:p01:f0:turn-661-560",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00102",
+      "source_code": "ucc:p01:f0:turn-661-560",
+      "target_code": "ucc:p01:f0:turn-661-565",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00103",
+      "source_code": "ucc:p01:f0:turn-661-565",
+      "target_code": "ucc:p01:f0:turn-663-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00104",
+      "source_code": "ucc:p01:f0:s09",
+      "target_code": "ucc:p01:f0:turn-524-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00105",
+      "source_code": "ucc:p01:f0:turn-733-556",
+      "target_code": "ucc:p01:f0:turn-714-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00106",
+      "source_code": "ucc:p01:f0:turn-714-567",
+      "target_code": "ucc:p01:f0:turn-663-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00107",
+      "source_code": "ucc:p01:f0:turn-733-556",
+      "target_code": "ucc:p01:f0:turn-747-572",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00108",
+      "source_code": "ucc:p01:f0:r022",
+      "target_code": "ucc:p01:f0:turn-330-557",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00109",
+      "source_code": "ucc:p01:f0:turn-330-557",
+      "target_code": "ucc:p01:f0:turn-332-555",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00110",
+      "source_code": "ucc:p01:f0:turn-332-555",
+      "target_code": "ucc:p01:f0:turn-339-555",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00111",
+      "source_code": "ucc:p01:f0:turn-339-555",
+      "target_code": "ucc:p01:f0:turn-345-557",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00112",
+      "source_code": "ucc:p01:f0:turn-345-557",
+      "target_code": "ucc:p01:f0:turn-352-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00113",
+      "source_code": "ucc:p01:f0:turn-352-561",
+      "target_code": "ucc:p01:f0:turn-372-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00114",
+      "source_code": "ucc:p01:f0:turn-372-561",
+      "target_code": "ucc:p01:f0:turn-388-578",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00115",
+      "source_code": "ucc:p01:f0:turn-388-578",
+      "target_code": "ucc:p01:f0:turn-389-581",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00116",
+      "source_code": "ucc:p01:f0:turn-389-581",
+      "target_code": "ucc:p01:f0:turn-413-582",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00117",
+      "source_code": "ucc:p01:f0:turn-413-582",
+      "target_code": "ucc:p01:f0:turn-422-593",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00118",
+      "source_code": "ucc:p01:f0:turn-330-557",
+      "target_code": "ucc:p01:f0:r018",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00119",
+      "source_code": "ucc:p01:f0:turn-477-559",
+      "target_code": "ucc:p01:f0:turn-483-559",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00120",
+      "source_code": "ucc:p01:f0:turn-483-559",
+      "target_code": "ucc:p01:f0:turn-497-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00121",
+      "source_code": "ucc:p01:f0:turn-497-561",
+      "target_code": "ucc:p01:f0:turn-498-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00122",
+      "source_code": "ucc:p01:f0:turn-498-561",
+      "target_code": "ucc:p01:f0:turn-500-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00123",
+      "source_code": "ucc:p01:f0:turn-500-561",
+      "target_code": "ucc:p01:f0:turn-501-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00124",
+      "source_code": "ucc:p01:f0:turn-501-561",
+      "target_code": "ucc:p01:f0:turn-503-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00125",
+      "source_code": "ucc:p01:f0:turn-503-561",
+      "target_code": "ucc:p01:f0:turn-504-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00126",
+      "source_code": "ucc:p01:f0:turn-477-559",
+      "target_code": "ucc:p01:f0:turn-452-583",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00127",
+      "source_code": "ucc:p01:f0:turn-452-583",
+      "target_code": "ucc:p01:f0:turn-429-583",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00128",
+      "source_code": "ucc:p01:f0:turn-429-583",
+      "target_code": "ucc:p01:f0:turn-422-593",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00129",
+      "source_code": "ucc:p01:f0:turn-504-561",
+      "target_code": "ucc:p01:f0:turn-506-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00130",
+      "source_code": "ucc:p01:f0:turn-506-561",
+      "target_code": "ucc:p01:f0:turn-507-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00131",
+      "source_code": "ucc:p01:f0:turn-507-561",
+      "target_code": "ucc:p01:f0:turn-509-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00132",
+      "source_code": "ucc:p01:f0:turn-509-561",
+      "target_code": "ucc:p01:f0:turn-510-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00133",
+      "source_code": "ucc:p01:f0:turn-510-561",
+      "target_code": "ucc:p01:f0:turn-512-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00134",
+      "source_code": "ucc:p01:f0:turn-512-561",
+      "target_code": "ucc:p01:f0:turn-513-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00135",
+      "source_code": "ucc:p01:f0:turn-513-561",
+      "target_code": "ucc:p01:f0:turn-515-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00136",
+      "source_code": "ucc:p01:f0:turn-515-561",
+      "target_code": "ucc:p01:f0:turn-516-561",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00137",
+      "source_code": "ucc:p01:f0:turn-516-561",
+      "target_code": "ucc:p01:f0:turn-524-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00138",
+      "source_code": "ucc:p01:f0:turn-504-561",
+      "target_code": "ucc:p01:f0:turn-506-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00139",
+      "source_code": "ucc:p01:f0:turn-506-567",
+      "target_code": "ucc:p01:f0:turn-507-568",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00140",
+      "source_code": "ucc:p01:f0:turn-507-568",
+      "target_code": "ucc:p01:f0:turn-509-570",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00141",
+      "source_code": "ucc:p01:f0:turn-509-570",
+      "target_code": "ucc:p01:f0:turn-510-571",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00142",
+      "source_code": "ucc:p01:f0:turn-510-571",
+      "target_code": "ucc:p01:f0:turn-512-573",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00143",
+      "source_code": "ucc:p01:f0:turn-512-573",
+      "target_code": "ucc:p01:f0:turn-513-574",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00144",
+      "source_code": "ucc:p01:f0:turn-513-574",
+      "target_code": "ucc:p01:f0:turn-515-576",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00145",
+      "source_code": "ucc:p01:f0:turn-515-576",
+      "target_code": "ucc:p01:f0:turn-515-577",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00146",
+      "source_code": "ucc:p01:f0:turn-515-577",
+      "target_code": "ucc:p01:f0:turn-516-586",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00147",
+      "source_code": "ucc:p01:f0:turn-516-586",
+      "target_code": "ucc:f0:waiting-room",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00148",
+      "source_code": "ucc:p01:f0:turn-524-561",
+      "target_code": "ucc:p01:f0:turn-535-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00149",
+      "source_code": "ucc:p01:f0:turn-535-561",
+      "target_code": "ucc:p01:f0:turn-556-562",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00150",
+      "source_code": "ucc:p01:f0:r013",
+      "target_code": "ucc:p01:f0:turn-556-562",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00151",
+      "source_code": "ucc:p01:f0:turn-556-562",
+      "target_code": "ucc:p01:f0:turn-565-562",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00152",
+      "source_code": "ucc:p01:f0:turn-565-562",
+      "target_code": "ucc:p01:f0:turn-608-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00153",
+      "source_code": "ucc:p01:f0:turn-608-567",
+      "target_code": "ucc:p01:f0:turn-657-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00154",
+      "source_code": "ucc:p01:f0:turn-657-567",
+      "target_code": "ucc:p01:f0:turn-663-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00155",
+      "source_code": "ucc:p01:f0:turn-657-567",
+      "target_code": "ucc:p01:f0:turn-657-591",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00156",
+      "source_code": "ucc:p01:f0:turn-657-591",
+      "target_code": "ucc:p01:f0:r014",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00157",
+      "source_code": "ucc:p01:f0:r016",
+      "target_code": "ucc:p01:f0:turn-757-566",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00158",
+      "source_code": "ucc:p01:f0:turn-757-566",
+      "target_code": "ucc:p01:f0:turn-753-566",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00159",
+      "source_code": "ucc:p01:f0:turn-753-566",
+      "target_code": "ucc:p01:f0:turn-747-572",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00160",
+      "source_code": "ucc:p01:f0:r018",
+      "target_code": "ucc:p01:f0:turn-320-579",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00161",
+      "source_code": "ucc:p01:f0:turn-747-572",
+      "target_code": "ucc:p01:f0:turn-759-582",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00162",
+      "source_code": "ucc:p01:f0:turn-759-582",
+      "target_code": "ucc:p01:f0:r015",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00163",
+      "source_code": "ucc:p01:f0:r021",
+      "target_code": "ucc:p01:f0:turn-304-579",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00164",
+      "source_code": "ucc:p01:f0:turn-304-579",
+      "target_code": "ucc:p01:f0:turn-318-579",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00165",
+      "source_code": "ucc:p01:f0:turn-318-579",
+      "target_code": "ucc:p01:f0:turn-319-580",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00166",
+      "source_code": "ucc:p01:f0:turn-304-579",
+      "target_code": "ucc:p01:f0:r020",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00167",
+      "source_code": "ucc:p01:f0:turn-320-579",
+      "target_code": "ucc:p01:f0:turn-327-579",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00168",
+      "source_code": "ucc:p01:f0:turn-327-579",
+      "target_code": "ucc:p01:f0:turn-328-582",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00169",
+      "source_code": "ucc:p01:f0:turn-328-582",
+      "target_code": "ucc:p01:f0:turn-328-594",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00170",
+      "source_code": "ucc:p01:f0:turn-328-594",
+      "target_code": "ucc:p01:f0:turn-325-639",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00171",
+      "source_code": "ucc:p01:f0:turn-320-579",
+      "target_code": "ucc:p01:f0:turn-319-580",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00172",
+      "source_code": "ucc:p01:f0:turn-319-580",
+      "target_code": "ucc:p01:f0:turn-317-587",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00173",
+      "source_code": "ucc:p01:f0:turn-317-587",
+      "target_code": "ucc:p01:f0:r019",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00174",
+      "source_code": "ucc:p01:f0:turn-422-593",
+      "target_code": "ucc:p01:f0:turn-420-596",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00175",
+      "source_code": "ucc:p01:f0:turn-420-596",
+      "target_code": "ucc:p01:f0:turn-419-605",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00176",
+      "source_code": "ucc:p01:f0:turn-419-605",
+      "target_code": "ucc:p01:f0:turn-419-665",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00177",
+      "source_code": "ucc:p01:f0:s10",
+      "target_code": "ucc:p01:f0:turn-467-639",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00178",
+      "source_code": "ucc:p01:f0:turn-467-639",
+      "target_code": "ucc:p01:f0:turn-467-660",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00179",
+      "source_code": "ucc:p01:f0:turn-467-660",
+      "target_code": "ucc:p01:f0:turn-464-662",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00180",
+      "source_code": "ucc:p01:f0:turn-464-662",
+      "target_code": "ucc:p01:f0:turn-461-662",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00181",
+      "source_code": "ucc:p01:f0:turn-461-662",
+      "target_code": "ucc:p01:f0:turn-456-657",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00182",
+      "source_code": "ucc:p01:f0:r049",
+      "target_code": "ucc:p01:f0:turn-325-639",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00183",
+      "source_code": "ucc:p01:f0:turn-325-639",
+      "target_code": "ucc:p01:f0:turn-325-693",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00184",
+      "source_code": "ucc:p01:f0:turn-325-693",
+      "target_code": "ucc:p01:f0:turn-310-705",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00185",
+      "source_code": "ucc:p01:f0:turn-310-705",
+      "target_code": "ucc:p01:f0:r023",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00186",
+      "source_code": "ucc:p01:f0:r052",
+      "target_code": "ucc:p01:f0:turn-456-654",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00187",
+      "source_code": "ucc:p01:f0:turn-456-654",
+      "target_code": "ucc:p01:f0:turn-456-657",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00188",
+      "source_code": "ucc:p01:f0:turn-456-657",
+      "target_code": "ucc:p01:f0:turn-456-661",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00189",
+      "source_code": "ucc:p01:f0:turn-456-661",
+      "target_code": "ucc:p01:f0:turn-452-665",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00190",
+      "source_code": "ucc:p01:f0:turn-419-665",
+      "target_code": "ucc:p01:f0:turn-452-665",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00191",
+      "source_code": "ucc:p01:f0:turn-419-665",
+      "target_code": "ucc:p01:f0:turn-418-668",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00192",
+      "source_code": "ucc:p01:f0:turn-418-668",
+      "target_code": "ucc:p01:f0:turn-415-690",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00193",
+      "source_code": "ucc:p01:f0:turn-452-665",
+      "target_code": "ucc:p01:f0:r053",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00194",
+      "source_code": "ucc:p01:f0:r053",
+      "target_code": "ucc:p01:f0:turn-470-666",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00195",
+      "source_code": "ucc:p01:f0:turn-470-666",
+      "target_code": "ucc:p01:f0:r050",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00196",
+      "source_code": "ucc:f0:waiting-room",
+      "target_code": "ucc:f0:facade-south",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00197",
+      "source_code": "ucc:p01:f0:r051",
+      "target_code": "ucc:p01:f0:turn-423-697",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00198",
+      "source_code": "ucc:p01:f0:turn-423-697",
+      "target_code": "ucc:p01:f0:turn-419-697",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00199",
+      "source_code": "ucc:p01:f0:turn-419-697",
+      "target_code": "ucc:p01:f0:turn-415-690",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00200",
+      "source_code": "ucc:p01:f0:turn-415-690",
+      "target_code": "ucc:p01:f0:turn-409-703",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00201",
+      "source_code": "ucc:f0:facade-south",
+      "target_code": "ucc:f0:facade-opening",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00202",
+      "source_code": "ucc:p01:west-landing-f0",
+      "target_code": "ucc:p01:f0:turn-409-703",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00203",
+      "source_code": "ucc:p01:f0:turn-409-703",
+      "target_code": "ucc:p01:f0:r028",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00204",
+      "source_code": "ucc:p01:f0:r059",
+      "target_code": "ucc:p01:f0:turn-713-735",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00205",
+      "source_code": "ucc:f0:facade-north",
+      "target_code": "ucc:f0:corridor-junction",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00206",
+      "source_code": "ucc:p01:f0:r037",
+      "target_code": "ucc:p01:f0:turn-485-735",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00207",
+      "source_code": "ucc:p01:f0:turn-485-735",
+      "target_code": "ucc:p01:f0:turn-485-739",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00208",
+      "source_code": "ucc:p01:f0:turn-485-739",
+      "target_code": "ucc:p01:f0:turn-503-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00209",
+      "source_code": "ucc:p01:f0:r066",
+      "target_code": "ucc:p01:f0:turn-470-733",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00210",
+      "source_code": "ucc:p01:f0:turn-470-733",
+      "target_code": "ucc:p01:f0:turn-471-736",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00211",
+      "source_code": "ucc:p01:f0:turn-471-736",
+      "target_code": "ucc:p01:f0:turn-471-739",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00212",
+      "source_code": "ucc:p01:f0:turn-471-739",
+      "target_code": "ucc:p01:f0:turn-460-750",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00213",
+      "source_code": "ucc:p01:f0:r065",
+      "target_code": "ucc:p01:f0:turn-389-734",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00214",
+      "source_code": "ucc:p01:f0:turn-389-734",
+      "target_code": "ucc:p01:f0:turn-394-739",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00215",
+      "source_code": "ucc:p01:f0:turn-394-739",
+      "target_code": "ucc:p01:f0:turn-399-739",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00216",
+      "source_code": "ucc:p01:f0:turn-399-739",
+      "target_code": "ucc:p01:f0:turn-402-736",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00217",
+      "source_code": "ucc:p01:f0:r064",
+      "target_code": "ucc:p01:f0:turn-402-736",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00218",
+      "source_code": "ucc:p01:f0:turn-605-735",
+      "target_code": "ucc:p01:f0:turn-534-744",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00219",
+      "source_code": "ucc:p01:f0:turn-605-735",
+      "target_code": "ucc:p01:f0:turn-617-735",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00220",
+      "source_code": "ucc:p01:f0:turn-605-735",
+      "target_code": "ucc:f0:sim-lab-corridor-turn",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00221",
+      "source_code": "ucc:p01:f0:turn-617-735",
+      "target_code": "ucc:p01:f0:turn-713-735",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00222",
+      "source_code": "ucc:p01:f0:turn-617-735",
+      "target_code": "ucc:p01:f0:turn-610-743",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00223",
+      "source_code": "ucc:p01:f0:turn-610-743",
+      "target_code": "ucc:p01:f0:turn-610-745",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00224",
+      "source_code": "ucc:p01:f0:turn-713-735",
+      "target_code": "ucc:p01:f0:turn-741-735",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00225",
+      "source_code": "ucc:p01:f0:turn-741-735",
+      "target_code": "ucc:p01:f0:turn-741-736",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00226",
+      "source_code": "ucc:p01:f0:turn-402-736",
+      "target_code": "ucc:p01:f0:turn-402-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00227",
+      "source_code": "ucc:p01:f0:turn-741-736",
+      "target_code": "ucc:p01:f0:s03",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00228",
+      "source_code": "ucc:p01:f0:turn-741-736",
+      "target_code": "ucc:p01:f0:turn-744-782",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00229",
+      "source_code": "ucc:p01:f0:turn-744-782",
+      "target_code": "ucc:p01:f0:turn-747-845",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00230",
+      "source_code": "ucc:p01:f0:turn-747-845",
+      "target_code": "ucc:p01:f0:r030",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00231",
+      "source_code": "ucc:p01:f0:s03",
+      "target_code": "ucc:p01:f0:s02",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00232",
+      "source_code": "ucc:p01:f0:r041",
+      "target_code": "ucc:p01:f0:turn-328-718",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00233",
+      "source_code": "ucc:p01:f0:turn-328-718",
+      "target_code": "ucc:p01:f0:turn-342-718",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00234",
+      "source_code": "ucc:p01:f0:turn-342-718",
+      "target_code": "ucc:p01:f0:turn-352-733",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00235",
+      "source_code": "ucc:p01:f0:turn-352-733",
+      "target_code": "ucc:p01:f0:turn-354-760",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00236",
+      "source_code": "ucc:f0:corridor-junction",
+      "target_code": "ucc:p01:f0:turn-534-744",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00237",
+      "source_code": "ucc:p01:f0:turn-534-744",
+      "target_code": "ucc:p01:f0:turn-518-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00238",
+      "source_code": "ucc:f0:sim-lab-outside",
+      "target_code": "ucc:p01:f0:turn-610-745",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00239",
+      "source_code": "ucc:p01:f0:turn-610-745",
+      "target_code": "ucc:p01:f0:turn-610-751",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00240",
+      "source_code": "ucc:f0:elevator-lobby",
+      "target_code": "ucc:p01:f0:turn-393-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00241",
+      "source_code": "ucc:f0:circulation-west",
+      "target_code": "ucc:p01:f0:turn-460-750",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00242",
+      "source_code": "ucc:p01:f0:turn-460-750",
+      "target_code": "ucc:p01:f0:turn-438-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00243",
+      "source_code": "ucc:f0:sim-lab-door",
+      "target_code": "ucc:p01:f0:turn-610-751",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00244",
+      "source_code": "ucc:p01:f0:turn-610-751",
+      "target_code": "ucc:p01:f0:turn-593-777",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00245",
+      "source_code": "ucc:p01:f0:turn-393-752",
+      "target_code": "ucc:p01:f0:turn-362-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00246",
+      "source_code": "ucc:p01:f0:turn-362-752",
+      "target_code": "ucc:p01:f0:turn-354-760",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00247",
+      "source_code": "ucc:p01:f0:turn-393-752",
+      "target_code": "ucc:p01:f0:turn-402-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00248",
+      "source_code": "ucc:p01:f0:turn-402-752",
+      "target_code": "ucc:p01:f0:turn-412-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00249",
+      "source_code": "ucc:p01:f0:turn-412-752",
+      "target_code": "ucc:p01:f0:turn-426-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00250",
+      "source_code": "ucc:p01:f0:turn-518-752",
+      "target_code": "ucc:p01:f0:turn-503-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00251",
+      "source_code": "ucc:p01:f0:turn-518-752",
+      "target_code": "ucc:f0:circulation-east",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00252",
+      "source_code": "ucc:p01:f0:turn-503-758",
+      "target_code": "ucc:p01:f0:turn-502-759",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00253",
+      "source_code": "ucc:p01:f0:turn-502-759",
+      "target_code": "ucc:p01:f0:turn-487-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00254",
+      "source_code": "ucc:p01:f0:turn-502-759",
+      "target_code": "ucc:p01:f0:r060",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00255",
+      "source_code": "ucc:p01:f0:turn-581-759",
+      "target_code": "ucc:p01:f0:turn-584-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00256",
+      "source_code": "ucc:p01:f0:turn-584-758",
+      "target_code": "ucc:p01:f0:turn-587-759",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00257",
+      "source_code": "ucc:p01:f0:turn-587-759",
+      "target_code": "ucc:p01:f0:turn-593-777",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00258",
+      "source_code": "ucc:p01:f0:turn-581-759",
+      "target_code": "ucc:p01:f0:turn-554-759",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00259",
+      "source_code": "ucc:p01:f0:turn-554-759",
+      "target_code": "ucc:p01:f0:s08",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00260",
+      "source_code": "ucc:p01:f0:turn-581-759",
+      "target_code": "ucc:p01:f0:s04",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00261",
+      "source_code": "ucc:p01:f0:turn-354-760",
+      "target_code": "ucc:p01:f0:turn-352-762",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00262",
+      "source_code": "ucc:p01:f0:r040",
+      "target_code": "ucc:p01:f0:turn-352-762",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00263",
+      "source_code": "ucc:p01:f0:turn-352-762",
+      "target_code": "ucc:p01:f0:turn-352-769",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00264",
+      "source_code": "ucc:p01:f0:turn-352-769",
+      "target_code": "ucc:p01:f0:turn-350-777",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00265",
+      "source_code": "ucc:p01:f0:turn-350-777",
+      "target_code": "ucc:p01:f0:turn-350-786",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00266",
+      "source_code": "ucc:p01:f0:turn-350-786",
+      "target_code": "ucc:p01:f0:turn-362-792",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00267",
+      "source_code": "ucc:p01:f0:turn-362-792",
+      "target_code": "ucc:p01:f0:turn-368-798",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00268",
+      "source_code": "ucc:p01:f0:turn-426-766",
+      "target_code": "ucc:p01:f0:turn-438-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00269",
+      "source_code": "ucc:p01:f0:turn-426-766",
+      "target_code": "ucc:p01:f0:turn-421-787",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00270",
+      "source_code": "ucc:p01:f0:turn-421-787",
+      "target_code": "ucc:p01:f0:turn-415-787",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00271",
+      "source_code": "ucc:p01:f0:turn-438-766",
+      "target_code": "ucc:p01:f0:turn-441-769",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00272",
+      "source_code": "ucc:p01:f0:turn-441-769",
+      "target_code": "ucc:p01:f0:turn-444-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00273",
+      "source_code": "ucc:p01:f0:turn-487-766",
+      "target_code": "ucc:p01:f0:turn-459-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00274",
+      "source_code": "ucc:p01:f0:turn-459-766",
+      "target_code": "ucc:p01:f0:turn-457-768",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00275",
+      "source_code": "ucc:p01:f0:turn-457-768",
+      "target_code": "ucc:p01:f0:turn-457-794",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00276",
+      "source_code": "ucc:p01:f0:turn-487-766",
+      "target_code": "ucc:p01:f0:turn-496-775",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00277",
+      "source_code": "ucc:p01:f0:turn-496-775",
+      "target_code": "ucc:f0:east-stair-00",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00278",
+      "source_code": "ucc:p01:f0:turn-496-775",
+      "target_code": "ucc:p01:f0:turn-515-783",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00279",
+      "source_code": "ucc:p01:f0:turn-515-783",
+      "target_code": "ucc:p01:f0:turn-516-788",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00280",
+      "source_code": "ucc:p01:f0:turn-516-788",
+      "target_code": "ucc:p01:f0:turn-516-800",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00281",
+      "source_code": "ucc:p01:f0:turn-444-776",
+      "target_code": "ucc:p01:f0:turn-453-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00282",
+      "source_code": "ucc:p01:f0:turn-453-776",
+      "target_code": "ucc:p01:f0:turn-457-794",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00283",
+      "source_code": "ucc:p01:f0:turn-444-776",
+      "target_code": "ucc:p01:f0:turn-443-781",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00284",
+      "source_code": "ucc:p01:f0:turn-443-781",
+      "target_code": "ucc:p01:f0:r039",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00285",
+      "source_code": "ucc:p01:f0:turn-593-777",
+      "target_code": "ucc:p01:f0:turn-589-783",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00286",
+      "source_code": "ucc:p01:f0:turn-589-783",
+      "target_code": "ucc:p01:f0:turn-589-795",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00287",
+      "source_code": "ucc:p01:f0:turn-589-795",
+      "target_code": "ucc:p01:f0:turn-599-800",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00288",
+      "source_code": "ucc:p01:f0:s06",
+      "target_code": "ucc:p01:f0:s05",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00289",
+      "source_code": "ucc:p01:f0:s05",
+      "target_code": "ucc:p01:f0:turn-638-800",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00290",
+      "source_code": "ucc:p01:f0:r034",
+      "target_code": "ucc:p01:f0:turn-677-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00291",
+      "source_code": "ucc:p01:f0:turn-677-771",
+      "target_code": "ucc:p01:f0:turn-680-772",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00292",
+      "source_code": "ucc:p01:f0:turn-680-772",
+      "target_code": "ucc:p01:f0:turn-681-775",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00293",
+      "source_code": "ucc:p01:f0:turn-681-775",
+      "target_code": "ucc:p01:f0:turn-681-784",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00294",
+      "source_code": "ucc:p01:f0:turn-681-784",
+      "target_code": "ucc:p01:f0:turn-661-802",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00295",
+      "source_code": "ucc:p01:f0:turn-661-802",
+      "target_code": "ucc:p01:f0:turn-650-807",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00296",
+      "source_code": "ucc:p01:f0:turn-415-787",
+      "target_code": "ucc:p01:f0:turn-399-785",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00297",
+      "source_code": "ucc:p01:f0:turn-399-785",
+      "target_code": "ucc:p01:f0:r056",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00298",
+      "source_code": "ucc:p01:f0:turn-415-787",
+      "target_code": "ucc:p01:f0:turn-409-794",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00299",
+      "source_code": "ucc:p01:f0:turn-409-794",
+      "target_code": "ucc:p01:f0:turn-409-797",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00300",
+      "source_code": "ucc:p01:f0:turn-409-797",
+      "target_code": "ucc:p01:f0:r058",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00301",
+      "source_code": "ucc:p01:f0:r033",
+      "target_code": "ucc:p01:f0:turn-703-793",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00302",
+      "source_code": "ucc:p01:f0:turn-703-793",
+      "target_code": "ucc:p01:f0:turn-702-798",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00303",
+      "source_code": "ucc:p01:f0:turn-702-798",
+      "target_code": "ucc:p01:f0:turn-702-828",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00304",
+      "source_code": "ucc:p01:f0:turn-457-794",
+      "target_code": "ucc:p01:f0:r038",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00305",
+      "source_code": "ucc:p01:f0:turn-368-798",
+      "target_code": "ucc:p01:f0:r055",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00306",
+      "source_code": "ucc:p01:f0:turn-368-798",
+      "target_code": "ucc:p01:f0:r057",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00307",
+      "source_code": "ucc:p01:f0:turn-516-800",
+      "target_code": "ucc:p01:f0:s07",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00308",
+      "source_code": "ucc:p01:f0:turn-516-800",
+      "target_code": "ucc:p01:f0:turn-516-809",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00309",
+      "source_code": "ucc:p01:f0:turn-516-809",
+      "target_code": "ucc:p01:f0:r042",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00310",
+      "source_code": "ucc:p01:f0:turn-599-800",
+      "target_code": "ucc:p01:f0:turn-638-800",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00311",
+      "source_code": "ucc:p01:f0:turn-599-800",
+      "target_code": "ucc:f0:simulation-lab-entrance",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00312",
+      "source_code": "ucc:p01:f0:turn-638-800",
+      "target_code": "ucc:p01:f0:turn-643-800",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00313",
+      "source_code": "ucc:p01:f0:turn-643-800",
+      "target_code": "ucc:p01:f0:turn-650-807",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00314",
+      "source_code": "ucc:p01:f0:turn-650-807",
+      "target_code": "ucc:p01:f0:turn-681-838",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00315",
+      "source_code": "ucc:p01:f0:turn-702-828",
+      "target_code": "ucc:p01:f0:r067",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00316",
+      "source_code": "ucc:p01:f0:turn-702-828",
+      "target_code": "ucc:p01:f0:turn-696-838",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00317",
+      "source_code": "ucc:p01:f0:turn-681-838",
+      "target_code": "ucc:p01:f0:turn-676-838",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00318",
+      "source_code": "ucc:p01:f0:turn-676-838",
+      "target_code": "ucc:p01:f0:turn-675-841",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00319",
+      "source_code": "ucc:p01:f0:turn-675-841",
+      "target_code": "ucc:p01:f0:turn-675-843",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00320",
+      "source_code": "ucc:p01:f0:turn-681-838",
+      "target_code": "ucc:p01:f0:turn-696-838",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00321",
+      "source_code": "ucc:p01:f0:turn-696-838",
+      "target_code": "ucc:p01:f0:turn-701-846",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00322",
+      "source_code": "ucc:p01:f0:turn-701-846",
+      "target_code": "ucc:p01:f0:turn-701-853",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00323",
+      "source_code": "ucc:p01:f0:turn-701-853",
+      "target_code": "ucc:p01:f0:r031",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00324",
+      "source_code": "ucc:p01:f0:turn-602-842",
+      "target_code": "ucc:p01:f0:turn-583-842",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00325",
+      "source_code": "ucc:p01:f0:turn-583-842",
+      "target_code": "ucc:p01:f0:turn-581-845",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00326",
+      "source_code": "ucc:p01:f0:turn-581-845",
+      "target_code": "ucc:p01:f0:turn-581-852",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00327",
+      "source_code": "ucc:p01:f0:turn-602-842",
+      "target_code": "ucc:p01:f0:turn-621-842",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00328",
+      "source_code": "ucc:p01:f0:turn-621-842",
+      "target_code": "ucc:p01:f0:turn-625-846",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00329",
+      "source_code": "ucc:p01:f0:turn-602-842",
+      "target_code": "ucc:p01:f0:turn-603-847",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00330",
+      "source_code": "ucc:p01:f0:turn-603-847",
+      "target_code": "ucc:p01:f0:turn-603-856",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00331",
+      "source_code": "ucc:p01:f0:turn-603-856",
+      "target_code": "ucc:p01:f0:r063",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00332",
+      "source_code": "ucc:p01:f0:turn-675-843",
+      "target_code": "ucc:p01:f0:turn-669-838",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00333",
+      "source_code": "ucc:p01:f0:turn-669-838",
+      "target_code": "ucc:p01:f0:turn-647-834",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00334",
+      "source_code": "ucc:p01:f0:turn-647-834",
+      "target_code": "ucc:p01:f0:turn-643-834",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00335",
+      "source_code": "ucc:p01:f0:turn-643-834",
+      "target_code": "ucc:p01:f0:turn-626-842",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00336",
+      "source_code": "ucc:p01:f0:turn-626-842",
+      "target_code": "ucc:p01:f0:turn-625-846",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00337",
+      "source_code": "ucc:p01:f0:turn-675-843",
+      "target_code": "ucc:p01:f0:r032",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00338",
+      "source_code": "ucc:p01:f0:turn-625-846",
+      "target_code": "ucc:p01:f0:turn-625-858",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00339",
+      "source_code": "ucc:p01:f0:turn-625-858",
+      "target_code": "ucc:p01:f0:r035",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00340",
+      "source_code": "ucc:p01:f0:s01",
+      "target_code": "ucc:p01:f0:turn-581-852",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00341",
+      "source_code": "ucc:p01:f0:turn-581-852",
+      "target_code": "ucc:p01:f0:r036",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00342",
+      "source_code": "ucc:p01:f0:r047",
+      "target_code": "ucc:p01:f0:r048",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00343",
+      "source_code": "ucc:p01:f1:r067",
+      "target_code": "ucc:p01:f1:turn-259-198",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00344",
+      "source_code": "ucc:p01:f1:turn-259-198",
+      "target_code": "ucc:p01:f1:turn-241-196",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00345",
+      "source_code": "ucc:p01:f1:turn-241-196",
+      "target_code": "ucc:p01:f1:turn-228-184",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00346",
+      "source_code": "ucc:p01:f1:turn-228-184",
+      "target_code": "ucc:p01:f1:turn-211-176",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00347",
+      "source_code": "ucc:p01:f1:turn-211-176",
+      "target_code": "ucc:p01:f1:turn-210-175",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00348",
+      "source_code": "ucc:p01:f1:turn-210-175",
+      "target_code": "ucc:p01:f1:turn-180-146",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00349",
+      "source_code": "ucc:p01:f1:turn-180-146",
+      "target_code": "ucc:p01:f1:turn-165-145",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00350",
+      "source_code": "ucc:p01:f1:turn-165-145",
+      "target_code": "ucc:p01:f1:turn-161-150",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00351",
+      "source_code": "ucc:p01:f1:turn-161-150",
+      "target_code": "ucc:p01:f1:turn-145-211",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00352",
+      "source_code": "ucc:p01:f1:turn-145-211",
+      "target_code": "ucc:p01:f1:turn-145-219",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00353",
+      "source_code": "ucc:p01:f1:turn-145-219",
+      "target_code": "ucc:p01:f1:turn-145-220",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00354",
+      "source_code": "ucc:p01:f1:turn-145-220",
+      "target_code": "ucc:p01:f1:s10",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00355",
+      "source_code": "ucc:p01:f1:r029",
+      "target_code": "ucc:p01:f1:turn-426-251",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00356",
+      "source_code": "ucc:p01:f1:r032",
+      "target_code": "ucc:p01:f1:turn-432-227",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00357",
+      "source_code": "ucc:p01:f1:turn-432-227",
+      "target_code": "ucc:p01:f1:turn-430-229",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00358",
+      "source_code": "ucc:p01:f1:s10",
+      "target_code": "ucc:p01:f1:turn-143-234",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00359",
+      "source_code": "ucc:p01:f1:turn-430-229",
+      "target_code": "ucc:p01:f1:turn-430-146",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00360",
+      "source_code": "ucc:p01:f1:turn-430-146",
+      "target_code": "ucc:p01:f1:turn-430-145",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00361",
+      "source_code": "ucc:p01:f1:turn-430-145",
+      "target_code": "ucc:p01:f1:turn-429-142",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00362",
+      "source_code": "ucc:p01:f1:turn-429-142",
+      "target_code": "ucc:p01:f1:turn-380-139",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00363",
+      "source_code": "ucc:p01:f1:turn-380-139",
+      "target_code": "ucc:p01:f1:turn-377-142",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00364",
+      "source_code": "ucc:p01:f1:turn-377-142",
+      "target_code": "ucc:p01:f1:turn-377-144",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00365",
+      "source_code": "ucc:p01:f1:turn-377-144",
+      "target_code": "ucc:p01:f1:turn-377-145",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00366",
+      "source_code": "ucc:p01:f1:turn-377-145",
+      "target_code": "ucc:p01:f1:turn-370-233",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00367",
+      "source_code": "ucc:p01:f1:turn-430-229",
+      "target_code": "ucc:p01:f1:turn-430-232",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00368",
+      "source_code": "ucc:p01:f1:turn-430-232",
+      "target_code": "ucc:p01:f1:turn-437-240",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00369",
+      "source_code": "ucc:p01:f1:turn-370-233",
+      "target_code": "ucc:p01:f1:turn-376-233",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00370",
+      "source_code": "ucc:p01:f1:turn-376-233",
+      "target_code": "ucc:p01:f1:turn-377-236",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00371",
+      "source_code": "ucc:p01:f1:turn-377-236",
+      "target_code": "ucc:p01:f1:r046",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00372",
+      "source_code": "ucc:p01:f1:turn-370-233",
+      "target_code": "ucc:p01:f1:turn-368-251",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00373",
+      "source_code": "ucc:p01:f1:turn-368-251",
+      "target_code": "ucc:p01:f1:turn-368-260",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00374",
+      "source_code": "ucc:p01:f1:turn-368-260",
+      "target_code": "ucc:p01:f1:turn-369-261",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00375",
+      "source_code": "ucc:p01:f1:turn-143-234",
+      "target_code": "ucc:p01:f1:turn-117-257",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00376",
+      "source_code": "ucc:p01:f1:turn-117-257",
+      "target_code": "ucc:p01:f1:s05",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00377",
+      "source_code": "ucc:p01:f1:turn-143-234",
+      "target_code": "ucc:p01:f1:turn-159-269",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00378",
+      "source_code": "ucc:p01:f1:turn-437-240",
+      "target_code": "ucc:p01:f1:turn-442-240",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00379",
+      "source_code": "ucc:p01:f1:turn-442-240",
+      "target_code": "ucc:p01:f1:turn-443-243",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00380",
+      "source_code": "ucc:p01:f1:turn-443-243",
+      "target_code": "ucc:p01:f1:turn-442-249",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00381",
+      "source_code": "ucc:p01:f1:turn-442-249",
+      "target_code": "ucc:p01:f1:r031",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00382",
+      "source_code": "ucc:p01:f1:turn-437-240",
+      "target_code": "ucc:p01:f1:turn-426-251",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00383",
+      "source_code": "ucc:p01:f1:s12",
+      "target_code": "ucc:p01:f1:turn-198-263",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00384",
+      "source_code": "ucc:p01:f1:turn-198-263",
+      "target_code": "ucc:p01:f1:turn-201-333",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00385",
+      "source_code": "ucc:p01:f1:turn-201-333",
+      "target_code": "ucc:p01:f1:turn-201-335",
+      "kind": "ramp",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00386",
+      "source_code": "ucc:p01:f1:turn-201-335",
+      "target_code": "ucc:p01:f1:turn-201-350",
+      "kind": "ramp",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00387",
+      "source_code": "ucc:p01:f1:turn-201-350",
+      "target_code": "ucc:p01:f1:turn-201-354",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00388",
+      "source_code": "ucc:p01:f1:turn-201-354",
+      "target_code": "ucc:p01:f1:turn-190-354",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00389",
+      "source_code": "ucc:p01:f1:turn-426-251",
+      "target_code": "ucc:p01:f1:turn-426-269",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00390",
+      "source_code": "ucc:p01:f1:turn-393-254",
+      "target_code": "ucc:p01:f1:turn-372-261",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00391",
+      "source_code": "ucc:p01:f1:turn-372-261",
+      "target_code": "ucc:p01:f1:turn-369-261",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00392",
+      "source_code": "ucc:p01:f1:turn-393-254",
+      "target_code": "ucc:p01:f1:r044",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00393",
+      "source_code": "ucc:p01:f1:turn-393-254",
+      "target_code": "ucc:p01:f1:r066",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00394",
+      "source_code": "ucc:p01:f1:s05",
+      "target_code": "ucc:p01:f1:turn-099-292",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00395",
+      "source_code": "ucc:p01:f1:turn-099-292",
+      "target_code": "ucc:p01:f1:turn-099-300",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00396",
+      "source_code": "ucc:p01:f1:turn-099-300",
+      "target_code": "ucc:p01:f1:turn-102-301",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00397",
+      "source_code": "ucc:p01:f1:turn-369-261",
+      "target_code": "ucc:p01:f1:turn-357-262",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00398",
+      "source_code": "ucc:p01:f1:turn-357-262",
+      "target_code": "ucc:p01:f1:turn-356-262",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00399",
+      "source_code": "ucc:p01:f1:turn-356-262",
+      "target_code": "ucc:p01:f1:s15",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00400",
+      "source_code": "ucc:p01:f1:turn-159-269",
+      "target_code": "ucc:p01:f1:s11",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00401",
+      "source_code": "ucc:p01:f1:turn-159-269",
+      "target_code": "ucc:p01:f1:turn-168-319",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00402",
+      "source_code": "ucc:p01:f1:turn-168-319",
+      "target_code": "ucc:p01:f1:turn-168-320",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00403",
+      "source_code": "ucc:p01:f1:turn-168-320",
+      "target_code": "ucc:p01:f1:turn-172-331",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00404",
+      "source_code": "ucc:p01:f1:turn-172-331",
+      "target_code": "ucc:p01:f1:turn-190-354",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00405",
+      "source_code": "ucc:p01:f1:turn-426-269",
+      "target_code": "ucc:p01:f1:turn-434-264",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00406",
+      "source_code": "ucc:p01:f1:turn-434-264",
+      "target_code": "ucc:p01:f1:turn-438-264",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00407",
+      "source_code": "ucc:p01:f1:turn-438-264",
+      "target_code": "ucc:p01:f1:turn-439-267",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00408",
+      "source_code": "ucc:p01:f1:turn-439-267",
+      "target_code": "ucc:p01:f1:turn-436-277",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00409",
+      "source_code": "ucc:p01:f1:turn-436-277",
+      "target_code": "ucc:p01:f1:r030",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00410",
+      "source_code": "ucc:p01:f1:turn-426-269",
+      "target_code": "ucc:p01:f1:turn-412-311",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00411",
+      "source_code": "ucc:p01:f1:turn-412-311",
+      "target_code": "ucc:p01:f1:turn-412-315",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00412",
+      "source_code": "ucc:p01:f1:turn-412-315",
+      "target_code": "ucc:p01:f1:turn-414-317",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00413",
+      "source_code": "ucc:p01:f1:turn-102-301",
+      "target_code": "ucc:p01:f1:s06",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00414",
+      "source_code": "ucc:p01:f1:turn-102-301",
+      "target_code": "ucc:p01:f1:turn-102-321",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00415",
+      "source_code": "ucc:p01:f1:turn-102-321",
+      "target_code": "ucc:p01:f1:turn-101-322",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00416",
+      "source_code": "ucc:p01:f1:turn-101-322",
+      "target_code": "ucc:p01:f1:turn-101-323",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00417",
+      "source_code": "ucc:p01:f1:turn-101-323",
+      "target_code": "ucc:p01:f1:turn-100-333",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00418",
+      "source_code": "ucc:p01:f1:turn-100-333",
+      "target_code": "ucc:p01:f1:turn-079-355",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00419",
+      "source_code": "ucc:p01:f1:r028",
+      "target_code": "ucc:p01:f1:turn-426-314",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00420",
+      "source_code": "ucc:p01:f1:turn-426-314",
+      "target_code": "ucc:p01:f1:turn-425-319",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00421",
+      "source_code": "ucc:p01:f1:turn-425-319",
+      "target_code": "ucc:p01:f1:turn-416-318",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00422",
+      "source_code": "ucc:p01:f1:turn-416-318",
+      "target_code": "ucc:p01:f1:turn-414-317",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00423",
+      "source_code": "ucc:p01:f1:turn-414-317",
+      "target_code": "ucc:p01:f1:turn-410-317",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00424",
+      "source_code": "ucc:p01:f1:turn-410-317",
+      "target_code": "ucc:p01:f1:turn-407-324",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00425",
+      "source_code": "ucc:p01:f1:turn-407-324",
+      "target_code": "ucc:p01:f1:turn-407-329",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00426",
+      "source_code": "ucc:p01:f1:r015",
+      "target_code": "ucc:p01:f1:turn-370-325",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00427",
+      "source_code": "ucc:p01:f1:turn-370-325",
+      "target_code": "ucc:p01:f1:turn-392-325",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00428",
+      "source_code": "ucc:p01:f1:turn-392-325",
+      "target_code": "ucc:p01:f1:turn-400-326",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00429",
+      "source_code": "ucc:p01:f1:turn-400-326",
+      "target_code": "ucc:p01:f1:turn-407-329",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00430",
+      "source_code": "ucc:p01:f1:r015",
+      "target_code": "ucc:p01:f1:turn-369-330",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00431",
+      "source_code": "ucc:p01:f1:turn-369-330",
+      "target_code": "ucc:p01:f1:turn-369-350",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00432",
+      "source_code": "ucc:p01:f1:turn-369-350",
+      "target_code": "ucc:p01:f1:turn-383-365",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00433",
+      "source_code": "ucc:p01:f1:turn-383-365",
+      "target_code": "ucc:p01:f1:turn-383-371",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00434",
+      "source_code": "ucc:p01:f1:turn-383-371",
+      "target_code": "ucc:p01:f1:turn-379-375",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00435",
+      "source_code": "ucc:p01:f1:turn-379-375",
+      "target_code": "ucc:p01:f1:turn-376-375",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00436",
+      "source_code": "ucc:p01:f1:turn-376-375",
+      "target_code": "ucc:p01:f1:turn-375-378",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00437",
+      "source_code": "ucc:p01:f1:turn-375-378",
+      "target_code": "ucc:p01:f1:turn-375-382",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00438",
+      "source_code": "ucc:p01:f1:turn-407-329",
+      "target_code": "ucc:p01:f1:turn-413-330",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00439",
+      "source_code": "ucc:p01:f1:turn-413-330",
+      "target_code": "ucc:p01:f1:r027",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00440",
+      "source_code": "ucc:p01:f1:turn-190-354",
+      "target_code": "ucc:p01:f1:turn-202-366",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00441",
+      "source_code": "ucc:p01:f1:turn-079-355",
+      "target_code": "ucc:p01:f1:turn-079-329",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00442",
+      "source_code": "ucc:p01:f1:turn-079-329",
+      "target_code": "ucc:p01:f1:turn-076-328",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00443",
+      "source_code": "ucc:p01:f1:turn-076-328",
+      "target_code": "ucc:p01:f1:turn-075-328",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00444",
+      "source_code": "ucc:p01:f1:turn-075-328",
+      "target_code": "ucc:p01:f1:turn-063-328",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00445",
+      "source_code": "ucc:p01:f1:turn-063-328",
+      "target_code": "ucc:p01:f1:turn-061-330",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00446",
+      "source_code": "ucc:p01:f1:turn-061-330",
+      "target_code": "ucc:p01:f1:turn-061-331",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00447",
+      "source_code": "ucc:p01:f1:turn-061-331",
+      "target_code": "ucc:p01:f1:turn-061-332",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00448",
+      "source_code": "ucc:p01:f1:turn-061-332",
+      "target_code": "ucc:p01:f1:turn-061-333",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00449",
+      "source_code": "ucc:p01:f1:turn-061-333",
+      "target_code": "ucc:p01:f1:s08",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00450",
+      "source_code": "ucc:p01:f1:turn-079-355",
+      "target_code": "ucc:p01:f1:turn-079-395",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00451",
+      "source_code": "ucc:p01:f1:turn-079-395",
+      "target_code": "ucc:p01:f1:turn-052-427",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00452",
+      "source_code": "ucc:p01:f1:turn-202-366",
+      "target_code": "ucc:p01:f1:turn-187-382",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00453",
+      "source_code": "ucc:p01:f1:turn-187-382",
+      "target_code": "ucc:floor1:p02",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00454",
+      "source_code": "ucc:p01:f1:turn-202-366",
+      "target_code": "ucc:p01:f1:turn-229-448",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00455",
+      "source_code": "ucc:p01:f1:r047",
+      "target_code": "ucc:p01:f1:turn-360-382",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00456",
+      "source_code": "ucc:p01:f1:turn-360-382",
+      "target_code": "ucc:p01:f1:turn-375-382",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00457",
+      "source_code": "ucc:p01:f1:turn-375-382",
+      "target_code": "ucc:p01:f1:turn-374-412",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00458",
+      "source_code": "ucc:p01:f1:r014",
+      "target_code": "ucc:p01:f1:turn-373-412",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00459",
+      "source_code": "ucc:p01:f1:turn-373-412",
+      "target_code": "ucc:p01:f1:turn-374-412",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00460",
+      "source_code": "ucc:p01:f1:turn-374-412",
+      "target_code": "ucc:p01:f1:turn-408-412",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00461",
+      "source_code": "ucc:p01:f1:turn-408-412",
+      "target_code": "ucc:p01:f1:turn-414-414",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00462",
+      "source_code": "ucc:p01:f1:turn-414-414",
+      "target_code": "ucc:p01:f1:turn-418-418",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00463",
+      "source_code": "ucc:p01:f1:turn-418-418",
+      "target_code": "ucc:p01:f1:turn-418-422",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00464",
+      "source_code": "ucc:p01:f1:turn-418-422",
+      "target_code": "ucc:p01:f1:turn-412-428",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00465",
+      "source_code": "ucc:p01:f1:turn-052-427",
+      "target_code": "ucc:p01:f1:turn-073-407",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00466",
+      "source_code": "ucc:p01:f1:turn-073-407",
+      "target_code": "ucc:p01:f1:turn-077-407",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00467",
+      "source_code": "ucc:p01:f1:turn-077-407",
+      "target_code": "ucc:p01:f1:turn-079-410",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00468",
+      "source_code": "ucc:p01:f1:turn-079-410",
+      "target_code": "ucc:p01:f1:s09",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00469",
+      "source_code": "ucc:p01:f1:turn-052-427",
+      "target_code": "ucc:p01:f1:s07",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00470",
+      "source_code": "ucc:p01:f1:turn-412-428",
+      "target_code": "ucc:p01:f1:turn-410-423",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00471",
+      "source_code": "ucc:p01:f1:turn-410-423",
+      "target_code": "ucc:p01:f1:turn-406-423",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00472",
+      "source_code": "ucc:p01:f1:turn-406-423",
+      "target_code": "ucc:p01:f1:r059",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00473",
+      "source_code": "ucc:p01:f1:turn-412-428",
+      "target_code": "ucc:p01:f1:turn-412-449",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00474",
+      "source_code": "ucc:p01:f1:turn-229-448",
+      "target_code": "ucc:p01:f1:s13",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00475",
+      "source_code": "ucc:p01:f1:turn-229-448",
+      "target_code": "ucc:p01:f1:turn-252-532",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00476",
+      "source_code": "ucc:p01:f1:turn-252-532",
+      "target_code": "ucc:p01:f1:turn-252-533",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00477",
+      "source_code": "ucc:p01:f1:turn-252-533",
+      "target_code": "ucc:p01:f1:turn-255-535",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00478",
+      "source_code": "ucc:p01:f1:turn-412-449",
+      "target_code": "ucc:p01:f1:turn-435-427",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00479",
+      "source_code": "ucc:p01:f1:turn-435-427",
+      "target_code": "ucc:p01:f1:turn-440-427",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00480",
+      "source_code": "ucc:p01:f1:turn-440-427",
+      "target_code": "ucc:p01:f1:r058",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00481",
+      "source_code": "ucc:p01:f1:turn-412-449",
+      "target_code": "ucc:p01:f1:turn-412-481",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00482",
+      "source_code": "ucc:p01:f1:turn-412-481",
+      "target_code": "ucc:p01:f1:turn-411-485",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00483",
+      "source_code": "ucc:p01:f1:r053",
+      "target_code": "ucc:p01:f1:turn-369-465",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00484",
+      "source_code": "ucc:p01:f1:turn-369-465",
+      "target_code": "ucc:p01:f1:turn-364-465",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00485",
+      "source_code": "ucc:p01:f1:turn-364-465",
+      "target_code": "ucc:p01:f1:turn-363-477",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00486",
+      "source_code": "ucc:p01:f1:turn-363-477",
+      "target_code": "ucc:p01:f1:turn-371-491",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00487",
+      "source_code": "ucc:p01:f1:turn-411-485",
+      "target_code": "ucc:p01:f1:turn-392-485",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00488",
+      "source_code": "ucc:p01:f1:turn-392-485",
+      "target_code": "ucc:p01:f1:turn-390-488",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00489",
+      "source_code": "ucc:p01:f1:turn-390-488",
+      "target_code": "ucc:p01:f1:r055",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00490",
+      "source_code": "ucc:p01:f1:turn-411-485",
+      "target_code": "ucc:p01:f1:turn-411-539",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00491",
+      "source_code": "ucc:p01:f1:turn-411-539",
+      "target_code": "ucc:p01:f1:turn-410-544",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00492",
+      "source_code": "ucc:p01:f1:turn-410-544",
+      "target_code": "ucc:p01:f1:turn-369-544",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00493",
+      "source_code": "ucc:p01:f1:turn-371-491",
+      "target_code": "ucc:p01:f1:turn-375-491",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00494",
+      "source_code": "ucc:p01:f1:turn-375-491",
+      "target_code": "ucc:p01:f1:turn-376-494",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00495",
+      "source_code": "ucc:p01:f1:turn-376-494",
+      "target_code": "ucc:p01:f1:turn-377-509",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00496",
+      "source_code": "ucc:p01:f1:turn-377-509",
+      "target_code": "ucc:p01:f1:turn-376-514",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00497",
+      "source_code": "ucc:p01:f1:turn-371-491",
+      "target_code": "ucc:p01:f1:turn-361-501",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00498",
+      "source_code": "ucc:p01:f1:turn-361-501",
+      "target_code": "ucc:p01:f1:turn-358-503",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00499",
+      "source_code": "ucc:p01:f1:turn-358-503",
+      "target_code": "ucc:p01:f1:r049",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00500",
+      "source_code": "ucc:p01:f1:turn-361-501",
+      "target_code": "ucc:p01:f1:turn-367-509",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00501",
+      "source_code": "ucc:p01:f1:turn-367-509",
+      "target_code": "ucc:p01:f1:r051",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00502",
+      "source_code": "ucc:p01:f1:turn-376-514",
+      "target_code": "ucc:p01:f1:turn-388-514",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00503",
+      "source_code": "ucc:p01:f1:turn-388-514",
+      "target_code": "ucc:p01:f1:turn-398-516",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00504",
+      "source_code": "ucc:p01:f1:turn-398-516",
+      "target_code": "ucc:p01:f1:turn-400-519",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00505",
+      "source_code": "ucc:p01:f1:turn-400-519",
+      "target_code": "ucc:p01:f1:r052",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00506",
+      "source_code": "ucc:p01:f1:turn-376-514",
+      "target_code": "ucc:p01:f1:turn-376-537",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00507",
+      "source_code": "ucc:p01:f1:turn-376-537",
+      "target_code": "ucc:p01:f1:turn-369-544",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00508",
+      "source_code": "ucc:p01:f1:r023",
+      "target_code": "ucc:p01:f1:turn-542-554",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00509",
+      "source_code": "ucc:p01:f1:r013",
+      "target_code": "ucc:p01:f1:turn-444-535",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00510",
+      "source_code": "ucc:p01:f1:turn-444-535",
+      "target_code": "ucc:p01:f1:turn-444-541",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00511",
+      "source_code": "ucc:p01:f1:turn-444-541",
+      "target_code": "ucc:p01:f1:turn-463-547",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00512",
+      "source_code": "ucc:p01:f1:r012",
+      "target_code": "ucc:p01:f1:turn-472-536",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00513",
+      "source_code": "ucc:p01:f1:turn-472-536",
+      "target_code": "ucc:p01:f1:turn-468-542",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00514",
+      "source_code": "ucc:p01:f1:turn-255-535",
+      "target_code": "ucc:p01:f1:turn-344-549",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00515",
+      "source_code": "ucc:p01:f1:turn-255-535",
+      "target_code": "ucc:p01:f1:turn-251-542",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00516",
+      "source_code": "ucc:p01:f1:turn-251-542",
+      "target_code": "ucc:p01:f1:turn-250-543",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00517",
+      "source_code": "ucc:p01:f1:turn-250-543",
+      "target_code": "ucc:p01:f1:s14",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00518",
+      "source_code": "ucc:floor1:p12",
+      "target_code": "ucc:p01:f1:turn-588-544",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00519",
+      "source_code": "ucc:p01:f1:turn-588-544",
+      "target_code": "ucc:p01:f1:turn-595-547",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00520",
+      "source_code": "ucc:p01:f1:turn-595-547",
+      "target_code": "ucc:p01:f1:r018",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00521",
+      "source_code": "ucc:p01:f1:turn-468-542",
+      "target_code": "ucc:p01:f1:turn-463-547",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00522",
+      "source_code": "ucc:p01:f1:turn-468-542",
+      "target_code": "ucc:p01:f1:turn-494-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00523",
+      "source_code": "ucc:p01:f1:turn-494-567",
+      "target_code": "ucc:p01:f1:turn-495-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00524",
+      "source_code": "ucc:p01:f1:turn-495-567",
+      "target_code": "ucc:p01:f1:turn-497-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00525",
+      "source_code": "ucc:p01:f1:turn-497-567",
+      "target_code": "ucc:p01:f1:turn-498-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00526",
+      "source_code": "ucc:p01:f1:turn-498-567",
+      "target_code": "ucc:p01:f1:turn-500-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00527",
+      "source_code": "ucc:p01:f1:turn-500-567",
+      "target_code": "ucc:p01:f1:turn-501-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00528",
+      "source_code": "ucc:p01:f1:turn-501-567",
+      "target_code": "ucc:p01:f1:turn-503-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00529",
+      "source_code": "ucc:p01:f1:turn-503-567",
+      "target_code": "ucc:p01:f1:turn-504-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00530",
+      "source_code": "ucc:p01:f1:turn-504-567",
+      "target_code": "ucc:p01:f1:turn-506-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00531",
+      "source_code": "ucc:p01:f1:turn-506-567",
+      "target_code": "ucc:p01:f1:turn-507-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00532",
+      "source_code": "ucc:p01:f1:turn-507-567",
+      "target_code": "ucc:p01:f1:turn-509-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00533",
+      "source_code": "ucc:p01:f1:turn-509-567",
+      "target_code": "ucc:p01:f1:turn-510-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00534",
+      "source_code": "ucc:p01:f1:turn-510-567",
+      "target_code": "ucc:p01:f1:turn-512-567",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00535",
+      "source_code": "ucc:p01:f1:turn-512-567",
+      "target_code": "ucc:p01:f1:turn-513-567",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00536",
+      "source_code": "ucc:p01:f1:turn-513-567",
+      "target_code": "ucc:p01:f1:turn-542-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00537",
+      "source_code": "ucc:p01:f1:turn-369-544",
+      "target_code": "ucc:p01:f1:turn-356-550",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00538",
+      "source_code": "ucc:p01:f1:turn-356-550",
+      "target_code": "ucc:p01:f1:turn-344-549",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00539",
+      "source_code": "ucc:p01:f1:turn-463-547",
+      "target_code": "ucc:p01:f1:turn-428-574",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00540",
+      "source_code": "ucc:p01:f1:r018",
+      "target_code": "ucc:p01:f1:turn-597-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00541",
+      "source_code": "ucc:p01:f1:turn-344-549",
+      "target_code": "ucc:p01:f1:turn-346-551",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00542",
+      "source_code": "ucc:p01:f1:turn-346-551",
+      "target_code": "ucc:floor1:p03",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00543",
+      "source_code": "ucc:p01:f1:turn-346-551",
+      "target_code": "ucc:p01:f1:turn-356-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00544",
+      "source_code": "ucc:p01:f1:turn-542-554",
+      "target_code": "ucc:floor1:p11",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00545",
+      "source_code": "ucc:p01:f1:turn-542-554",
+      "target_code": "ucc:p01:f1:turn-542-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00546",
+      "source_code": "ucc:p01:f1:r034",
+      "target_code": "ucc:p01:f1:turn-720-568",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00547",
+      "source_code": "ucc:floor1:p04",
+      "target_code": "ucc:p01:f1:turn-356-561",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00548",
+      "source_code": "ucc:p01:f1:r016",
+      "target_code": "ucc:p01:f1:turn-720-568",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00549",
+      "source_code": "ucc:p01:f1:turn-356-561",
+      "target_code": "ucc:p01:f1:turn-358-564",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00550",
+      "source_code": "ucc:p01:f1:turn-358-564",
+      "target_code": "ucc:p01:f1:turn-364-578",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00551",
+      "source_code": "ucc:p01:f1:turn-720-568",
+      "target_code": "ucc:p01:f1:turn-642-570",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00552",
+      "source_code": "ucc:p01:f1:turn-642-570",
+      "target_code": "ucc:p01:f1:turn-636-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00553",
+      "source_code": "ucc:p01:f1:turn-542-569",
+      "target_code": "ucc:p01:f1:turn-578-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00554",
+      "source_code": "ucc:p01:f1:turn-578-569",
+      "target_code": "ucc:p01:f1:turn-597-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00555",
+      "source_code": "ucc:p01:f1:turn-578-569",
+      "target_code": "ucc:p01:f1:turn-590-587",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00556",
+      "source_code": "ucc:p01:f1:turn-590-587",
+      "target_code": "ucc:p01:f1:turn-590-591",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00557",
+      "source_code": "ucc:p01:f1:turn-590-591",
+      "target_code": "ucc:p01:f1:r024",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00558",
+      "source_code": "ucc:p01:f1:turn-597-569",
+      "target_code": "ucc:p01:f1:turn-636-569",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00559",
+      "source_code": "ucc:p01:f1:turn-636-569",
+      "target_code": "ucc:p01:f1:turn-636-614",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00560",
+      "source_code": "ucc:p01:f1:turn-636-614",
+      "target_code": "ucc:p01:f1:r017",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00561",
+      "source_code": "ucc:p01:f1:turn-428-574",
+      "target_code": "ucc:p01:f1:turn-409-586",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00562",
+      "source_code": "ucc:p01:f1:turn-428-574",
+      "target_code": "ucc:p01:f1:turn-428-582",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00563",
+      "source_code": "ucc:p01:f1:turn-428-582",
+      "target_code": "ucc:p01:f1:turn-439-590",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00564",
+      "source_code": "ucc:p01:f1:turn-439-590",
+      "target_code": "ucc:p01:f1:r065",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00565",
+      "source_code": "ucc:p01:f1:turn-364-578",
+      "target_code": "ucc:floor1:p05",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00566",
+      "source_code": "ucc:p01:f1:turn-364-578",
+      "target_code": "ucc:p01:f1:turn-368-581",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00567",
+      "source_code": "ucc:p01:f1:turn-368-581",
+      "target_code": "ucc:p01:f1:turn-369-581",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00568",
+      "source_code": "ucc:p01:f1:turn-369-581",
+      "target_code": "ucc:p01:f1:turn-406-586",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00569",
+      "source_code": "ucc:p01:f1:turn-406-586",
+      "target_code": "ucc:p01:f1:turn-407-587",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00570",
+      "source_code": "ucc:p01:f1:turn-369-581",
+      "target_code": "ucc:floor1:p07",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00571",
+      "source_code": "ucc:floor1:p07",
+      "target_code": "ucc:p01:f1:turn-369-591",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00572",
+      "source_code": "ucc:floor1:p08",
+      "target_code": "ucc:p01:f1:turn-409-586",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00573",
+      "source_code": "ucc:p01:f1:turn-409-586",
+      "target_code": "ucc:p01:f1:turn-407-587",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00574",
+      "source_code": "ucc:p01:f1:turn-407-587",
+      "target_code": "ucc:p01:f1:turn-407-632",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00575",
+      "source_code": "ucc:p01:f1:turn-369-591",
+      "target_code": "ucc:p01:f1:s20",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00576",
+      "source_code": "ucc:p01:f1:turn-369-591",
+      "target_code": "ucc:p01:f1:turn-369-607",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00577",
+      "source_code": "ucc:p01:f1:turn-369-607",
+      "target_code": "ucc:p01:f1:s19",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00578",
+      "source_code": "ucc:p01:f1:turn-369-607",
+      "target_code": "ucc:p01:f1:turn-369-624",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00579",
+      "source_code": "ucc:p01:f1:turn-369-624",
+      "target_code": "ucc:p01:f1:s18",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00580",
+      "source_code": "ucc:p01:f1:turn-369-624",
+      "target_code": "ucc:p01:f1:turn-369-627",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00581",
+      "source_code": "ucc:p01:f1:s18",
+      "target_code": "ucc:p01:f1:s21",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00582",
+      "source_code": "ucc:p01:f1:r050",
+      "target_code": "ucc:p01:f1:turn-369-627",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00583",
+      "source_code": "ucc:p01:f1:turn-369-627",
+      "target_code": "ucc:p01:f1:turn-369-637",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00584",
+      "source_code": "ucc:p01:f1:turn-407-632",
+      "target_code": "ucc:p01:f1:turn-429-632",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00585",
+      "source_code": "ucc:p01:f1:turn-407-632",
+      "target_code": "ucc:p01:f1:turn-408-639",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00586",
+      "source_code": "ucc:p01:f1:turn-408-639",
+      "target_code": "ucc:p01:f1:turn-414-690",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00587",
+      "source_code": "ucc:p01:f1:turn-429-632",
+      "target_code": "ucc:p01:f1:r054",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00588",
+      "source_code": "ucc:p01:f1:turn-429-632",
+      "target_code": "ucc:p01:f1:turn-426-636",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00589",
+      "source_code": "ucc:p01:f1:turn-426-636",
+      "target_code": "ucc:p01:f1:turn-426-641",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00590",
+      "source_code": "ucc:p01:f1:turn-426-641",
+      "target_code": "ucc:p01:f1:r056",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00591",
+      "source_code": "ucc:p01:f1:turn-369-637",
+      "target_code": "ucc:floor1:p06",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00592",
+      "source_code": "ucc:p01:f1:turn-369-637",
+      "target_code": "ucc:p01:f1:s17",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00593",
+      "source_code": "ucc:p01:f1:r063",
+      "target_code": "ucc:p01:f1:turn-498-703",
+      "kind": "ramp",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00594",
+      "source_code": "ucc:p01:f1:s17",
+      "target_code": "ucc:p01:f1:turn-364-655",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00595",
+      "source_code": "ucc:p01:f1:turn-364-655",
+      "target_code": "ucc:p01:f1:turn-360-655",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00596",
+      "source_code": "ucc:p01:f1:turn-360-655",
+      "target_code": "ucc:p01:f1:turn-350-682",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00597",
+      "source_code": "ucc:p01:f1:turn-350-682",
+      "target_code": "ucc:p01:f1:s16",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00598",
+      "source_code": "ucc:p01:f1:s17",
+      "target_code": "ucc:p01:f1:turn-369-669",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00599",
+      "source_code": "ucc:p01:f1:turn-369-669",
+      "target_code": "ucc:p01:f1:turn-394-675",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00600",
+      "source_code": "ucc:p01:f1:turn-394-675",
+      "target_code": "ucc:p01:f1:turn-395-679",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00601",
+      "source_code": "ucc:p01:f1:turn-395-679",
+      "target_code": "ucc:p01:f1:r048",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00602",
+      "source_code": "ucc:p01:f1:r057",
+      "target_code": "ucc:p01:f1:turn-441-692",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00603",
+      "source_code": "ucc:p01:f1:turn-441-692",
+      "target_code": "ucc:p01:f1:turn-426-692",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00604",
+      "source_code": "ucc:p01:f1:turn-426-692",
+      "target_code": "ucc:p01:f1:turn-424-698",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00605",
+      "source_code": "ucc:p01:f1:turn-424-698",
+      "target_code": "ucc:p01:f1:turn-424-700",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00606",
+      "source_code": "ucc:p01:f1:turn-414-690",
+      "target_code": "ucc:floor1:p09",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00607",
+      "source_code": "ucc:p01:f1:turn-414-690",
+      "target_code": "ucc:p01:f1:turn-424-700",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00608",
+      "source_code": "ucc:floor1:p09",
+      "target_code": "ucc:floor1:hall-tread-01",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00609",
+      "source_code": "ucc:floor1:hall-tread-01",
+      "target_code": "ucc:floor1:hall-tread-02",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00610",
+      "source_code": "ucc:p01:f1:turn-424-700",
+      "target_code": "ucc:p01:f1:turn-427-702",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00611",
+      "source_code": "ucc:p01:f1:turn-427-702",
+      "target_code": "ucc:p01:f1:turn-488-703",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00612",
+      "source_code": "ucc:p01:f1:turn-488-703",
+      "target_code": "ucc:p01:f1:turn-498-703",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00613",
+      "source_code": "ucc:p01:west-landing-f1",
+      "target_code": "ucc:p01:f1:turn-275-708",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00614",
+      "source_code": "ucc:p01:f1:turn-275-708",
+      "target_code": "ucc:p01:f1:turn-274-710",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00615",
+      "source_code": "ucc:p01:f1:turn-274-710",
+      "target_code": "ucc:p01:f1:turn-274-711",
+      "kind": "stairs",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00616",
+      "source_code": "ucc:p01:f1:turn-274-711",
+      "target_code": "ucc:p01:f1:turn-274-714",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00617",
+      "source_code": "ucc:p01:f1:turn-274-714",
+      "target_code": "ucc:p01:f1:turn-293-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00618",
+      "source_code": "ucc:p01:f1:turn-498-703",
+      "target_code": "ucc:p01:f1:turn-535-738",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00619",
+      "source_code": "ucc:floor1:hall-tread-02",
+      "target_code": "ucc:floor1:hall-tread-03",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00620",
+      "source_code": "ucc:floor1:hall-tread-03",
+      "target_code": "ucc:floor1:hall-after",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00621",
+      "source_code": "ucc:p01:f1:s01",
+      "target_code": "ucc:p01:f1:turn-172-773",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00622",
+      "source_code": "ucc:p01:f1:turn-172-773",
+      "target_code": "ucc:p01:f1:turn-180-782",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00623",
+      "source_code": "ucc:p01:f1:r037",
+      "target_code": "ucc:p01:f1:turn-565-718",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00624",
+      "source_code": "ucc:p01:f1:turn-565-718",
+      "target_code": "ucc:p01:f1:turn-562-719",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00625",
+      "source_code": "ucc:p01:f1:turn-562-719",
+      "target_code": "ucc:p01:f1:turn-562-732",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00626",
+      "source_code": "ucc:p01:f1:turn-562-732",
+      "target_code": "ucc:p01:f1:turn-586-740",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00627",
+      "source_code": "ucc:p01:f1:r038",
+      "target_code": "ucc:p01:f1:turn-631-727",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00628",
+      "source_code": "ucc:p01:f1:turn-631-727",
+      "target_code": "ucc:p01:f1:turn-620-743",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00629",
+      "source_code": "ucc:p01:f1:turn-620-743",
+      "target_code": "ucc:p01:f1:turn-620-744",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00630",
+      "source_code": "ucc:p01:f1:r003",
+      "target_code": "ucc:p01:f1:turn-653-743",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00631",
+      "source_code": "ucc:p01:f1:turn-653-743",
+      "target_code": "ucc:p01:f1:turn-653-756",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00632",
+      "source_code": "ucc:p01:f1:turn-653-756",
+      "target_code": "ucc:p01:f1:turn-654-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00633",
+      "source_code": "ucc:p01:f1:turn-535-738",
+      "target_code": "ucc:p01:f1:r005",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00634",
+      "source_code": "ucc:p01:f1:turn-535-738",
+      "target_code": "ucc:p01:f1:turn-555-757",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00635",
+      "source_code": "ucc:p01:f1:turn-555-757",
+      "target_code": "ucc:p01:f1:turn-563-757",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00636",
+      "source_code": "ucc:floor1:p14",
+      "target_code": "ucc:p01:f1:turn-710-739",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00637",
+      "source_code": "ucc:p01:f1:turn-710-739",
+      "target_code": "ucc:p01:f1:turn-711-741",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00638",
+      "source_code": "ucc:floor1:p10",
+      "target_code": "ucc:p01:f1:turn-387-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00639",
+      "source_code": "ucc:p01:f1:turn-586-740",
+      "target_code": "ucc:p01:f1:turn-589-737",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00640",
+      "source_code": "ucc:p01:f1:turn-589-737",
+      "target_code": "ucc:p01:f1:turn-613-737",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00641",
+      "source_code": "ucc:p01:f1:turn-613-737",
+      "target_code": "ucc:p01:f1:turn-620-744",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00642",
+      "source_code": "ucc:p01:f1:turn-586-740",
+      "target_code": "ucc:p01:f1:turn-583-744",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00643",
+      "source_code": "ucc:p01:f1:turn-583-744",
+      "target_code": "ucc:p01:f1:r004",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00644",
+      "source_code": "ucc:p01:f1:turn-711-741",
+      "target_code": "ucc:floor1:p17",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00645",
+      "source_code": "ucc:p01:f1:turn-711-741",
+      "target_code": "ucc:p01:f1:turn-711-756",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00646",
+      "source_code": "ucc:p01:f1:turn-711-756",
+      "target_code": "ucc:p01:f1:turn-709-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00647",
+      "source_code": "ucc:p01:f1:turn-620-744",
+      "target_code": "ucc:p01:f1:r036",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00648",
+      "source_code": "ucc:p01:f1:r004",
+      "target_code": "ucc:p01:f1:turn-564-751",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00649",
+      "source_code": "ucc:p01:f1:turn-564-751",
+      "target_code": "ucc:p01:f1:turn-563-754",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00650",
+      "source_code": "ucc:p01:f1:turn-563-754",
+      "target_code": "ucc:p01:f1:turn-563-757",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00651",
+      "source_code": "ucc:p01:f1:turn-262-752",
+      "target_code": "ucc:p01:f1:turn-241-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00652",
+      "source_code": "ucc:p01:f1:turn-241-752",
+      "target_code": "ucc:p01:f1:turn-239-754",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00653",
+      "source_code": "ucc:p01:f1:turn-239-754",
+      "target_code": "ucc:p01:f1:turn-222-792",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00654",
+      "source_code": "ucc:p01:f1:turn-262-752",
+      "target_code": "ucc:p01:f1:turn-293-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00655",
+      "source_code": "ucc:p01:f1:turn-262-752",
+      "target_code": "ucc:p01:f1:turn-262-792",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00656",
+      "source_code": "ucc:p01:f1:turn-262-792",
+      "target_code": "ucc:p01:f1:r070",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00657",
+      "source_code": "ucc:p01:f1:turn-293-752",
+      "target_code": "ucc:p01:f1:turn-345-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00658",
+      "source_code": "ucc:p01:f1:turn-345-771",
+      "target_code": "ucc:p01:f1:turn-350-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00659",
+      "source_code": "ucc:p01:f1:turn-387-752",
+      "target_code": "ucc:p01:f1:turn-361-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00660",
+      "source_code": "ucc:p01:f1:turn-361-752",
+      "target_code": "ucc:p01:f1:turn-350-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00661",
+      "source_code": "ucc:p01:f1:turn-387-752",
+      "target_code": "ucc:p01:f1:turn-412-752",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00662",
+      "source_code": "ucc:p01:f1:turn-412-752",
+      "target_code": "ucc:p01:f1:turn-431-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00663",
+      "source_code": "ucc:p01:f1:turn-563-757",
+      "target_code": "ucc:p01:f1:turn-566-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00664",
+      "source_code": "ucc:p01:f1:turn-566-758",
+      "target_code": "ucc:p01:f1:turn-603-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00665",
+      "source_code": "ucc:p01:f1:turn-603-758",
+      "target_code": "ucc:p01:f1:turn-654-758",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00666",
+      "source_code": "ucc:p01:f1:turn-603-758",
+      "target_code": "ucc:p01:f1:turn-603-781",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00667",
+      "source_code": "ucc:p01:f1:turn-603-781",
+      "target_code": "ucc:p01:f1:turn-581-801",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00668",
+      "source_code": "ucc:p01:f1:turn-581-801",
+      "target_code": "ucc:p01:f1:turn-581-814",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00669",
+      "source_code": "ucc:p01:f1:turn-654-758",
+      "target_code": "ucc:p01:f1:turn-682-767",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00670",
+      "source_code": "ucc:p01:f1:turn-709-758",
+      "target_code": "ucc:p01:f1:turn-682-767",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00671",
+      "source_code": "ucc:p01:f1:turn-709-758",
+      "target_code": "ucc:p01:f1:turn-714-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00672",
+      "source_code": "ucc:floor1:p15",
+      "target_code": "ucc:p01:f1:turn-458-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00673",
+      "source_code": "ucc:f2:north-junction",
+      "target_code": "ucc:p01:f1:turn-493-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00674",
+      "source_code": "ucc:p01:f1:r060",
+      "target_code": "ucc:p01:f1:turn-820-765",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00675",
+      "source_code": "ucc:p01:f1:turn-820-765",
+      "target_code": "ucc:p01:f1:turn-817-772",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00676",
+      "source_code": "ucc:floor1:p16",
+      "target_code": "ucc:p01:f1:turn-714-766",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00677",
+      "source_code": "ucc:p01:f1:turn-714-766",
+      "target_code": "ucc:p01:f1:turn-720-772",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00678",
+      "source_code": "ucc:p01:f1:turn-720-772",
+      "target_code": "ucc:p01:f1:turn-817-772",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00679",
+      "source_code": "ucc:p01:f1:turn-682-767",
+      "target_code": "ucc:p01:f1:turn-699-783",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00680",
+      "source_code": "ucc:p01:f1:turn-699-783",
+      "target_code": "ucc:p01:f1:turn-733-787",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00681",
+      "source_code": "ucc:p01:f1:turn-733-787",
+      "target_code": "ucc:p01:f1:turn-736-792",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00682",
+      "source_code": "ucc:p01:f1:turn-736-792",
+      "target_code": "ucc:p01:f1:turn-736-804",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00683",
+      "source_code": "ucc:p01:f1:turn-736-804",
+      "target_code": "ucc:p01:f1:turn-733-805",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00684",
+      "source_code": "ucc:p01:f1:turn-733-805",
+      "target_code": "ucc:p01:f1:turn-689-810",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00685",
+      "source_code": "ucc:p01:f1:turn-689-810",
+      "target_code": "ucc:p01:f1:r001",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00686",
+      "source_code": "ucc:p01:f1:r005",
+      "target_code": "ucc:p01:f1:turn-500-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00687",
+      "source_code": "ucc:p01:f1:turn-431-771",
+      "target_code": "ucc:p01:f1:turn-427-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00688",
+      "source_code": "ucc:p01:f1:turn-427-771",
+      "target_code": "ucc:p01:f1:turn-420-789",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00689",
+      "source_code": "ucc:p01:f1:turn-420-789",
+      "target_code": "ucc:p01:f1:turn-409-794",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00690",
+      "source_code": "ucc:p01:f1:turn-409-794",
+      "target_code": "ucc:p01:f1:turn-405-798",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00691",
+      "source_code": "ucc:p01:f1:turn-431-771",
+      "target_code": "ucc:p01:f1:turn-435-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00692",
+      "source_code": "ucc:p01:f1:turn-435-771",
+      "target_code": "ucc:p01:f1:turn-443-779",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00693",
+      "source_code": "ucc:p01:f1:turn-458-771",
+      "target_code": "ucc:p01:f1:turn-493-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00694",
+      "source_code": "ucc:p01:f1:turn-458-771",
+      "target_code": "ucc:p01:f1:turn-457-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00695",
+      "source_code": "ucc:p01:f1:turn-457-776",
+      "target_code": "ucc:p01:f1:turn-457-795",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00696",
+      "source_code": "ucc:p01:f1:turn-493-771",
+      "target_code": "ucc:p01:f1:turn-500-771",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00697",
+      "source_code": "ucc:p01:f1:turn-493-771",
+      "target_code": "ucc:f2:east-stair-00",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00698",
+      "source_code": "ucc:p01:f1:turn-500-771",
+      "target_code": "ucc:p01:f1:turn-505-781",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00699",
+      "source_code": "ucc:p01:f1:turn-817-772",
+      "target_code": "ucc:p01:f1:turn-818-803",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00700",
+      "source_code": "ucc:p01:f1:turn-818-803",
+      "target_code": "ucc:p01:f1:r061",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00701",
+      "source_code": "ucc:p01:f1:turn-350-776",
+      "target_code": "ucc:p01:f1:turn-350-787",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00702",
+      "source_code": "ucc:p01:f1:turn-350-787",
+      "target_code": "ucc:p01:f1:turn-361-792",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00703",
+      "source_code": "ucc:f0:east-stair-24",
+      "target_code": "ucc:p01:f1:turn-505-781",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00704",
+      "source_code": "ucc:p01:f1:turn-443-779",
+      "target_code": "ucc:p01:f1:turn-444-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00705",
+      "source_code": "ucc:p01:f1:turn-444-776",
+      "target_code": "ucc:p01:f1:turn-452-776",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00706",
+      "source_code": "ucc:p01:f1:turn-452-776",
+      "target_code": "ucc:p01:f1:turn-453-779",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00707",
+      "source_code": "ucc:p01:f1:turn-453-779",
+      "target_code": "ucc:p01:f1:turn-457-795",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00708",
+      "source_code": "ucc:p01:f1:turn-443-779",
+      "target_code": "ucc:p01:f1:r008",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00709",
+      "source_code": "ucc:p01:f1:turn-505-781",
+      "target_code": "ucc:p01:f1:r033",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00710",
+      "source_code": "ucc:p01:f1:turn-180-782",
+      "target_code": "ucc:p01:f1:turn-203-783",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00711",
+      "source_code": "ucc:p01:f1:turn-203-783",
+      "target_code": "ucc:p01:f1:turn-222-792",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00712",
+      "source_code": "ucc:p01:f1:turn-180-782",
+      "target_code": "ucc:p01:f1:turn-159-787",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00713",
+      "source_code": "ucc:p01:f1:turn-159-787",
+      "target_code": "ucc:p01:f1:turn-153-787",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00714",
+      "source_code": "ucc:p01:f1:turn-153-787",
+      "target_code": "ucc:p01:f1:turn-152-790",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00715",
+      "source_code": "ucc:p01:f1:turn-152-790",
+      "target_code": "ucc:p01:f1:turn-152-808",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00716",
+      "source_code": "ucc:p01:f1:turn-159-787",
+      "target_code": "ucc:p01:f1:turn-159-817",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00717",
+      "source_code": "ucc:p01:f1:turn-159-817",
+      "target_code": "ucc:p01:f1:s04",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00718",
+      "source_code": "ucc:p01:f1:r011",
+      "target_code": "ucc:p01:f1:turn-572-788",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00719",
+      "source_code": "ucc:p01:f1:turn-572-788",
+      "target_code": "ucc:p01:f1:turn-576-788",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00720",
+      "source_code": "ucc:p01:f1:turn-576-788",
+      "target_code": "ucc:p01:f1:turn-577-791",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00721",
+      "source_code": "ucc:p01:f1:turn-577-791",
+      "target_code": "ucc:p01:f1:turn-577-801",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00722",
+      "source_code": "ucc:p01:f1:turn-577-801",
+      "target_code": "ucc:p01:f1:turn-574-804",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00723",
+      "source_code": "ucc:p01:f1:turn-222-792",
+      "target_code": "ucc:p01:f1:turn-222-798",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00724",
+      "source_code": "ucc:p01:f1:turn-222-798",
+      "target_code": "ucc:p01:f1:r026",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00725",
+      "source_code": "ucc:p01:f1:turn-361-792",
+      "target_code": "ucc:p01:f1:turn-369-785",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00726",
+      "source_code": "ucc:p01:f1:turn-369-785",
+      "target_code": "ucc:p01:f1:turn-374-785",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00727",
+      "source_code": "ucc:p01:f1:turn-374-785",
+      "target_code": "ucc:p01:f1:r039",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00728",
+      "source_code": "ucc:p01:f1:turn-361-792",
+      "target_code": "ucc:p01:f1:turn-363-796",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00729",
+      "source_code": "ucc:p01:f1:turn-363-796",
+      "target_code": "ucc:p01:f1:r025",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00730",
+      "source_code": "ucc:p01:f1:r069",
+      "target_code": "ucc:p01:f1:turn-399-785",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00731",
+      "source_code": "ucc:p01:f1:turn-399-785",
+      "target_code": "ucc:p01:f1:turn-403-785",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00732",
+      "source_code": "ucc:p01:f1:turn-403-785",
+      "target_code": "ucc:p01:f1:turn-404-788",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00733",
+      "source_code": "ucc:p01:f1:turn-404-788",
+      "target_code": "ucc:p01:f1:turn-405-798",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00734",
+      "source_code": "ucc:p01:f1:turn-457-795",
+      "target_code": "ucc:p01:f1:r007",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00735",
+      "source_code": "ucc:p01:f1:turn-405-798",
+      "target_code": "ucc:p01:f1:turn-405-809",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00736",
+      "source_code": "ucc:p01:f1:turn-405-809",
+      "target_code": "ucc:p01:f1:r062",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00737",
+      "source_code": "ucc:p01:f1:turn-574-804",
+      "target_code": "ucc:p01:f1:turn-563-804",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00738",
+      "source_code": "ucc:p01:f1:turn-563-804",
+      "target_code": "ucc:p01:f1:turn-562-807",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00739",
+      "source_code": "ucc:p01:f1:turn-562-807",
+      "target_code": "ucc:p01:f1:r010",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00740",
+      "source_code": "ucc:p01:f1:turn-574-804",
+      "target_code": "ucc:p01:f1:turn-577-805",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00741",
+      "source_code": "ucc:p01:f1:turn-577-805",
+      "target_code": "ucc:p01:f1:turn-577-817",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00742",
+      "source_code": "ucc:p01:f1:s03",
+      "target_code": "ucc:p01:f1:turn-152-808",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00743",
+      "source_code": "ucc:p01:f1:turn-152-808",
+      "target_code": "ucc:p01:f1:turn-149-833",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00744",
+      "source_code": "ucc:p01:f1:turn-149-833",
+      "target_code": "ucc:p01:f1:r041",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00745",
+      "source_code": "ucc:p01:f1:r026",
+      "target_code": "ucc:p01:f1:turn-243-822",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00746",
+      "source_code": "ucc:p01:f1:turn-243-822",
+      "target_code": "ucc:p01:f1:r040",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00747",
+      "source_code": "ucc:p01:f1:turn-581-814",
+      "target_code": "ucc:p01:f1:turn-577-817",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00748",
+      "source_code": "ucc:p01:f1:turn-581-814",
+      "target_code": "ucc:p01:f1:turn-584-815",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00749",
+      "source_code": "ucc:p01:f1:turn-584-815",
+      "target_code": "ucc:p01:f1:r006",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00750",
+      "source_code": "ucc:p01:f1:turn-577-817",
+      "target_code": "ucc:p01:f1:turn-574-819",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00751",
+      "source_code": "ucc:p01:f1:turn-574-819",
+      "target_code": "ucc:p01:f1:turn-562-821",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00752",
+      "source_code": "ucc:p01:f1:turn-562-821",
+      "target_code": "ucc:p01:f1:turn-561-824",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00753",
+      "source_code": "ucc:p01:f1:turn-561-824",
+      "target_code": "ucc:p01:f1:turn-561-827",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00754",
+      "source_code": "ucc:p01:f1:turn-561-827",
+      "target_code": "ucc:p01:f1:r009",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00755",
+      "source_code": "ucc:p01:f1:s02",
+      "target_code": "ucc:p01:f1:turn-070-818",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00756",
+      "source_code": "ucc:p01:f1:turn-070-818",
+      "target_code": "ucc:p01:f1:turn-069-821",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00757",
+      "source_code": "ucc:p01:f1:turn-069-821",
+      "target_code": "ucc:p01:f1:turn-069-824",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00758",
+      "source_code": "ucc:p01:f1:turn-069-824",
+      "target_code": "ucc:p01:f1:turn-086-836",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00759",
+      "source_code": "ucc:p01:f1:turn-086-836",
+      "target_code": "ucc:p01:f1:turn-097-840",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00760",
+      "source_code": "ucc:p01:f1:r041",
+      "target_code": "ucc:p01:f1:turn-097-840",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00761",
+      "source_code": "ucc:p01:f1:turn-097-840",
+      "target_code": "ucc:p01:f1:r042",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:p01:e00762",
+      "source_code": "ucc:p01:f1:r018",
+      "target_code": "ucc:floor1:p13",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "scope": "ucc:floor2-connection",
+  "revision": "navigation-p23-c28-v1",
+  "source": "DWG P2/P3 room names and doors; uploaded C28 support, body-clearance and stair validation; 2026-11-16; manual arrivals pending",
+  "places": [
+    {
+      "name": "Molecular Biology Laboratory (floor 2)",
+      "x": 46.95,
+      "y": 64.25,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "laboratory",
+      "code": "ucc:f2:molecular-biology-entrance",
+      "display_name": "Laboratorio de biología molecular",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Medical Research Centre (floor 2)",
+      "x": 35.15,
+      "y": 53.65,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "service",
+      "code": "ucc:f2:medical-research-arrival",
+      "display_name": "Centro de investigaciones médicas",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Mixed Reality Laboratory (floor 2)",
+      "x": 43.95,
+      "y": 52.85,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "laboratory",
+      "code": "ucc:f2:mixed-reality-entrance",
+      "display_name": "Laboratorio de realidad mixta",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D13 corridor stand",
+      "x": 34.95,
+      "y": 54.150000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:medical-research-outside",
+      "display_name": "D13 corridor stand",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D13 doorway centre",
+      "x": 34.95,
+      "y": 53.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:medical-research-door",
+      "display_name": "D13 doorway centre",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D13 interior stand",
+      "x": 34.95,
+      "y": 53.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:medical-research-entrance",
+      "display_name": "D13 interior stand",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D14 corridor stand",
+      "x": 46.650000000000006,
+      "y": 54.25,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:mixed-reality-outside",
+      "display_name": "D14 corridor stand",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D14 doorway centre",
+      "x": 46.650000000000006,
+      "y": 53.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:mixed-reality-door",
+      "display_name": "D14 doorway centre",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D15 corridor stand",
+      "x": 47.150000000000006,
+      "y": 55.45,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:molecular-biology-outside",
+      "display_name": "D15 corridor stand",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "D15 doorway centre",
+      "x": 47.150000000000006,
+      "y": 56.05000000000001,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:molecular-biology-door",
+      "display_name": "D15 doorway centre",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Medical research corridor turn",
+      "x": 34.95,
+      "y": 54.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:research-corridor-turn",
+      "display_name": "Medical research corridor turn",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Mixed reality corridor turn",
+      "x": 46.650000000000006,
+      "y": 54.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:mixed-corridor-turn",
+      "display_name": "Mixed reality corridor turn",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Molecular biology corridor turn",
+      "x": 47.150000000000006,
+      "y": 54.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:molecular-corridor-turn",
+      "display_name": "Molecular biology corridor turn",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Second-floor north circulation",
+      "x": 38.650000000000006,
+      "y": 54.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:north-corridor",
+      "display_name": "Second-floor north circulation",
+      "block_code": null,
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:f2:e004",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:24",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e005",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:25",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e006",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:26",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e007",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:27",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e008",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:28",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e009",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:29",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e010",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:30",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e011",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:31",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e012",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:32",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e013",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:33",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e014",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:34",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e015",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:35",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e016",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:36",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e017",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:37",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e018",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:38",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e019",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:39",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e020",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:40",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e021",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:41",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e022",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:42",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e023",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:43",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e024",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:44",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e025",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:45",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e026",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:46",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e027",
+      "source_code": "ucc:f2:east-stair-00",
+      "target_code": "ucc:p23:historical:47",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e028",
+      "source_code": "ucc:f2:north-corridor",
+      "target_code": "ucc:p23:historical:48",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e029",
+      "source_code": "ucc:f2:north-corridor",
+      "target_code": "ucc:p23:historical:49",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e030",
+      "source_code": "ucc:f2:mixed-corridor-turn",
+      "target_code": "ucc:p23:historical:50",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e031",
+      "source_code": "ucc:f2:north-corridor",
+      "target_code": "ucc:p23:historical:51",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e032",
+      "source_code": "ucc:f2:mixed-corridor-turn",
+      "target_code": "ucc:p23:historical:52",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e033",
+      "source_code": "ucc:f2:mixed-reality-outside",
+      "target_code": "ucc:p23:historical:53",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e034",
+      "source_code": "ucc:f2:mixed-reality-door",
+      "target_code": "ucc:p23:historical:54",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e035",
+      "source_code": "ucc:f2:molecular-corridor-turn",
+      "target_code": "ucc:p23:historical:55",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e036",
+      "source_code": "ucc:f2:molecular-biology-outside",
+      "target_code": "ucc:p23:historical:56",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e037",
+      "source_code": "ucc:f2:molecular-biology-door",
+      "target_code": "ucc:p23:historical:57",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e038",
+      "source_code": "ucc:f2:research-corridor-turn",
+      "target_code": "ucc:p23:historical:58",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e039",
+      "source_code": "ucc:f2:medical-research-outside",
+      "target_code": "ucc:p23:historical:59",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e040",
+      "source_code": "ucc:f2:medical-research-door",
+      "target_code": "ucc:p23:historical:60",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e041",
+      "source_code": "ucc:f2:medical-research-entrance",
+      "target_code": "ucc:p23:historical:61",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e042",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:62",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e043",
+      "source_code": "ucc:f2:medical-research-arrival",
+      "target_code": "ucc:p23:historical:63",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

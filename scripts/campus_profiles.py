@@ -105,6 +105,11 @@ def seed_profile(session: Session, profile: Profile) -> dict:
             # the full target. Existing upgraded scopes never enter this branch.
             created[:] = seed_campus(session)
         results = []
+        # Floor connections can reference each other. Prepare all places first,
+        # keeping their original scopes and the outer transaction's rollback.
+        for dataset in profile.datasets:
+            prepared = import_dataset(session, dataset, _places_only=True)
+            created[0] += prepared.created_places
         for dataset in profile.datasets:
             result = import_dataset(session, dataset)
             results.append(result.model_dump(mode="json"))

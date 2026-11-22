@@ -48,6 +48,156 @@
       "revision": "c16-floors-4-5-v1",
       "generation": 1,
       "sha256": "c6d3e213f000cead1c67d84fb40f517fddc9def9eb02281b2eaf900ceb9889c5"
+    },
+    "ucc-first-floor-c22.json": {
+      "scope": "ucc:floor1",
+      "revision": "ucc-first-floor-c22-hall-recrecido-v1",
+      "generation": 4,
+      "sha256": "6fedbcebb20a23364ffcd2e9fa7a395cfabe2d23cc230e57bbf0814b92a8dd6d"
+    },
+    "ucc-second-floor-c22.json": {
+      "scope": "ucc:floor2-connection",
+      "revision": "ucc-second-floor-c22-hall-recrecido-v1",
+      "generation": 4,
+      "sha256": "869e3da51c53d452a51248800f2b64ab3604ac3e713c79dc6271c1e9a9674ea1"
+    },
+    "ucc-floor-zero-c22.json": {
+      "scope": "ucc:floor0-connection",
+      "revision": "ucc-floor-zero-c22-hall-recrecido-v1",
+      "generation": 2,
+      "sha256": "85d1d8e1d1913784d9d2d58d9cb069b0a51b12db99c37d3e55174d685b10cabc"
+    },
+    "ucc-navigation-p01-places.json": {
+      "scope": "ucc:navigation-p01",
+      "revision": "navigation-p01-c27-v2-places",
+      "generation": 2,
+      "sha256": "2a3ec7c376887991edb1e8b9f04f3d450630bbe05eff7dd52cf133bcc6350cb0"
+    },
+    "ucc-navigation-p01-floor0.json": {
+      "scope": "ucc:floor0-connection",
+      "revision": "navigation-p01-c27-v1",
+      "generation": 3,
+      "sha256": "05c9e3df45058ae4571dd87b10a0924af07262b532fbf6de56b374e6c71ac300"
+    },
+    "ucc-navigation-p01-floor1.json": {
+      "scope": "ucc:floor1",
+      "revision": "navigation-p01-c27-v1",
+      "generation": 5,
+      "sha256": "aa02f8c6327eaaa86c124f6df8257a4825005c8f7593e61fdccc72941d127038"
+    },
+    "ucc-navigation-p01-floor2.json": {
+      "scope": "ucc:floor2-connection",
+      "revision": "navigation-p01-c27-v1",
+      "generation": 5,
+      "sha256": "e1c7c1c620e6cc1144dc507a2a8a9e845aff44926a761980b80a663705a66bd6"
+    },
+    "ucc-navigation-p01-paths.json": {
+      "scope": "ucc:navigation-p01-paths",
+      "revision": "navigation-p01-c27-v1",
+      "generation": 1,
+      "sha256": "c0a890295ba38126045ce7f7b6263eea2f4cafd373cd6d3c11f081aa89effbf0"
+    },
+    "ucc-navigation-p01-east-stair.json": {
+      "scope": "ucc:floor0-connection",
+      "revision": "navigation-p01-c27-v2-east-stair",
+      "generation": 4,
+      "sha256": "784e319c3952429e99b5cffccd1f76bb6abf02cb417d5cbe1ffa57f241184656"
+    },
+    "ucc-short-routes-p01.json": {
+      "scope": "ucc:short-routes-p01",
+      "revision": "short-routes-c27-v1",
+      "generation": 2,
+      "sha256": "68a52aea1ff11165b21bdff75102e94da265df55cfb750241f98a54f223e9588"
+    },
+    "ucc-short-routes-p01-arrivals.json": {
+      "scope": "ucc:navigation-p01",
+      "revision": "short-routes-arrivals-v1",
+      "generation": 4,
+      "sha256": "96fb3e6153363ee5ac25291891e7f70a2ffb292bed299402469fc1d8ae83b799"
+    },
+    "ucc-navigation-p23-places.json": {
+      "scope": "ucc:navigation-p23",
+      "revision": "navigation-p23-c28-v1-places",
+      "generation": 1,
+      "sha256": "30c1825cddbd47638945b7c5893189b127c6f4aea37db2177e10381df1986da5"
+    },
+    "ucc-navigation-p23-floor2-connection.json": {
+      "scope": "ucc:floor2-connection",
+      "revision": "navigation-p23-c28-v1",
+      "generation": 6,
+      "sha256": "8ade365ec81e7c83c772d89e3d34d0e1b5d64c3cd716a5a98784e55137e1680e"
+    },
+    "ucc-navigation-p23-floor3-connection.json": {
+      "scope": "ucc:floor3-connection",
+      "revision": "navigation-p23-c28-v1",
+      "generation": 2,
+      "sha256": "51de7fe5316708beeb5387260de39978575e9fe172d5562f728a1ed1b5124e47"
+    },
+    "ucc-navigation-p23-floor45-connection.json": {
+      "scope": "ucc:floor45-connection",
+      "revision": "navigation-p23-c28-v1",
+      "generation": 2,
+      "sha256": "16ad9ad4ac69db07b1d0746223cf775a5b4b2f76cab65fcdbb325aefcb144c5d"
+    },
+    "ucc-navigation-p23-paths.json": {
+      "scope": "ucc:navigation-p23-paths",
+      "revision": "navigation-p23-c28-v1-paths",
+      "generation": 1,
+      "sha256": "dfc5fa656dcac8ae3316a55be2be76ae81d9fb18bdae04091de1da30f0ec7bd6"
+    },
+    "ucc-navigation-p4-places.json": {
+      "scope": "ucc:navigation-p4",
+      "revision": "navigation-p4-c29-v1-places",
+      "generation": 1,
+      "sha256": "a8a44203c97dae59df7ed27d22400b6f01d9359e0bcdd98957daf158184f88ff"
+    },
+    "ucc-navigation-p4-floor45-connection.json": {
+      "scope": "ucc:floor45-connection",
+      "revision": "navigation-p4-c29-v1",
+      "generation": 3,
+      "sha256": "5d154d901d61460e47e3fa07644322f7c3dee552e3c0e044ef2fdab4d7eef690"
+    },
+    "ucc-navigation-p4-paths.json": {
+      "scope": "ucc:navigation-p4-paths",
+      "revision": "navigation-p4-c29-v1-paths",
+      "generation": 1,
+      "sha256": "dde64543c5c75852ca7f1d2f75c5670b44f7a38bed737291c421712702eea5ae"
+    },
+    "ucc-navigation-p5-places.json": {
+      "scope": "ucc:navigation-p56",
+      "revision": "navigation-p5-v1-places",
+      "generation": 1,
+      "sha256": "8b40a8294f1c92646dc7c38f77ba74b06e20277daab5274c7224a54adcbf0fc3"
+    },
+    "ucc-navigation-p6-places.json": {
+      "scope": "ucc:navigation-p6",
+      "revision": "navigation-p6-v1-places",
+      "generation": 1,
+      "sha256": "c268e3df05f32cda611a4b315740ff2e3486278374b5f1f8d824894ad7394754"
+    },
+    "ucc-navigation-p5-floor45-connection.json": {
+      "scope": "ucc:floor45-connection",
+      "revision": "navigation-p56-v1",
+      "generation": 4,
+      "sha256": "1ccf6c00a3d2e983e03f9f2b38fe4293118ad1a221d08ab672855fc8dd1168c3"
+    },
+    "ucc-navigation-p5-navigation-p4-paths.json": {
+      "scope": "ucc:navigation-p4-paths",
+      "revision": "navigation-p56-v1",
+      "generation": 2,
+      "sha256": "1427a4fc20ee9d9d2c5ddcaa0873ffa291ec07c43fcb2276d9005285e885986e"
+    },
+    "ucc-navigation-p5-paths.json": {
+      "scope": "ucc:navigation-p56-paths",
+      "revision": "navigation-p5-v1-paths",
+      "generation": 1,
+      "sha256": "ebeea1797fc9e41ebd36855f6e692888a1c926968d884f80c145046cedad66c4"
+    },
+    "ucc-navigation-p6-paths.json": {
+      "scope": "ucc:navigation-p6-paths",
+      "revision": "navigation-p6-v1-paths",
+      "generation": 1,
+      "sha256": "86ee2fe88301fc446917b986cf0dfc924699d8c873fab1244d4f997bd6fa2377"
     }
   },
   "profiles": {
@@ -83,33 +233,73 @@
     },
     "ucc-two-floors-c15": {
       "datasets": [
-        "ucc-first-floor-c15.json",
-        "ucc-second-floor-c15.json"
+        "ucc-first-floor-c22.json",
+        "ucc-second-floor-c22.json"
       ]
     },
     "ucc-three-floors-c16": {
       "datasets": [
-        "ucc-first-floor-c15.json",
-        "ucc-second-floor-c15.json",
+        "ucc-first-floor-c22.json",
+        "ucc-second-floor-c22.json",
         "ucc-third-floor.json"
       ]
     },
     "ucc-four-floors-c18": {
       "datasets": [
-        "ucc-first-floor-c15.json",
-        "ucc-second-floor-c15.json",
+        "ucc-first-floor-c22.json",
+        "ucc-second-floor-c22.json",
         "ucc-third-floor.json",
-        "ucc-floor-zero.json"
+        "ucc-floor-zero-c22.json"
       ]
     },
     "ucc-six-floors-c18": {
       "datasets": [
-        "ucc-first-floor-c15.json",
-        "ucc-second-floor-c15.json",
+        "ucc-first-floor-c22.json",
+        "ucc-second-floor-c22.json",
         "ucc-third-floor.json",
-        "ucc-floor-zero.json",
+        "ucc-floor-zero-c22.json",
         "ucc-floors-4-5.json"
       ]
+    },
+    "ucc-navigation-p01": {
+      "datasets": [
+        "ucc-navigation-p6-places.json",
+        "ucc-navigation-p5-places.json",
+        "ucc-navigation-p4-places.json",
+        "ucc-navigation-p23-places.json",
+        "ucc-navigation-p01-places.json",
+        "ucc-first-floor-c22.json",
+        "ucc-second-floor-c22.json",
+        "ucc-third-floor.json",
+        "ucc-floor-zero-c22.json",
+        "ucc-floors-4-5.json",
+        "ucc-navigation-p01-floor0.json",
+        "ucc-navigation-p01-floor1.json",
+        "ucc-navigation-p01-floor2.json",
+        "ucc-navigation-p01-paths.json",
+        "ucc-navigation-p01-east-stair.json",
+        "ucc-short-routes-p01.json",
+        "ucc-short-routes-p01-arrivals.json",
+        "ucc-navigation-p23-floor2-connection.json",
+        "ucc-navigation-p23-floor3-connection.json",
+        "ucc-navigation-p23-floor45-connection.json",
+        "ucc-navigation-p23-paths.json",
+        "ucc-navigation-p4-floor45-connection.json",
+        "ucc-navigation-p4-paths.json",
+        "ucc-navigation-p5-floor45-connection.json",
+        "ucc-navigation-p5-navigation-p4-paths.json",
+        "ucc-navigation-p5-paths.json",
+        "ucc-navigation-p6-paths.json"
+      ],
+      "composed_revisions": {
+        "ucc:floor0-connection": "navigation-p01-c27-v2-composed",
+        "ucc:floor1": "navigation-p01-c27-v1-composed",
+        "ucc:floor2-connection": "navigation-p23-c28-v1-composed",
+        "ucc:navigation-p01": "short-routes-p01-places-composed-v1",
+        "ucc:floor3-connection": "navigation-p23-c28-v1-composed",
+        "ucc:floor45-connection": "navigation-p56-v1-composed",
+        "ucc:navigation-p4-paths": "navigation-p56-v1-composed"
+      }
     }
   }
 }

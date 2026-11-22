@@ -1,0 +1,36 @@
+{
+  "scope": "ucc:navigation-p01",
+  "revision": "short-routes-arrivals-v1",
+  "source": "Two arrivals moved 20/32 cm to their existing supported approach, with original identities and geometry preserved",
+  "places": [
+    {
+      "name": "P0 004 Patio de luz",
+      "x": 54.65,
+      "y": 28.85,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "service",
+      "code": "ucc:p01:f0:r004",
+      "display_name": "Patio de luz",
+      "block_code": "B",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.63,
+      "elevation_source": "Existing adjacent arrival approach; GLB foot support and swept body checked; correction <= 0.32 m; 2026-11-16"
+    },
+    {
+      "name": "P1 033 Escalera de la torre este",
+      "x": 37.55,
+      "y": 56.15,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "service",
+      "code": "ucc:p01:f1:r033",
+      "display_name": "Escalera de la torre este",
+      "block_code": "A",
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "Existing adjacent arrival approach; GLB foot support and swept body checked; correction <= 0.32 m; 2026-11-16"
+    }
+  ],
+  "paths": []
+}

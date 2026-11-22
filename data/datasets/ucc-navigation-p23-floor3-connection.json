@@ -1,0 +1,517 @@
+{
+  "scope": "ucc:floor3-connection",
+  "revision": "navigation-p23-c28-v1",
+  "source": "DWG P2/P3 room names and doors; uploaded C28 support, body-clearance and stair validation; 2026-11-16; manual arrivals pending",
+  "places": [
+    {
+      "name": "Third-floor stair approach on floor 2",
+      "x": 36.35,
+      "y": 54.650000000000006,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lower-corridor-turn",
+      "display_name": "Third-floor stair approach on floor 2",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.179999828338623,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Computer Laboratory 3 (floor 3)",
+      "x": 63.55,
+      "y": 59.15,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "laboratory",
+      "code": "ucc:f3:computer-lab-3-entrance",
+      "display_name": "Laboratorio de informática 3 · Aula 310 A",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Computer Laboratory 2 (floor 3)",
+      "x": 54.05,
+      "y": 59.35,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "laboratory",
+      "code": "ucc:f3:computer-lab-2-entrance",
+      "display_name": "Laboratorio de informática 2 · Aula 309 A",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Computer Laboratory 1 (floor 3)",
+      "x": 44.25,
+      "y": 59.55,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "laboratory",
+      "code": "ucc:f3:computer-lab-1-entrance",
+      "display_name": "Laboratorio de informática 1 · Aula 308 A",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 3 D13 corridor stand",
+      "x": 61.85000000000001,
+      "y": 55.95,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-3-outside",
+      "display_name": "Floor 3 D13 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 3 D13 doorway centre",
+      "x": 61.85000000000001,
+      "y": 56.55000000000001,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-3-door",
+      "display_name": "Floor 3 D13 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 3 D14 corridor stand",
+      "x": 52.650000000000006,
+      "y": 55.95,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-2-outside",
+      "display_name": "Floor 3 D14 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 3 D14 doorway centre",
+      "x": 52.650000000000006,
+      "y": 56.55000000000001,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-2-door",
+      "display_name": "Floor 3 D14 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 3 D15 corridor stand",
+      "x": 43.550000000000004,
+      "y": 55.95,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-1-outside",
+      "display_name": "Floor 3 D15 corridor stand",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Floor 3 D15 doorway centre",
+      "x": 43.550000000000004,
+      "y": 56.55000000000001,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-1-door",
+      "display_name": "Floor 3 D15 doorway centre",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Third-floor corridor near Computer Lab 1",
+      "x": 43.550000000000004,
+      "y": 54.650000000000006,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-1-corridor-turn",
+      "display_name": "Third-floor corridor near Computer Lab 1",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Third-floor corridor near Computer Lab 2",
+      "x": 52.650000000000006,
+      "y": 54.650000000000006,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-2-corridor-turn",
+      "display_name": "Third-floor corridor near Computer Lab 2",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Third-floor corridor near Computer Lab 3",
+      "x": 61.85000000000001,
+      "y": 54.650000000000006,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:lab-3-corridor-turn",
+      "display_name": "Third-floor corridor near Computer Lab 3",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Third-floor north circulation",
+      "x": 38.650000000000006,
+      "y": 54.650000000000006,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f3:north-corridor",
+      "display_name": "Third-floor north circulation",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.869999885559082,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:f3:e001",
+      "source_code": "ucc:f2:north-corridor",
+      "target_code": "ucc:p23:historical:64",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e002",
+      "source_code": "ucc:f3:lower-corridor-turn",
+      "target_code": "ucc:p23:historical:65",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e003",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:66",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e004",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:67",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e005",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:68",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e006",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:69",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e007",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:70",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e008",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:71",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e009",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:72",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e010",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:73",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e011",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:74",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e012",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:75",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e013",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:76",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e014",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:77",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e015",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:78",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e016",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:79",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e017",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:80",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e018",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:81",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e019",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:82",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e020",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:83",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e021",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:84",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e022",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:85",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e023",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:86",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e024",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:87",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e025",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:88",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e026",
+      "source_code": "ucc:f3:east-stair-00",
+      "target_code": "ucc:p23:historical:89",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e027",
+      "source_code": "ucc:f3:north-corridor",
+      "target_code": "ucc:p23:historical:90",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e028",
+      "source_code": "ucc:f3:north-corridor",
+      "target_code": "ucc:p23:historical:91",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e029",
+      "source_code": "ucc:f3:lab-1-corridor-turn",
+      "target_code": "ucc:p23:historical:92",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e030",
+      "source_code": "ucc:f3:lab-1-outside",
+      "target_code": "ucc:p23:historical:93",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e031",
+      "source_code": "ucc:f3:lab-1-door",
+      "target_code": "ucc:p23:historical:94",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e032",
+      "source_code": "ucc:f3:lab-1-corridor-turn",
+      "target_code": "ucc:p23:historical:95",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e033",
+      "source_code": "ucc:f3:lab-2-corridor-turn",
+      "target_code": "ucc:p23:historical:96",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e034",
+      "source_code": "ucc:f3:lab-2-outside",
+      "target_code": "ucc:p23:historical:97",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e035",
+      "source_code": "ucc:f3:lab-2-door",
+      "target_code": "ucc:p23:historical:98",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e036",
+      "source_code": "ucc:f3:lab-2-corridor-turn",
+      "target_code": "ucc:p23:historical:99",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e037",
+      "source_code": "ucc:f3:lab-3-corridor-turn",
+      "target_code": "ucc:p23:historical:100",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e038",
+      "source_code": "ucc:f3:lab-3-outside",
+      "target_code": "ucc:p23:historical:101",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f3:e039",
+      "source_code": "ucc:f3:lab-3-door",
+      "target_code": "ucc:p23:historical:102",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}

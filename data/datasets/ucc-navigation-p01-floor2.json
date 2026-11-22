@@ -1,0 +1,61 @@
+{
+  "scope": "ucc:floor2-connection",
+  "revision": "navigation-p01-c27-v1",
+  "source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending",
+  "places": [
+    {
+      "name": "East stair point 0 (floors 1-2)",
+      "x": 36.35,
+      "y": 55.85000000000001,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:east-stair-00",
+      "display_name": "East stair point 0 (floors 1-2)",
+      "block_code": null,
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "North circulation / east stair junction",
+      "x": 36.35,
+      "y": 54.45,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "waypoint",
+      "code": "ucc:f2:north-junction",
+      "display_name": "North circulation / east stair junction",
+      "block_code": null,
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:f2:e001",
+      "source_code": "ucc:floor1:p15",
+      "target_code": "ucc:p01:legacy-connector-21",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e002",
+      "source_code": "ucc:f2:north-junction",
+      "target_code": "ucc:p01:legacy-connector-22",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:f2:e003",
+      "source_code": "ucc:f2:north-junction",
+      "target_code": "ucc:p01:legacy-connector-23",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}
