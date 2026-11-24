@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session, selectinload
 from dependencies import CurrentUser, DatabaseSession
 from models import RouteVisit
 from schemas.routes import RouteVisitResponse
+from services import route_learning
 from services.history import to_visit_response, user_history_newest_first
 
 router = APIRouter(prefix="/routes/history", tags=["history"])
@@ -34,8 +35,10 @@ def read_last_route(
 
 @router.delete("", status_code=status.HTTP_204_NO_CONTENT)
 def clear_route_history(database_session: DatabaseSession, current_user: CurrentUser) -> Response:
+    # Route observations and their feedback are deleted with the history (foreign-key cascade).
     database_session.execute(delete(RouteVisit).where(RouteVisit.user_id == current_user.id))
     database_session.commit()
+    route_learning.refresh(database_session)
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
@@ -63,4 +66,5 @@ def delete_route_visit(
 ) -> Response:
     database_session.delete(get_own_visit(database_session, current_user.id, visit_id))
     database_session.commit()
+    route_learning.refresh(database_session)
     return Response(status_code=status.HTTP_204_NO_CONTENT)
