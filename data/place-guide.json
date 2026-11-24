@@ -1,0 +1,2559 @@
+{
+ "version": 1,
+ "generated": "2026-11-24",
+ "source": "Reglas sobre los nombres del DWG (scripts/build_place_guide.py). 's' = interpretación SUPUESTA del nombre, para revisar.",
+ "categories": {
+  "bano": {
+   "label": "Baños",
+   "priority": 2,
+   "words": [
+    "baño",
+    "baños",
+    "sanitario",
+    "sanitarios",
+    "wc",
+    "servicio sanitario",
+    "restroom",
+    "restrooms",
+    "toilet",
+    "toilets",
+    "bathroom",
+    "bathrooms",
+    "lavabo"
+   ]
+  },
+  "comida": {
+   "label": "Comida y bebida",
+   "priority": 2,
+   "words": [
+    "cafetería",
+    "cafeteria",
+    "cafetín",
+    "cafe",
+    "comida",
+    "restaurante",
+    "food",
+    "cafeteria",
+    "snack"
+   ]
+  },
+  "biblioteca": {
+   "label": "Biblioteca",
+   "priority": 2,
+   "words": [
+    "biblioteca",
+    "hemeroteca",
+    "libros",
+    "library",
+    "books"
+   ]
+  },
+  "estudio": {
+   "label": "Espacios de estudio",
+   "priority": 2,
+   "words": [
+    "sala de estudio",
+    "estudio",
+    "consulta digital",
+    "study room",
+    "study"
+   ]
+  },
+  "aula": {
+   "label": "Aulas y auditorios",
+   "priority": 2,
+   "words": [
+    "aula",
+    "aulas",
+    "salón",
+    "salon",
+    "clase",
+    "auditorio",
+    "classroom",
+    "lecture hall",
+    "auditorium"
+   ]
+  },
+  "laboratorio": {
+   "label": "Laboratorios",
+   "priority": 2,
+   "words": [
+    "laboratorio",
+    "laboratorios",
+    "lab",
+    "labs",
+    "laboratory"
+   ]
+  },
+  "salud": {
+   "label": "Salud y primeros auxilios",
+   "priority": 2,
+   "words": [
+    "primeros auxilios",
+    "enfermería",
+    "first aid",
+    "nurse",
+    "infirmary"
+   ]
+  },
+  "bienestar": {
+   "label": "Bienestar y apoyo",
+   "priority": 2,
+   "words": [
+    "bienestar",
+    "psicosocial",
+    "apoyo",
+    "wellbeing",
+    "counseling"
+   ]
+  },
+  "deporte": {
+   "label": "Deporte y recreación",
+   "priority": 2,
+   "words": [
+    "cancha",
+    "canchas",
+    "gimnasio",
+    "gym",
+    "juegos",
+    "deporte",
+    "sports",
+    "court"
+   ]
+  },
+  "tramites": {
+   "label": "Trámites y oficinas",
+   "priority": 1,
+   "words": [
+    "oficina",
+    "oficinas",
+    "trámite",
+    "tramites",
+    "secretaría",
+    "secretaria",
+    "coordinación",
+    "decanatura",
+    "office",
+    "admissions"
+   ]
+  },
+  "docentes": {
+   "label": "Salas de docentes",
+   "priority": 1,
+   "words": [
+    "sala de profesores",
+    "profesores",
+    "docentes",
+    "teachers room",
+    "faculty room"
+   ]
+  },
+  "servicios": {
+   "label": "Servicios al estudiante",
+   "priority": 2,
+   "words": [
+    "servicio",
+    "servicios",
+    "recepción",
+    "información",
+    "lockers",
+    "casilleros",
+    "lactancia",
+    "vigilancia",
+    "correspondencia"
+   ]
+  },
+  "ascensor": {
+   "label": "Ascensores",
+   "priority": 2,
+   "words": [
+    "ascensor",
+    "ascensores",
+    "elevador",
+    "elevator",
+    "lift"
+   ]
+  },
+  "escalera": {
+   "label": "Escaleras",
+   "priority": 1,
+   "words": [
+    "escalera",
+    "escaleras",
+    "gradas",
+    "stairs",
+    "staircase"
+   ]
+  },
+  "acceso": {
+   "label": "Accesos y entradas",
+   "priority": 2,
+   "words": [
+    "entrada",
+    "acceso",
+    "salida",
+    "puerta principal",
+    "entrance",
+    "exit",
+    "way in",
+    "way out"
+   ]
+  },
+  "zona_comun": {
+   "label": "Halls, patios y terrazas",
+   "priority": 1,
+   "words": [
+    "hall",
+    "plazoleta",
+    "patio",
+    "terraza",
+    "balcón",
+    "zona común"
+   ]
+  },
+  "clinica": {
+   "label": "Áreas clínicas de práctica",
+   "priority": 1,
+   "words": [
+    "clínica",
+    "consultorio",
+    "simulación",
+    "cuidado crítico",
+    "rx",
+    "clinic",
+    "simulation"
+   ]
+  },
+  "local": {
+   "label": "Locales",
+   "priority": 1,
+   "words": [
+    "local",
+    "locales",
+    "tienda",
+    "shop"
+   ]
+  },
+  "tecnico": {
+   "label": "Áreas técnicas y de personal",
+   "priority": 0,
+   "words": [
+    "bodega",
+    "cuarto técnico",
+    "depósito",
+    "almacén",
+    "storage"
+   ]
+  }
+ },
+ "needs": {
+  "comer": {
+   "words": [
+    "comer",
+    "comida",
+    "almorzar",
+    "almuerzo",
+    "desayunar",
+    "desayuno",
+    "hambre",
+    "merienda",
+    "onces",
+    "eat",
+    "food",
+    "lunch",
+    "breakfast",
+    "hungry"
+   ],
+   "categories": [
+    "comida"
+   ]
+  },
+  "beber": {
+   "words": [
+    "sed",
+    "agua",
+    "beber",
+    "tomar algo",
+    "café",
+    "tinto",
+    "jugo",
+    "drink",
+    "water",
+    "coffee",
+    "thirsty"
+   ],
+   "categories": [
+    "comida"
+   ]
+  },
+  "estudiar": {
+   "words": [
+    "estudiar",
+    "silencio",
+    "tranquilo",
+    "concentrarme",
+    "leer",
+    "lectura",
+    "libro",
+    "libros",
+    "repasar",
+    "tarea",
+    "study",
+    "quiet",
+    "read",
+    "homework"
+   ],
+   "categories": [
+    "biblioteca",
+    "estudio"
+   ],
+   "first": [
+    "biblioteca 1",
+    "hemeroteca"
+   ]
+  },
+  "computador": {
+   "words": [
+    "computador",
+    "computadora",
+    "pc",
+    "internet",
+    "wifi",
+    "computer"
+   ],
+   "categories": [
+    "estudio"
+   ],
+   "first": [
+    "sala de consulta digital"
+   ]
+  },
+  "salud": {
+   "words": [
+    "enfermo",
+    "enferma",
+    "dolor",
+    "mareo",
+    "mareado",
+    "herida",
+    "sangre",
+    "emergencia",
+    "accidente",
+    "me siento mal",
+    "sick",
+    "hurt",
+    "emergency",
+    "injured"
+   ],
+   "categories": [
+    "salud"
+   ],
+   "first": [
+    "primeros auxilios"
+   ]
+  },
+  "apoyo": {
+   "words": [
+    "psicólogo",
+    "psicologo",
+    "psicología",
+    "ansiedad",
+    "estrés",
+    "estres",
+    "triste",
+    "hablar con alguien",
+    "apoyo emocional",
+    "beca",
+    "becas",
+    "counselor",
+    "stress",
+    "anxiety"
+   ],
+   "categories": [
+    "bienestar"
+   ]
+  },
+  "pagar": {
+   "words": [
+    "pagar",
+    "pago",
+    "pagos",
+    "matrícula",
+    "matricula",
+    "recibo",
+    "factura",
+    "caja",
+    "tesorería",
+    "pay",
+    "payment",
+    "tuition"
+   ],
+   "categories": [
+    "tramites"
+   ],
+   "first": [
+    "tesoreria"
+   ]
+  },
+  "credito": {
+   "words": [
+    "crédito",
+    "credito",
+    "préstamo",
+    "prestamo",
+    "financiación",
+    "financiacion",
+    "icetex",
+    "loan"
+   ],
+   "categories": [
+    "tramites"
+   ],
+   "first": [
+    "icetex"
+   ]
+  },
+  "registro": {
+   "words": [
+    "admisiones",
+    "inscripción",
+    "inscripcion",
+    "notas",
+    "certificado",
+    "certificados",
+    "registro académico",
+    "registro",
+    "admissions",
+    "transcript"
+   ],
+   "categories": [
+    "tramites"
+   ],
+   "first": [
+    "darc"
+   ]
+  },
+  "deporte": {
+   "words": [
+    "ejercicio",
+    "entrenar",
+    "deporte",
+    "deportes",
+    "fútbol",
+    "futbol",
+    "microfútbol",
+    "jugar",
+    "gym",
+    "sport",
+    "sports",
+    "workout",
+    "soccer"
+   ],
+   "categories": [
+    "deporte"
+   ]
+  },
+  "recreacion": {
+   "words": [
+    "ping pong",
+    "billar",
+    "descansar",
+    "relajarme",
+    "entretenimiento",
+    "play",
+    "relax"
+   ],
+   "categories": [
+    "deporte"
+   ],
+   "first": [
+    "juegos de salon"
+   ]
+  },
+  "musica": {
+   "words": [
+    "música",
+    "musica",
+    "cantar",
+    "instrumento",
+    "ensayar",
+    "music"
+   ],
+   "categories": [
+    "deporte"
+   ],
+   "first": [
+    "salon de musica"
+   ]
+  },
+  "idiomas": {
+   "words": [
+    "inglés",
+    "ingles",
+    "idiomas",
+    "idioma",
+    "francés",
+    "english",
+    "languages"
+   ],
+   "categories": [
+    "tramites"
+   ],
+   "first": [
+    "centro de idiomas"
+   ]
+  },
+  "lactancia": {
+   "words": [
+    "lactancia",
+    "amamantar",
+    "bebé",
+    "bebe",
+    "extraer leche",
+    "breastfeeding",
+    "nursing room"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "lactancia"
+   ]
+  },
+  "guardar": {
+   "words": [
+    "locker",
+    "lockers",
+    "casillero",
+    "casilleros",
+    "guardar",
+    "dejar mis cosas",
+    "maleta",
+    "morral"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "area de lockers"
+   ]
+  },
+  "seguridad": {
+   "words": [
+    "seguridad",
+    "vigilante",
+    "vigilancia",
+    "robo",
+    "me robaron",
+    "perdí",
+    "perdi",
+    "objeto perdido",
+    "security",
+    "lost"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "vigilantes",
+    "recepcion"
+   ]
+  },
+  "informacion": {
+   "words": [
+    "información",
+    "informacion",
+    "informes",
+    "preguntar",
+    "ayuda",
+    "orientación",
+    "info",
+    "help desk",
+    "reception"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "recepcion"
+   ]
+  },
+  "bici": {
+   "words": [
+    "bicicleta",
+    "bici",
+    "bicis",
+    "bike",
+    "urkubici"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "bicicletas"
+   ]
+  },
+  "correo": {
+   "words": [
+    "correo",
+    "paquete",
+    "carta",
+    "documentos",
+    "radicar",
+    "mail",
+    "package"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "correspondencia"
+   ]
+  },
+  "cambiarse": {
+   "words": [
+    "cambiarme",
+    "vestier",
+    "ropa",
+    "uniforme",
+    "changing room"
+   ],
+   "categories": [
+    "servicios"
+   ],
+   "first": [
+    "vestier"
+   ]
+  },
+  "profesor": {
+   "words": [
+    "profesor",
+    "profesora",
+    "profesores",
+    "docente",
+    "docentes",
+    "teacher",
+    "professor"
+   ],
+   "categories": [
+    "docentes"
+   ]
+  },
+  "decano": {
+   "words": [
+    "decano",
+    "decana",
+    "decanatura",
+    "dean"
+   ],
+   "categories": [
+    "tramites"
+   ],
+   "first": [
+    "decanatura"
+   ]
+  },
+  "subir": {
+   "words": [
+    "subir",
+    "bajar",
+    "otro piso",
+    "silla de ruedas",
+    "movilidad reducida",
+    "wheelchair",
+    "upstairs",
+    "downstairs"
+   ],
+   "categories": [
+    "ascensor",
+    "escalera"
+   ]
+  },
+  "salir": {
+   "words": [
+    "salir",
+    "salida",
+    "entrar",
+    "entrada",
+    "llegar al campus",
+    "exit",
+    "way out"
+   ],
+   "categories": [
+    "acceso"
+   ],
+   "first": [
+    "acceso principal"
+   ]
+  }
+ },
+ "missing": {
+  "imprimir": {
+   "words": [
+    "imprimir",
+    "impresión",
+    "impresion",
+    "impresora",
+    "fotocopia",
+    "fotocopias",
+    "copias",
+    "escanear",
+    "print",
+    "printer",
+    "copies"
+   ],
+   "message": "No hay un punto de impresión o fotocopias marcado en el mapa de UniNav.",
+   "ask": [
+    "recepcion",
+    "biblioteca 1"
+   ]
+  },
+  "parqueadero": {
+   "words": [
+    "parqueadero",
+    "parqueo",
+    "estacionamiento",
+    "parquear",
+    "carro",
+    "moto",
+    "parking",
+    "car park"
+   ],
+   "message": "El parqueadero no está en el mapa de UniNav.",
+   "ask": [
+    "vigilantes",
+    "acceso principal"
+   ]
+  },
+  "cajero": {
+   "words": [
+    "cajero",
+    "cajero automático",
+    "atm",
+    "retirar plata",
+    "plata",
+    "efectivo",
+    "cash"
+   ],
+   "message": "No hay un cajero automático marcado en el mapa de UniNav.",
+   "ask": [
+    "recepcion"
+   ]
+  },
+  "papeleria": {
+   "words": [
+    "papelería",
+    "papeleria",
+    "útiles",
+    "cuaderno",
+    "esfero",
+    "stationery"
+   ],
+   "message": "No hay una papelería marcada en el mapa. En el piso 1 hay locales (Local 1–4), pero el plano no dice qué venden.",
+   "ask": [
+    "local 1"
+   ]
+  },
+  "capilla": {
+   "words": [
+    "capilla",
+    "iglesia",
+    "orar",
+    "rezar",
+    "chapel"
+   ],
+   "message": "No hay una capilla marcada en el mapa de UniNav.",
+   "ask": [
+    "bienestar universitario"
+   ]
+  }
+ },
+ "places": {
+  "ucc:f0:elevator-lobby": {
+   "c": "ascensor",
+   "p": 2,
+   "a": [
+    "ascensores",
+    "elevador"
+   ]
+  },
+  "ucc:f0:simulation-lab-entrance": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:f0:waiting-room": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:f2:medical-research-arrival": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:f2:mixed-reality-entrance": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:f2:molecular-biology-entrance": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:f3:computer-lab-1-entrance": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:f3:computer-lab-2-entrance": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:f3:computer-lab-3-entrance": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:f45:classroom-420-entrance": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:f45:classroom-421-entrance": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:f45:classroom-422-entrance": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:f45:classroom-512-entrance": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:f45:classroom-513-entrance": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:f45:classroom-515-entrance": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:floor1:p06": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "crédito educativo",
+    "financiación",
+    "préstamo"
+   ]
+  },
+  "ucc:floor1:p10": {
+   "c": "ascensor",
+   "p": 2,
+   "a": [
+    "ascensores",
+    "baños",
+    "elevador"
+   ]
+  },
+  "ucc:floor1:p13": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:floor1:p14": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:floor1:p17": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r001": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r002": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r003": {
+   "c": "estudio",
+   "p": 2,
+   "a": [
+    "computadores",
+    "estudiar"
+   ],
+   "s": true
+  },
+  "ucc:p01:f0:r004": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:r005": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r006": {
+   "c": "bano",
+   "p": 1,
+   "s": true
+  },
+  "ucc:p01:f0:r007": {
+   "c": "bano",
+   "p": 1,
+   "s": true
+  },
+  "ucc:p01:f0:r008": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "lockers"
+   ]
+  },
+  "ucc:p01:f0:r009": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "lockers"
+   ]
+  },
+  "ucc:p01:f0:r010": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r011": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f0:r012": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r013": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:r014": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r015": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r016": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r017": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r018": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r019": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r020": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r021": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r022": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r023": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r024": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r025": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r026": {
+   "c": "clinica",
+   "p": 0
+  },
+  "ucc:p01:f0:r027": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r028": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:r030": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p01:f0:r031": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r032": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r033": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r034": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r035": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r036": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r037": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r038": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r039": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r040": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r041": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r042": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p01:f0:r044": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r045": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r047": {
+   "c": "acceso",
+   "p": 2
+  },
+  "ucc:p01:f0:r048": {
+   "c": "acceso",
+   "p": 2
+  },
+  "ucc:p01:f0:r049": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:r050": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r051": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r052": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "cambiarse",
+    "vestier"
+   ]
+  },
+  "ucc:p01:f0:r053": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r055": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "cuarto de aseo",
+    "janitor",
+    "limpieza"
+   ],
+   "s": true
+  },
+  "ucc:p01:f0:r056": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "cuarto de aseo",
+    "janitor",
+    "limpieza"
+   ],
+   "s": true
+  },
+  "ucc:p01:f0:r057": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "damas",
+    "mujeres",
+    "women"
+   ]
+  },
+  "ucc:p01:f0:r058": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p01:f0:r059": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:r060": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:r061": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:r062": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r063": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r064": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r065": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r066": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:r067": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:s01": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:s02": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f0:s03": {
+   "c": "acceso",
+   "p": 2
+  },
+  "ucc:p01:f0:s04": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f0:s05": {
+   "c": "salud",
+   "p": 2,
+   "a": [
+    "enfermería"
+   ],
+   "s": true
+  },
+  "ucc:p01:f0:s06": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:s07": {
+   "c": "comida",
+   "p": 2,
+   "a": [
+    "café",
+    "comer",
+    "comida",
+    "tinto"
+   ]
+  },
+  "ucc:p01:f0:s08": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f0:s09": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f0:s10": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f1:r001": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p01:f1:r003": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r004": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r005": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:r006": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p01:f1:r007": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r008": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r009": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r010": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f1:r011": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f1:r012": {
+   "c": "bienestar",
+   "p": 2,
+   "a": [
+    "apoyo",
+    "bienestar",
+    "psicología"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r013": {
+   "c": "bienestar",
+   "p": 2,
+   "a": [
+    "apoyo",
+    "bienestar",
+    "psicología"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r014": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r015": {
+   "c": "deporte",
+   "p": 2,
+   "a": [
+    "juegos",
+    "ping pong",
+    "recreación"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r016": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r017": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "casilleros",
+    "guardar cosas",
+    "lockers"
+   ]
+  },
+  "ucc:p01:f1:r018": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f1:r023": {
+   "c": "clinica",
+   "p": 1
+  },
+  "ucc:p01:f1:r024": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r025": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "damas",
+    "mujeres",
+    "women"
+   ]
+  },
+  "ucc:p01:f1:r026": {
+   "c": "local",
+   "p": 1
+  },
+  "ucc:p01:f1:r027": {
+   "c": "bano",
+   "p": 1,
+   "s": true
+  },
+  "ucc:p01:f1:r028": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r029": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r030": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r031": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r032": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r033": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p01:f1:r034": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:r036": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r037": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r038": {
+   "c": "bano",
+   "p": 1,
+   "s": true
+  },
+  "ucc:p01:f1:r039": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r040": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r041": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r042": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r044": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "cambiarse",
+    "vestier"
+   ]
+  },
+  "ucc:p01:f1:r046": {
+   "c": "bano",
+   "p": 1,
+   "s": true
+  },
+  "ucc:p01:f1:r047": {
+   "c": "bano",
+   "p": 1,
+   "s": true
+  },
+  "ucc:p01:f1:r048": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "caja",
+    "matrícula",
+    "pagar",
+    "pagos"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r049": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "admisiones",
+    "registro académico"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r050": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r051": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "admisiones",
+    "registro académico"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r052": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r053": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "admisiones",
+    "registro académico"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r054": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "bebé",
+    "lactancia",
+    "sala amiga"
+   ]
+  },
+  "ucc:p01:f1:r055": {
+   "c": "salud",
+   "p": 2,
+   "a": [
+    "emergencia",
+    "first aid",
+    "primeros auxilios"
+   ]
+  },
+  "ucc:p01:f1:r056": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r057": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:r058": {
+   "c": "deporte",
+   "p": 2,
+   "a": [
+    "ejercicio",
+    "gym"
+   ]
+  },
+  "ucc:p01:f1:r059": {
+   "c": "bienestar",
+   "p": 2,
+   "a": [
+    "apoyo",
+    "bienestar",
+    "psicología"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:r060": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:r061": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p01:f1:r062": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p01:f1:r063": {
+   "c": "acceso",
+   "p": 2
+  },
+  "ucc:p01:f1:r065": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r066": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "guardas",
+    "seguridad",
+    "vigilancia"
+   ]
+  },
+  "ucc:p01:f1:r067": {
+   "c": "bano",
+   "p": 2
+  },
+  "ucc:p01:f1:r069": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:r070": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:s01": {
+   "c": "comida",
+   "p": 2,
+   "a": [
+    "café",
+    "comer",
+    "comida",
+    "tinto"
+   ]
+  },
+  "ucc:p01:f1:s02": {
+   "c": "local",
+   "p": 1
+  },
+  "ucc:p01:f1:s03": {
+   "c": "local",
+   "p": 1
+  },
+  "ucc:p01:f1:s04": {
+   "c": "local",
+   "p": 1
+  },
+  "ucc:p01:f1:s05": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "información",
+    "informes",
+    "preguntar"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:s06": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "cartas",
+    "correo",
+    "paquetes"
+   ]
+  },
+  "ucc:p01:f1:s07": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:s08": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:s09": {
+   "c": "servicios",
+   "p": 2,
+   "a": [
+    "bici",
+    "bicicletas",
+    "urkubici"
+   ]
+  },
+  "ucc:p01:f1:s10": {
+   "c": "acceso",
+   "p": 2
+  },
+  "ucc:p01:f1:s11": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:s12": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:s13": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:s14": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:s15": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p01:f1:s16": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p01:f1:s17": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "crédito educativo",
+    "financiación",
+    "préstamo"
+   ]
+  },
+  "ucc:p01:f1:s18": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "admisiones",
+    "registro académico"
+   ],
+   "s": true
+  },
+  "ucc:p01:f1:s19": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:s20": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p01:f1:s21": {
+   "c": "estudio",
+   "p": 2,
+   "a": [
+    "computadores",
+    "estudiar"
+   ],
+   "s": true
+  },
+  "ucc:p23:f2:r001": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p23:f2:r002": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p23:f2:r003": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r004": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r005": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r006": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f2:r007": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r009": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r011": {
+   "c": "estudio",
+   "p": 2,
+   "a": [
+    "computadores",
+    "estudiar"
+   ],
+   "s": true
+  },
+  "ucc:p23:f2:r012": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r013": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r014": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r015": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r016": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r017": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r018": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r020": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r021": {
+   "c": "local",
+   "p": 1
+  },
+  "ucc:p23:f2:r022": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r023": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r025": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r026": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r027": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f2:r028": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r029": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r030": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r031": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r032": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p23:f2:r033": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f2:r034": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r035": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r036": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f2:r037": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r038": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r039": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r040": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r041": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r042": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r043": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r044": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r045": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f2:r046": {
+   "c": "biblioteca",
+   "p": 2,
+   "a": [
+    "libros",
+    "préstamo de libros"
+   ]
+  },
+  "ucc:p23:f2:r048": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r050": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p23:f2:r051": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f2:r052": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p23:f2:r053": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r054": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r055": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f2:r056": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:r057": {
+   "c": "biblioteca",
+   "p": 2,
+   "a": [
+    "libros",
+    "préstamo de libros"
+   ]
+  },
+  "ucc:p23:f2:s02": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f2:s03": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p23:f2:s04": {
+   "c": "ascensor",
+   "p": 2,
+   "a": [
+    "ascensores",
+    "baños",
+    "elevador"
+   ]
+  },
+  "ucc:p23:f3:r002": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f3:r005": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f3:r006": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f3:r007": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f3:r008": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f3:r010": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f3:r011": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f3:r012": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p23:f3:r013": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f3:r014": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r015": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f3:r016": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r017": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f3:r018": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p23:f3:r019": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p23:f3:r020": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r021": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p23:f3:r022": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r023": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f3:r024": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f3:r025": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r026": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r027": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f3:r028": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p23:f3:r029": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "damas",
+    "mujeres",
+    "women"
+   ]
+  },
+  "ucc:p23:f3:r030": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p23:f3:r031": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "cuarto de aseo",
+    "janitor",
+    "limpieza"
+   ],
+   "s": true
+  },
+  "ucc:p23:f3:r032": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "damas",
+    "mujeres",
+    "women"
+   ]
+  },
+  "ucc:p23:f3:r033": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p23:f3:r034": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f3:r035": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:r036": {
+   "c": "estudio",
+   "p": 2,
+   "a": [
+    "computadores",
+    "estudiar"
+   ],
+   "s": true
+  },
+  "ucc:p23:f3:r037": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p23:f3:s01": {
+   "c": "biblioteca",
+   "p": 2,
+   "a": [
+    "libros",
+    "préstamo de libros"
+   ]
+  },
+  "ucc:p23:f3:s02": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p23:f3:s03": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p23:f3:s04": {
+   "c": "ascensor",
+   "p": 2,
+   "a": [
+    "ascensores",
+    "baños",
+    "elevador"
+   ]
+  },
+  "ucc:p23:f3:s05": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p4:f4:r001": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r003": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r005": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r006": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r008": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r009": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p4:f4:r010": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p4:f4:r011": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r012": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r013": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r014": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r015": {
+   "c": "comida",
+   "p": 1,
+   "a": [
+    "café",
+    "comer",
+    "comida",
+    "tinto"
+   ],
+   "s": true
+  },
+  "ucc:p4:f4:r017": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p4:f4:r018": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r019": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r020": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r021": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r022": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r023": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p4:f4:r024": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r025": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r026": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r027": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p4:f4:r028": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p4:f4:r029": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:r030": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p4:f4:r031": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p4:f4:r032": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r035": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:r036": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "cuarto de aseo",
+    "janitor",
+    "limpieza"
+   ],
+   "s": true
+  },
+  "ucc:p4:f4:r037": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p4:f4:r038": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p4:f4:r039": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "cuarto de aseo",
+    "janitor",
+    "limpieza"
+   ],
+   "s": true
+  },
+  "ucc:p4:f4:r040": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "damas",
+    "mujeres",
+    "women"
+   ]
+  },
+  "ucc:p4:f4:r041": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p4:f4:r042": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p4:f4:s02": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:s03": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p4:f4:s04": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:s05": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p4:f4:s06": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p4:f4:s07": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p4:f4:s08": {
+   "c": "ascensor",
+   "p": 2,
+   "a": [
+    "ascensores",
+    "baños",
+    "elevador"
+   ]
+  },
+  "ucc:p4:f4:s09": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p4:f4:s10": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p4:f4:s11": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p5:f5:r001": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p5:f5:r002": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p5:f5:r004": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r007": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r008": {
+   "c": "docentes",
+   "p": 1,
+   "a": [
+    "docentes",
+    "profesores"
+   ]
+  },
+  "ucc:p5:f5:r009": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p5:f5:r010": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p5:f5:r011": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r012": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r013": {
+   "c": "laboratorio",
+   "p": 2
+  },
+  "ucc:p5:f5:r014": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r015": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r016": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r017": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p5:f5:r018": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p5:f5:r019": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p5:f5:r020": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r021": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r022": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r023": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r024": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r025": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r026": {
+   "c": "aula",
+   "p": 2
+  },
+  "ucc:p5:f5:r027": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p5:f5:r028": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p5:f5:r029": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p5:f5:r030": {
+   "c": "tecnico",
+   "p": 0,
+   "a": [
+    "cuarto de aseo",
+    "janitor",
+    "limpieza"
+   ],
+   "s": true
+  },
+  "ucc:p5:f5:r031": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "caballeros",
+    "hombres",
+    "men"
+   ]
+  },
+  "ucc:p5:f5:r032": {
+   "c": "bano",
+   "p": 2,
+   "a": [
+    "damas",
+    "mujeres",
+    "women"
+   ]
+  },
+  "ucc:p5:f5:r033": {
+   "c": "tramites",
+   "p": 1,
+   "a": [
+    "idiomas",
+    "inglés",
+    "languages"
+   ]
+  },
+  "ucc:p5:f5:r035": {
+   "c": "tramites",
+   "p": 1
+  },
+  "ucc:p5:f5:s01": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p5:f5:s02": {
+   "c": "ascensor",
+   "p": 2,
+   "a": [
+    "ascensores",
+    "baños",
+    "elevador"
+   ]
+  },
+  "ucc:p5:f5:s03": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p5:f5:s04": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p6:bodega": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p6:cancha-este": {
+   "c": "deporte",
+   "p": 2,
+   "a": [
+    "cancha",
+    "fútbol",
+    "microfútbol"
+   ]
+  },
+  "ucc:p6:cancha-oeste": {
+   "c": "deporte",
+   "p": 2,
+   "a": [
+    "cancha",
+    "fútbol",
+    "microfútbol"
+   ]
+  },
+  "ucc:p6:circulacion-este": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p6:circulacion-oeste": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p6:cuarto-maquinas": {
+   "c": "tecnico",
+   "p": 0
+  },
+  "ucc:p6:salon-musica": {
+   "c": "deporte",
+   "p": 2,
+   "a": [
+    "ensayo",
+    "música"
+   ]
+  },
+  "ucc:p6:terraza-nucleo": {
+   "c": "zona_comun",
+   "p": 1
+  },
+  "ucc:p6:torre-este": {
+   "c": "escalera",
+   "p": 1
+  },
+  "ucc:p6:torre-oeste": {
+   "c": "escalera",
+   "p": 1
+  }
+ }
+}

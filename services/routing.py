@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 
 from models import Building
 from schemas.paths import PathKind
-from schemas.routes import PathAlgorithm
+from schemas.routes import PathAlgorithm, RouteMode
 from services.buildings import get_building_or_404
 from services.campus_graph import campus_graph_service
 
@@ -23,6 +23,7 @@ def compute_path(
     destination: Building,
     algorithm: PathAlgorithm,
     avoid: list[PathKind] | None = None,
+    mode: RouteMode = RouteMode.SHORTEST,
 ) -> tuple[list[str], float]:
     if not campus_graph_service.contains(origin.id, destination.id):
         raise HTTPException(
@@ -31,7 +32,7 @@ def compute_path(
         )
 
     path, distance = campus_graph_service.find_path(
-        origin.id, destination.id, algorithm, frozenset(avoid or [])
+        origin.id, destination.id, algorithm, frozenset(avoid or []), mode
     )
     if not path:
         raise HTTPException(

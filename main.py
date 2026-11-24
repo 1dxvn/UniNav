@@ -6,9 +6,11 @@ from contextlib import asynccontextmanager
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
+from starlette.types import Receive, Scope, Send
 
 from config import ALLOWED_ORIGINS, API_DESCRIPTION, API_TITLE, API_VERSION, FRONTEND_DIST
-from database import init_db
+from database import SessionLocal, init_db
 from frontend import mount_frontend
 from routers import (
     auth,
@@ -27,6 +29,7 @@ from routers import (
     tours,
     users,
 )
+from services import route_learning
 from services.campus_graph import campus_graph_service
 from services.runtime_state import attach_runtime_stores, detach_runtime_stores
 
@@ -35,6 +38,8 @@ from services.runtime_state import attach_runtime_stores, detach_runtime_stores
 async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
     init_db()
     campus_graph_service.load_from_database()
+    with SessionLocal() as database_session:
+        route_learning.startup(database_session)
     try:
         attach_runtime_stores()
         yield
@@ -48,6 +53,18 @@ app = FastAPI(
     description=API_DESCRIPTION,
     lifespan=lifespan,
 )
+
+class ApiGZipMiddleware(GZipMiddleware):
+    """Compresses API responses (/paths and /buildings weigh several MB) but not the /app build files."""
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        if scope["type"] == "http" and not scope["path"].startswith("/app"):
+            await super().__call__(scope, receive, send)
+        else:
+            await self.app(scope, receive, send)
+
+
+app.add_middleware(ApiGZipMiddleware, minimum_size=1024, compresslevel=6)
 
 app.add_middleware(
     CORSMiddleware,

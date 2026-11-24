@@ -167,6 +167,55 @@ class RouteVisit(Base):
         )
 
 
+class RouteObservation(Base):
+    """The exact connections of one calculated route, so the router can learn from how it went.
+
+    Deleted together with its history entry; older than ROUTE_LEARNING_RETENTION_DAYS is purged at startup."""
+
+    __tablename__ = "route_observations"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    route_visit_id: Mapped[Optional[int]] = mapped_column(
+        ForeignKey("route_visits.id", ondelete="CASCADE"), nullable=True, index=True
+    )
+    origin_id: Mapped[int] = mapped_column(ForeignKey("buildings.id", ondelete="CASCADE"), nullable=False)
+    destination_id: Mapped[int] = mapped_column(ForeignKey("buildings.id", ondelete="CASCADE"), nullable=False)
+    mode: Mapped[str] = mapped_column(String(20), nullable=False)
+    avoid: Mapped[str] = mapped_column(String(60), nullable=False, default="")
+    path_ids: Mapped[str] = mapped_column(Text, nullable=False)  # JSON list of paths.id, in route order
+    distance: Mapped[float] = mapped_column(Float, nullable=False)
+    outcome: Mapped[Optional[str]] = mapped_column(String(20), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utc_now, nullable=False, index=True)
+
+
+class RouteFeedback(Base):
+    __tablename__ = "route_feedback"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    observation_id: Mapped[int] = mapped_column(
+        ForeignKey("route_observations.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    rating: Mapped[int] = mapped_column(Integer, nullable=False)
+    reason: Mapped[Optional[str]] = mapped_column(String(20), nullable=True)
+    path_id: Mapped[Optional[int]] = mapped_column(ForeignKey("paths.id", ondelete="SET NULL"), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utc_now, nullable=False)
+
+
+class BlockedPathReport(Base):
+    """A user's report that a connection cannot be used (closed door, works). Admins can confirm or clear it."""
+
+    __tablename__ = "blocked_path_reports"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    path_id: Mapped[int] = mapped_column(ForeignKey("paths.id", ondelete="CASCADE"), nullable=False, index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    reason: Mapped[str] = mapped_column(String(30), nullable=False, default="closed")
+    confirmed: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utc_now, nullable=False)
+
+
 class Tour(Base):
     __tablename__ = "tours"
 
