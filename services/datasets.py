@@ -11,8 +11,50 @@ from models import Building, CampusDataRevision, CampusPath
 from schemas.datasets import CampusDataset, DatasetImportResult
 
 
-def import_dataset(session: Session, dataset: CampusDataset, *, adopt_legacy: bool = False,
-                   _places_only: bool = False) -> DatasetImportResult:
+def import_places(session: Session, dataset: CampusDataset, *, revision: CampusDataRevision | None,
+                  adopt_legacy: bool = False) -> tuple[dict[str, Building], int]:
+    created = 0
+    places = {place.code: place for place in session.scalars(select(Building))}
+    by_name = {place.name: place for place in places.values()}
+    for record in dataset.places:
+        values = record.model_dump()
+        place = places.get(record.code)
+        if place is None and record.name in by_name:
+            candidate = by_name[record.name]
+            same_location = (abs(candidate.x-record.x) < 0.001 and abs(candidate.y-record.y) < 0.001
+                and candidate.floor == record.floor and abs(candidate.effective_elevation_m-record.elevation_m) < 0.001)
+            if not (adopt_legacy and candidate.data_scope is None and same_location
+                    and candidate.code.startswith(("legacy-place:", "place:"))):
+                raise ValueError(f"Legacy name already belongs to another record: {record.name}.")
+            place = candidate
+        if place is None:
+            if revision:
+                raise ValueError(f"Stored revision has missing place: {record.code}.")
+            place = Building(**values, data_scope=dataset.scope)
+            session.add(place)
+            created += 1
+        else:
+            if place.data_scope != dataset.scope and not (adopt_legacy and place.data_scope is None
+                    and place.code.startswith(("legacy-place:", "place:"))
+                    and abs(place.x-record.x) < 0.001 and abs(place.y-record.y) < 0.001
+                    and place.floor == record.floor and abs(place.effective_elevation_m-record.elevation_m) < 0.001):
+                raise ValueError(f"Place is owned by another scope: {record.code}.")
+            if revision and any(getattr(place, key) != value for key, value in values.items()):
+                raise ValueError(f"Stored revision has changed place: {record.code}.")
+            name_owner = by_name.get(record.name)
+            if name_owner is not None and name_owner is not place:
+                raise ValueError(f"Legacy name already exists: {record.name}.")
+            by_name.pop(place.name, None)
+            for key, value in values.items():
+                setattr(place, key, value)
+            place.data_scope = dataset.scope
+        places[record.code] = place
+        by_name[record.name] = place
+    session.flush()
+    return places, created
+
+
+def import_dataset(session: Session, dataset: CampusDataset, *, adopt_legacy: bool = False) -> DatasetImportResult:
     payload_hash = hashlib.sha256(json.dumps(dataset.model_dump(mode="json"),
         sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()).hexdigest()
     counts = [0, 0]
@@ -25,49 +67,7 @@ def import_dataset(session: Session, dataset: CampusDataset, *, adopt_legacy: bo
         revision = session.get(CampusDataRevision, (dataset.scope, dataset.revision))
         if revision and revision.payload_hash != payload_hash:
             raise ValueError("This revision already exists with a different payload; create a new revision.")
-        places = {place.code: place for place in session.scalars(select(Building))}
-        by_name = {place.name: place for place in places.values()}
-        for record in dataset.places:
-            values = record.model_dump()
-            place = places.get(record.code)
-            if place is None and record.name in by_name:
-                candidate = by_name[record.name]
-                same_location = (abs(candidate.x-record.x) < 0.001 and abs(candidate.y-record.y) < 0.001
-                    and candidate.floor == record.floor and abs(candidate.effective_elevation_m-record.elevation_m) < 0.001)
-                if not (adopt_legacy and candidate.data_scope is None and same_location
-                        and candidate.code.startswith(("legacy-place:", "place:"))):
-                    raise ValueError(f"Legacy name already belongs to another record: {record.name}.")
-                place = candidate
-            if place is None:
-                if revision:
-                    raise ValueError(f"Stored revision has missing place: {record.code}.")
-                place = Building(**values, data_scope=dataset.scope)
-                session.add(place)
-                counts[0] += 1
-            else:
-                if place.data_scope != dataset.scope and not (adopt_legacy and place.data_scope is None
-                        and place.code.startswith(("legacy-place:", "place:"))
-                        and abs(place.x-record.x) < 0.001 and abs(place.y-record.y) < 0.001
-                        and place.floor == record.floor and abs(place.effective_elevation_m-record.elevation_m) < 0.001):
-                    raise ValueError(f"Place is owned by another scope: {record.code}.")
-                if revision and any(getattr(place, key) != value for key, value in values.items()):
-                    raise ValueError(f"Stored revision has changed place: {record.code}.")
-                name_owner = by_name.get(record.name)
-                if name_owner is not None and name_owner is not place:
-                    raise ValueError(f"Legacy name already exists: {record.name}.")
-                by_name.pop(place.name, None)
-                for key, value in values.items():
-                    setattr(place, key, value)
-                place.data_scope = dataset.scope
-            places[record.code] = place
-            by_name[record.name] = place
-        session.flush()
-        if _places_only:
-            # Startup prepares every scope's places before cross-floor paths.
-            # The enclosing profile transaction still owns the entire import.
-            return DatasetImportResult(scope=dataset.scope, revision=dataset.revision,
-                payload_hash=payload_hash, created_places=counts[0], created_paths=0,
-                unchanged_revision=revision is not None)
+        places, counts[0] = import_places(session, dataset, revision=revision, adopt_legacy=adopt_legacy)
         for record in dataset.paths:
             if record.source_code not in places or record.target_code not in places:
                 raise ValueError(f"Unknown endpoint for path: {record.code}.")

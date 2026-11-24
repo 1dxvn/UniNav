@@ -83,7 +83,7 @@ def seed_profile(session: Session, profile: Profile) -> dict:
     from sqlalchemy import func, select
     from models import Building, CampusDataRevision, CampusPath
     from scripts.seed_ucc_floor1 import seed_campus
-    from services.datasets import import_dataset
+    from services.datasets import import_dataset, import_places
 
     # Begin before the outer savepoint: sqlite's legacy driver otherwise releases
     # its first savepoint as a commit, defeating the caller's rollback.
@@ -104,14 +104,22 @@ def seed_profile(session: Session, profile: Profile) -> dict:
             # Fresh DB or recognized legacy identities: bootstrap once, then apply
             # the full target. Existing upgraded scopes never enter this branch.
             created[:] = seed_campus(session)
-        results = []
-        # Floor connections can reference each other. Prepare all places first,
-        # keeping their original scopes and the outer transaction's rollback.
+        staged_counts = {}
+        # Some scopes reference each other. Resolve their nodes before importing edges.
         for dataset in profile.datasets:
-            prepared = import_dataset(session, dataset, _places_only=True)
-            created[0] += prepared.created_places
+            revision = session.get(CampusDataRevision, (dataset.scope, dataset.revision))
+            _, added = import_places(session, dataset, revision=revision)
+            staged_counts[dataset.scope] = added
+        if profile.selected_generations.get("ucc:elevators-a", 0) >= 2:
+            obsolete = [f"ucc:elevator-a:f{i}-f{i+1}" for i in range(5)]
+            for path in session.scalars(select(CampusPath).where(
+                    CampusPath.data_scope == "ucc:elevators-a", CampusPath.code.in_(obsolete))):
+                session.delete(path)
+            session.flush()
+        results = []
         for dataset in profile.datasets:
             result = import_dataset(session, dataset)
+            result.created_places += staged_counts[dataset.scope]
             results.append(result.model_dump(mode="json"))
             created[0] += result.created_places
             created[1] += result.created_paths

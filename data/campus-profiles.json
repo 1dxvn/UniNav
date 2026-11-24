@@ -198,6 +198,12 @@
       "revision": "navigation-p6-v1-paths",
       "generation": 1,
       "sha256": "86ee2fe88301fc446917b986cf0dfc924699d8c873fab1244d4f997bd6fa2377"
+    },
+    "ucc-elevators-a.json": {
+      "scope": "ucc:elevators-a",
+      "revision": "elevators-a-v2",
+      "generation": 2,
+      "sha256": "f6cca9970bffbfa1925bb48dddce1ab43305cfea61f89d52fe61c6b2fea56c17"
     }
   },
   "profiles": {
@@ -289,7 +295,8 @@
         "ucc-navigation-p5-floor45-connection.json",
         "ucc-navigation-p5-navigation-p4-paths.json",
         "ucc-navigation-p5-paths.json",
-        "ucc-navigation-p6-paths.json"
+        "ucc-navigation-p6-paths.json",
+        "ucc-elevators-a.json"
       ],
       "composed_revisions": {
         "ucc:floor0-connection": "navigation-p01-c27-v2-composed",

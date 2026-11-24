@@ -74,7 +74,7 @@ def main() -> int:
         print('UniNav está preparado. Ejecuta este mismo comando sin --setup-only para iniciar.')
         return 0
     print(f'Abre http://127.0.0.1:{args.port}/app/ al iniciar el servidor. Ctrl+C para detener.', flush=True)
-    run([str(python), '-m', 'scripts.run_campus', '--profile', 'ucc-six-floors-c18', '--port', str(args.port)])
+    run([str(python), '-m', 'scripts.run_campus', '--profile', 'ucc-navigation-p01', '--port', str(args.port)])
     return 0
 
 

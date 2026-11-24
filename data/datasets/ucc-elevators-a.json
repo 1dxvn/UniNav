@@ -1,0 +1,617 @@
+{
+  "scope": "ucc:elevators-a",
+  "revision": "elevators-a-v2",
+  "source": "DWG bloque A, cabinas y rellanos P0-P5. PLAN_ASCENSORES_FUNCIONALES.md",
+  "places": [
+    {
+      "name": "Rellano del ascensor 1 - Piso 0",
+      "x": 26.8,
+      "y": 53.0,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p0:rellano",
+      "display_name": "Rellano del ascensor 1 - Piso 0",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Cabina del ascensor 1 - Piso 0",
+      "x": 26.8,
+      "y": 54.75,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p0:cabina",
+      "display_name": "Cabina del ascensor 1 - Piso 0",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Rellano del ascensor 1 - Piso 1",
+      "x": 26.8,
+      "y": 53.0,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p1:rellano",
+      "display_name": "Rellano del ascensor 1 - Piso 1",
+      "block_code": "A",
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Cabina del ascensor 1 - Piso 1",
+      "x": 26.8,
+      "y": 54.75,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p1:cabina",
+      "display_name": "Cabina del ascensor 1 - Piso 1",
+      "block_code": "A",
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Rellano del ascensor 1 - Piso 2",
+      "x": 26.8,
+      "y": 53.0,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p2:rellano",
+      "display_name": "Rellano del ascensor 1 - Piso 2",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 1 - Piso 2",
+      "x": 26.8,
+      "y": 54.75,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p2:cabina",
+      "display_name": "Cabina del ascensor 1 - Piso 2",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 1 - Piso 3",
+      "x": 26.8,
+      "y": 53.0,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p3:rellano",
+      "display_name": "Rellano del ascensor 1 - Piso 3",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 1 - Piso 3",
+      "x": 26.8,
+      "y": 54.75,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p3:cabina",
+      "display_name": "Cabina del ascensor 1 - Piso 3",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 1 - Piso 4",
+      "x": 26.8,
+      "y": 53.0,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p4:rellano",
+      "display_name": "Rellano del ascensor 1 - Piso 4",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 1 - Piso 4",
+      "x": 26.8,
+      "y": 54.75,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p4:cabina",
+      "display_name": "Cabina del ascensor 1 - Piso 4",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 1 - Piso 5",
+      "x": 26.8,
+      "y": 53.0,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p5:rellano",
+      "display_name": "Rellano del ascensor 1 - Piso 5",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 1 - Piso 5",
+      "x": 26.8,
+      "y": 54.75,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a1:p5:cabina",
+      "display_name": "Cabina del ascensor 1 - Piso 5",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 2 - Piso 0",
+      "x": 24.65,
+      "y": 53.0,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p0:rellano",
+      "display_name": "Rellano del ascensor 2 - Piso 0",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Cabina del ascensor 2 - Piso 0",
+      "x": 24.65,
+      "y": 54.75,
+      "floor": 0,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p0:cabina",
+      "display_name": "Cabina del ascensor 2 - Piso 0",
+      "block_code": "A",
+      "floor_code": "ucc-floor-zero",
+      "elevation_m": -0.6299998164176941,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Rellano del ascensor 2 - Piso 1",
+      "x": 24.65,
+      "y": 53.0,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p1:rellano",
+      "display_name": "Rellano del ascensor 2 - Piso 1",
+      "block_code": "A",
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Cabina del ascensor 2 - Piso 1",
+      "x": 24.65,
+      "y": 54.75,
+      "floor": 1,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p1:cabina",
+      "display_name": "Cabina del ascensor 2 - Piso 1",
+      "block_code": "A",
+      "floor_code": "ucc-first-floor",
+      "elevation_m": 3.5,
+      "elevation_source": "DWG P0/P1 labels and doorways; current C27/C26 walking surfaces; graph construction 2026-11-16; manual arrivals pending"
+    },
+    {
+      "name": "Rellano del ascensor 2 - Piso 2",
+      "x": 24.65,
+      "y": 53.0,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p2:rellano",
+      "display_name": "Rellano del ascensor 2 - Piso 2",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 2 - Piso 2",
+      "x": 24.65,
+      "y": 54.75,
+      "floor": 2,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p2:cabina",
+      "display_name": "Cabina del ascensor 2 - Piso 2",
+      "block_code": "A",
+      "floor_code": "ucc-second-floor",
+      "elevation_m": 6.18,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 2 - Piso 3",
+      "x": 24.65,
+      "y": 53.0,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p3:rellano",
+      "display_name": "Rellano del ascensor 2 - Piso 3",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 2 - Piso 3",
+      "x": 24.65,
+      "y": 54.75,
+      "floor": 3,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p3:cabina",
+      "display_name": "Cabina del ascensor 2 - Piso 3",
+      "block_code": "A",
+      "floor_code": "ucc-third-floor",
+      "elevation_m": 9.87,
+      "elevation_source": "DWG P2/P3 names/doorways; current uploaded C28 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 2 - Piso 4",
+      "x": 24.65,
+      "y": 53.0,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p4:rellano",
+      "display_name": "Rellano del ascensor 2 - Piso 4",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 2 - Piso 4",
+      "x": 24.65,
+      "y": 54.75,
+      "floor": 4,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p4:cabina",
+      "display_name": "Cabina del ascensor 2 - Piso 4",
+      "block_code": "A",
+      "floor_code": "ucc-fourth-floor",
+      "elevation_m": 13.37,
+      "elevation_source": "DWG P4 names/doorways; current uploaded C29 walking surfaces; full body validation required; 2026-11-16"
+    },
+    {
+      "name": "Rellano del ascensor 2 - Piso 5",
+      "x": 24.65,
+      "y": 53.0,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p5:rellano",
+      "display_name": "Rellano del ascensor 2 - Piso 5",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    },
+    {
+      "name": "Cabina del ascensor 2 - Piso 5",
+      "x": 24.65,
+      "y": 54.75,
+      "floor": 5,
+      "faculty": null,
+      "building_type": "elevator",
+      "code": "ucc:elev-a2:p5:cabina",
+      "display_name": "Cabina del ascensor 2 - Piso 5",
+      "block_code": "A",
+      "floor_code": "ucc-fifth-floor",
+      "elevation_m": 16.869999,
+      "elevation_source": "DWG P5/TERRAZAS; current C29/C31/C34 support, physical stair chains; 2026-11-16"
+    }
+  ],
+  "paths": [
+    {
+      "code": "ucc:elev-a1:p0:rellano-from-ucc:f0:elevator-lobby",
+      "source_code": "ucc:f0:elevator-lobby",
+      "target_code": "ucc:elev-a1:p0:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p0:cabina-from-ucc:elev-a1:p0:rellano",
+      "source_code": "ucc:elev-a1:p0:rellano",
+      "target_code": "ucc:elev-a1:p0:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p1:rellano-from-ucc:floor1:p10",
+      "source_code": "ucc:floor1:p10",
+      "target_code": "ucc:elev-a1:p1:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p1:cabina-from-ucc:elev-a1:p1:rellano",
+      "source_code": "ucc:elev-a1:p1:rellano",
+      "target_code": "ucc:elev-a1:p1:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p1:cabina-from-ucc:elev-a1:p0:cabina",
+      "source_code": "ucc:elev-a1:p0:cabina",
+      "target_code": "ucc:elev-a1:p1:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p2:rellano-from-ucc:p23:f2:s04",
+      "source_code": "ucc:p23:f2:s04",
+      "target_code": "ucc:elev-a1:p2:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p2:cabina-from-ucc:elev-a1:p2:rellano",
+      "source_code": "ucc:elev-a1:p2:rellano",
+      "target_code": "ucc:elev-a1:p2:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p2:cabina-from-ucc:elev-a1:p1:cabina",
+      "source_code": "ucc:elev-a1:p1:cabina",
+      "target_code": "ucc:elev-a1:p2:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p3:rellano-from-ucc:p23:f3:s04",
+      "source_code": "ucc:p23:f3:s04",
+      "target_code": "ucc:elev-a1:p3:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p3:cabina-from-ucc:elev-a1:p3:rellano",
+      "source_code": "ucc:elev-a1:p3:rellano",
+      "target_code": "ucc:elev-a1:p3:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p3:cabina-from-ucc:elev-a1:p2:cabina",
+      "source_code": "ucc:elev-a1:p2:cabina",
+      "target_code": "ucc:elev-a1:p3:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p4:rellano-from-ucc:p4:f4:s08",
+      "source_code": "ucc:p4:f4:s08",
+      "target_code": "ucc:elev-a1:p4:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p4:cabina-from-ucc:elev-a1:p4:rellano",
+      "source_code": "ucc:elev-a1:p4:rellano",
+      "target_code": "ucc:elev-a1:p4:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p4:cabina-from-ucc:elev-a1:p3:cabina",
+      "source_code": "ucc:elev-a1:p3:cabina",
+      "target_code": "ucc:elev-a1:p4:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p5:rellano-from-ucc:p5:f5:s02",
+      "source_code": "ucc:p5:f5:s02",
+      "target_code": "ucc:elev-a1:p5:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p5:cabina-from-ucc:elev-a1:p5:rellano",
+      "source_code": "ucc:elev-a1:p5:rellano",
+      "target_code": "ucc:elev-a1:p5:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a1:p5:cabina-from-ucc:elev-a1:p4:cabina",
+      "source_code": "ucc:elev-a1:p4:cabina",
+      "target_code": "ucc:elev-a1:p5:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p0:rellano-from-ucc:f0:elevator-lobby",
+      "source_code": "ucc:f0:elevator-lobby",
+      "target_code": "ucc:elev-a2:p0:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p0:cabina-from-ucc:elev-a2:p0:rellano",
+      "source_code": "ucc:elev-a2:p0:rellano",
+      "target_code": "ucc:elev-a2:p0:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p1:rellano-from-ucc:floor1:p10",
+      "source_code": "ucc:floor1:p10",
+      "target_code": "ucc:elev-a2:p1:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p1:cabina-from-ucc:elev-a2:p1:rellano",
+      "source_code": "ucc:elev-a2:p1:rellano",
+      "target_code": "ucc:elev-a2:p1:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p1:cabina-from-ucc:elev-a2:p0:cabina",
+      "source_code": "ucc:elev-a2:p0:cabina",
+      "target_code": "ucc:elev-a2:p1:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p2:rellano-from-ucc:p23:f2:s04",
+      "source_code": "ucc:p23:f2:s04",
+      "target_code": "ucc:elev-a2:p2:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p2:cabina-from-ucc:elev-a2:p2:rellano",
+      "source_code": "ucc:elev-a2:p2:rellano",
+      "target_code": "ucc:elev-a2:p2:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p2:cabina-from-ucc:elev-a2:p1:cabina",
+      "source_code": "ucc:elev-a2:p1:cabina",
+      "target_code": "ucc:elev-a2:p2:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p3:rellano-from-ucc:p23:f3:s04",
+      "source_code": "ucc:p23:f3:s04",
+      "target_code": "ucc:elev-a2:p3:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p3:cabina-from-ucc:elev-a2:p3:rellano",
+      "source_code": "ucc:elev-a2:p3:rellano",
+      "target_code": "ucc:elev-a2:p3:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p3:cabina-from-ucc:elev-a2:p2:cabina",
+      "source_code": "ucc:elev-a2:p2:cabina",
+      "target_code": "ucc:elev-a2:p3:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p4:rellano-from-ucc:p4:f4:s08",
+      "source_code": "ucc:p4:f4:s08",
+      "target_code": "ucc:elev-a2:p4:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p4:cabina-from-ucc:elev-a2:p4:rellano",
+      "source_code": "ucc:elev-a2:p4:rellano",
+      "target_code": "ucc:elev-a2:p4:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p4:cabina-from-ucc:elev-a2:p3:cabina",
+      "source_code": "ucc:elev-a2:p3:cabina",
+      "target_code": "ucc:elev-a2:p4:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p5:rellano-from-ucc:p5:f5:s02",
+      "source_code": "ucc:p5:f5:s02",
+      "target_code": "ucc:elev-a2:p5:rellano",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p5:cabina-from-ucc:elev-a2:p5:rellano",
+      "source_code": "ucc:elev-a2:p5:rellano",
+      "target_code": "ucc:elev-a2:p5:cabina",
+      "kind": "corridor",
+      "bidirectional": true,
+      "weight": null
+    },
+    {
+      "code": "ucc:elev-a2:p5:cabina-from-ucc:elev-a2:p4:cabina",
+      "source_code": "ucc:elev-a2:p4:cabina",
+      "target_code": "ucc:elev-a2:p5:cabina",
+      "kind": "elevator",
+      "bidirectional": true,
+      "weight": null
+    }
+  ]
+}
