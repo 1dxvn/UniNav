@@ -1,0 +1,24 @@
+# Servidor de UniNav (la API) en Render, plan gratis.
+# La página sigue en Cloudflare Pages (https://uninavucc.pages.dev); su worker reenvía la API a este servicio.
+# La base SQLite se arma al compilar con el perfil ucc-navigation-p01. El disco del plan gratis se borra en cada
+# reinicio o despliegue: los lugares y rutas vuelven solos, los usuarios nuevos y el historial no.
+services:
+  - type: web
+    name: uninavucc
+    runtime: python
+    plan: free
+    region: virginia
+    buildCommand: pip install -r requirements.txt && python -m scripts.seed_campus --profile ucc-navigation-p01
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT --proxy-headers
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.7
+      - key: UNINAV_DATABASE_URL
+        value: sqlite:////opt/render/project/src/uninav-campus.db
+      - key: FORWARDED_ALLOW_IPS
+        value: "*"
+      - key: UNINAV_SECRET_KEY
+        generateValue: true
+      - key: UNINAV_ADMIN_PASSWORD
+        sync: false
